@@ -1,0 +1,19 @@
+{
+  "release": "0.1.2-alpha256",
+  "install": {
+    "outcome": "passed",
+    "files": 934
+  },
+  "validation": {
+    "outcome": "passed",
+    "checks": 11,
+    "phase_failures": 0,
+    "runtime_errors": 0,
+    "load_attempts": 0,
+    "preload_blocked": 1,
+    "save_slot": -1,
+    "release": "0.1.2-alpha256",
+    "scope": "Native travel to Jackson, board item and empty drop hit tests, layout revalidation and return to pawnshop",
+    "helper_removed": true
+  }
+}

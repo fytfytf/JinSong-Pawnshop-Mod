@@ -1,0 +1,38 @@
+{
+  "release": "0.1.2-alpha259",
+  "scope": [
+    "New provision buyer and loot seller use separate window departure results.",
+    "A garrison guard brings one original-format handnote on the next day.",
+    "The existing wanted board and wanted statuses retain their original logic."
+  ],
+  "decisions": {
+    "first_eligible_day": 17,
+    "food_budget": 1000,
+    "percentage": 66,
+    "loot_quantity": "3 after pass, 1 after shortfall",
+    "loot_day": "next eligible business day after notice delivery",
+    "full_counter": "guard returns the next day if there is no room for the note",
+    "portrait": "reuse existing merchant and officer art"
+  },
+  "validation": {
+    "outcome": "passed",
+    "checks": 45,
+    "phase_failures": 0,
+    "runtime_errors": 0,
+    "load_attempts": 0,
+    "preload_blocked": 1,
+    "save_slot": -1,
+    "helper_removed": true,
+    "scope": "In-memory shop with controlled day progression and native arrival, buy/sell cash settlement, dismissal and handnote reader. Food 659/660, loot one below/at 66%, next-day guard and original wanted statuses. No existing save opened.",
+    "baseline_note": "Probe adjusted raw unit value linearly although native stolen modifiers scale it. Boundary fixture now derives the required unit value from the native quote. Production package unchanged across these runs."
+  },
+  "install": {
+    "outcome": "passed",
+    "files": 934
+  },
+  "pending": [
+    "weapon purchase",
+    "medical supplies",
+    "assassin outcomes and newspaper"
+  ]
+}

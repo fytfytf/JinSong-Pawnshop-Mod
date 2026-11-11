@@ -1,0 +1,27 @@
+{
+  "release": "0.1.2-alpha260",
+  "scope": "Full Shen Li storyline, independent handnote, four 66% window decisions, four regular endings and one report ending.",
+  "decisions": {
+    "weapon_visit": "three days after loot departure",
+    "medicine_visit": "day after weapons departure",
+    "news": "day after medicine departure or report",
+    "portrait": "reuses existing merchant and officer artwork",
+    "alpha259_state": "loot settled without a date qualifies on next customer generation"
+  },
+  "validation": {
+    "outcome": "passed",
+    "checks": 131,
+    "phase_failures": 0,
+    "runtime_errors": 0,
+    "load_attempts": 0,
+    "preload_blocked": 1,
+    "save_slot": -1,
+    "helper_removed": true,
+    "scope": "Steam game, temporary in-memory shop, controlled business days. One full route and all five outcomes, actual native trade settlement, departure, choice, separate readable notice and newspaper display. No save opened.",
+    "baseline_note": "Probe used bandage sprite key rather than the registered item ID and did not complete the scheduled report response. Corrected the fixture and completed the native response end action. No production changes between runs."
+  },
+  "install": {
+    "outcome": "passed",
+    "files": 934
+  }
+}

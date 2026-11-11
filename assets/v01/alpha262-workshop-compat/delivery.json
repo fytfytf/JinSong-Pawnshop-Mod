@@ -1,0 +1,18 @@
+{
+  "release": "0.1.2-alpha262",
+  "install": {
+    "outcome": "passed",
+    "files": 934
+  },
+  "validation": {
+    "outcome": "passed",
+    "checks": 15,
+    "phase_failures": 0,
+    "runtime_errors": 0,
+    "load_attempts": 0,
+    "preload_blocked": 1,
+    "save_slot": -1,
+    "helper_removed": true,
+    "scope": "Chinese shop, current Steam build, native guide and newspaper labels, shop audio and background music, chemistry targets, native shop/phone name bubbles and actual Item Details 0.9.4 tooltip; no save slot loaded."
+  }
+}

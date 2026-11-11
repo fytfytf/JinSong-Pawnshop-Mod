@@ -1,0 +1,1454 @@
+trade_UI_ui_nego_budget_warning,"The customer only has {0} Credits left.
+You will miss out on {1} Credits."
+trade_UI_ui_nego_buying_items,Buying {0} Items
+trade_UI_ui_nego_selling_items,Selling {0} Items
+trade_UI_ui_nego_buy_items,Buy {0} Items
+trade_UI_ui_nego_sell_items,Sell {0} Items
+trade_UI_ui_appraisal_estimate,Estimate Sent: {0}
+trade_UI_ui_appraisal_true_value,True Value: {0}
+trade_UI_ui_nego_wholesale_offer,Offering Wholesale {0}% Discount
+trade_UI_ui_nego_choose_offer,Choose offer: {0} / {1}
+trade_UI_ui_nego_gun_best_premium,"Best of its kind, +{0}%"
+trade_UI_ui_storage_coordinator_default_name,Sorting Plan {0}
+trade_UI_ui_storage_coordinator_chip_tooltip,{0}: click to remove it from this preset.
+trade_UI_ui_storage_coordinator_pick_start,Adding to {0}: click a container in the store. Escape or right-click to stop.
+trade_UI_ui_storage_coordinator_capture_start,Press the key for {0}. Escape or right-click cancels.
+trade_UI_ui_storage_coordinator_key_refused,{0} is already used by the game. Press another key. Escape or right-click cancels.
+trade_UI_ui_storage_coordinator_hint_idle,Adding to {0}: click a container. Escape or right-click to stop.
+trade_UI_ui_storage_coordinator_hint_cant_add,Can't add {0} to {1}.
+trade_UI_ui_storage_coordinator_hint_already,{0} is already in {1}.
+trade_UI_ui_storage_coordinator_hint_click_add,Click to add {0} to {1}.
+trade_UI_ui_nego_donate_items,Donate ({0})
+remainder_source_Item_item_skincare_cream_flavor,A sleek glass jar containing a shimmering serum.
+remainder_Item_item_skincare_cream_flavor,A small jar containing a faintly shimmering cream.
+remainder_source_Item_item_box_tampon_flavor,"Promising protection and discretion, sanitary products like these are a luxury that few in the Lower Levels can afford."
+remainder_Item_item_box_tampon_flavor,"Promising protection and discretion, sanitary products like these are a luxury that few in the Outer City can afford."
+remainder_source_Item_item_pack_condom_flavor,"Surprisingly common in the Lower Levels thanks to a subsidised distribution program. Population control, after all, is cheaper than riot control."
+remainder_Item_item_pack_condom_flavor,"Surprisingly common in the Outer City thanks to a subsidised distribution program. Population control, after all, is cheaper than riot control."
+remainder_source_Item_item_toilet_paper_flavor,Affordable toilet paper that offers strength and reliability. Two-ply is a luxury in the Lower Levels.
+remainder_Item_item_toilet_paper_flavor,Affordable toilet paper that offers strength and reliability. Two-ply is a luxury in the Outer City.
+remainder_source_Item_item_lottery_ticket_flavor,A jackpot ticket could buy you a lifetime in the Upper Levels' safety and comfort.
+remainder_Item_item_lottery_ticket_flavor,A jackpot ticket could buy you a lifetime in the Inner City' safety and comfort.
+remainder_source_Item_item_lottery_ticket_old_desc,"A worthless ticket from the Lower Levels Lottery. No winning numbers, just faded hope."
+remainder_Item_item_lottery_ticket_old_desc,"A worthless ticket from the Outer City Lottery. No winning numbers, just faded hope."
+remainder_source_Item_item_lottery_ticket_old_flavor,A jackpot ticket could buy you a lifetime in the Upper Levels' safety and comfort.
+remainder_Item_item_lottery_ticket_old_flavor,A jackpot ticket could buy you a lifetime in the Inner City' safety and comfort.
+remainder_source_Item_item_pheromone_perfume_flavor,"An illegal fragrance formulated from engineered human pheromones. It pushes attraction and emotional receptivity. Despite being illegal, it is highly sought after by social climbers in the Upper Levels."
+remainder_Item_item_pheromone_perfume_flavor,"An illegal fragrance formulated from engineered human pheromones. It pushes attraction and emotional receptivity. Despite being illegal, it is highly sought after by social climbers in the Inner City."
+remainder_source_Item_item_screwdriver_flavor,"The humble screwdriver, a common fixture of the spare drawers of citizens in the Upper and Lower Levels alike."
+remainder_Item_item_screwdriver_flavor,"The humble screwdriver, a common fixture of the spare drawers of citizens in the Inner and Outer City alike."
+remainder_source_Item_item_sec_box_name,Security Department Supply Crate
+remainder_Item_item_sec_box_name,City Watch Supply Crate
+remainder_source_Item_item_sec_box_desc,A locked crate. Labeled for the Station Security Armory. Full of supplies. Access card required.
+remainder_Item_item_sec_box_desc,A locked crate. Labeled for the City Watch Armory. Full of supplies. Access card required.
+remainder_source_Item_item_eng_box_desc,A locked crate. Labeled for the Station Engineering Foundry. Full of supplies. Access card required.
+remainder_Item_item_eng_box_desc,A locked crate. Labeled for the City Foundry. Full of supplies. Access card required.
+remainder_source_Item_item_med_box_desc,A locked crate. Labeled for the Station Medical Bay. Full of supplies. Access card required.
+remainder_Item_item_med_box_desc,A locked crate. Labeled for the City Infirmary. Full of supplies. Access card required.
+remainder_source_Item_item_evidence_box_name,Security Department Evidence Locker
+remainder_Item_item_evidence_box_name,City Watch Evidence Locker
+remainder_source_Item_item_evidence_box_flavor,There's enough here to put the entire Lower Levels behind bars.
+remainder_Item_item_evidence_box_flavor,There's enough here to put the entire Outer City behind bars.
+remainder_source_Item_item_evidence_box_desc,A locked crate. Labeled for the Station Security Evidence Locker. Valuable. Access card required.
+remainder_Item_item_evidence_box_desc,A locked crate. Labeled for the City Watch Evidence Store. Valuable. Access card required.
+remainder_source_Item_item_service_box_desc,A secure crate. Labeled for the Station Service Department. Full of supplies. Access card required.
+remainder_Item_item_service_box_desc,A secure crate. Labeled for the City Supply Office. Full of supplies. Access card required.
+remainder_source_Item_item_service_box_flavor,"The Station Service Department distributes utility supplies to those who need, or pay, for them."
+remainder_Item_item_service_box_flavor,"The City Supply Office distributes utility supplies to those who need, or pay, for them."
+remainder_source_Item_item_rds_makeshift_desc,"A 3D printed RDS with a red LED and plastic lens. It is not very reliable, but it works surprising well."
+remainder_Item_item_rds_makeshift_desc,"A 3D printed RDS with a red LED and plastic lens. It is not very reliable, but it works surprising well."
+remainder_source_Item_item_mag_22_desc,A cheap 3D printed 12 round compact .22 magazine.
+remainder_Item_item_mag_22_desc,A cheap 3D printed 12 round compact .22 magazine.
+remainder_source_Item_item_mag_22_high_desc,A cheap 3D 24 round compact .22 magazine.
+remainder_Item_item_mag_22_high_desc,A cheap 3D 24 round compact .22 magazine.
+remainder_source_Item_item_mag_22_ext_desc,A cheap 3D 48 round compact .22 magazine.
+remainder_Item_item_mag_22_ext_desc,A cheap 3D 48 round compact .22 magazine.
+remainder_source_Item_item_common_chemical_flavor,A collection of common chemical supplies you could likely find in the Station Hardware Depot.
+remainder_Item_item_common_chemical_flavor,A collection of common chemical supplies you could likely find in the city Hardware Depot.
+remainder_source_Item_item_restricted_medical_flavor,"A collection of restricted medical supplies, necessary for the care of the Station's infirm."
+remainder_Item_item_restricted_medical_flavor,"A collection of restricted medical supplies, necessary for the care of the city's infirm."
+remainder_source_Item_item_scrap_metal_desc,"Can be smelted into Metal Ore. With limited resources available on the Station, salvage and recycling are important habits."
+remainder_Item_item_scrap_metal_desc,"Can be smelted into Metal Ore. With limited resources available in the city, salvage and recycling are important habits."
+remainder_source_Item_item_common_electronic_flavor,"An assortment of all kinds of useful, if common, electronics: connectors, switches, capacitors, processors and processing units..."
+remainder_Item_item_common_electronic_flavor,"A collection of useful common clockwork components: connectors, switches, energy components and calculating units."
+remainder_source_Item_item_rare_electronic_flavor,"An assortment of uncommon, high-end electronic parts. A certain inventor would be very interested in this..."
+remainder_Item_item_rare_electronic_flavor,A collection of uncommon precision clockwork parts. A certain inventor would surely take an interest...
+remainder_source_Item_item_printer_plastic_name,3D Printing Filament
+remainder_Item_item_printer_plastic_name,3D Printing Filament
+remainder_source_Item_item_printer_plastic_desc,A spool of premium filament for use in a 3D printer. Made from recycled plastics where possible. 
+remainder_Item_item_printer_plastic_desc,A spool of premium filament for use in a clockwork pattern press. Made from recycled plastics where possible. 
+remainder_source_Item_item_printed_gun_name,Liberator 3D Printed Pistol
+remainder_Item_item_printed_gun_name,Liberator 3D Printed Pistol
+remainder_source_Item_item_printed_gun_desc,A low cost plastic 3D printed pistol.
+remainder_Item_item_printed_gun_desc,A low cost plastic 3D printed pistol.
+remainder_source_Item_item_handmade_pistol_flavor,Widely used for home defence in the Lower Level. Mostly tolerated by Security. Probably handmade by a Lower Level gunsmith.
+remainder_Item_item_handmade_pistol_flavor,Widely used for home defence in the Outer City. Mostly tolerated by the Watch. Probably handmade by a Outer City gunsmith.
+remainder_source_Item_item_heavy_handmade_pistol_flavor,Capable of piercing body armor. A popular weapon for Lower Level Revolutionary.
+remainder_Item_item_heavy_handmade_pistol_flavor,Capable of piercing body armor. A popular weapon for Outer City Revolutionary.
+remainder_source_Item_item_glock_receiver_desc,"A reliable handgun, chambered in 10mm. Mostly carried by Security"
+remainder_Item_item_glock_receiver_desc,"A reliable handgun, chambered in 10mm. Mostly carried by the Watch"
+remainder_source_Item_item_smg_desc,"A heavy SMG, chambered in 10mm. Used sparingly by Security during high stakes operations."
+remainder_Item_item_smg_desc,"A heavy SMG, chambered in 10mm. Used sparingly by the Watch during high stakes operations."
+remainder_source_Item_item_stun_gun_flavor,A well made self-defence option officially endorsed by Security. Mostly used by Upper Level due to high cost.
+remainder_Item_item_stun_gun_flavor,A well made self-defence option officially endorsed by the Watch. Mostly used by Inner City due to high cost.
+remainder_source_Item_item_zerochew_flavor,"Used by some Lower Levels inhabitants looking to stretch their credits by skipping meals. Marketed as Regime-X, a weight loss drug in the Upper Levels."
+remainder_Item_item_zerochew_flavor,"Used by some Outer City inhabitants looking to stretch their credits by skipping meals. Marketed as Regime-X, a weight loss drug in the Inner City."
+remainder_source_Item_item_blue_blood_bag_flavor,It's not actually blood. Not so common even in the Upper Levels.
+remainder_Item_item_blue_blood_bag_flavor,It's not actually blood. Not so common even in the Inner City.
+remainder_source_Item_item_dream_dust_flavor,"A cheap, euphoria inducing powder, created in the Lower Levels. Used as a brief escape from the harsh realities of Station life."
+remainder_Item_item_dream_dust_flavor,"A cheap, euphoria inducing powder, created in the Outer City. Used as a brief escape from the harsh realities of city life."
+remainder_source_Item_item_caffeine_pill_flavor,"Synthesized from the waste of Upper Levels espresso bars, these pills are essential for the long shift workers of the Lower Levels."
+remainder_Item_item_caffeine_pill_flavor,"Synthesized from the waste of Inner City espresso bars, these pills are essential for the long shift workers of the Outer City."
+remainder_source_Item_item_rubbing_alcohol_flavor,"A potent disinfectant used for cleaning wounds and surfaces. Highly toxic if ingested, but that doesn't stop it being used as an alternative to Nudka in the Lower Levels."
+remainder_Item_item_rubbing_alcohol_flavor,"A potent disinfectant used for cleaning wounds and surfaces. Highly toxic if ingested, but that doesn't stop it being used as an alternative to Nudka in the Outer City."
+remainder_source_Item_item_crowbar_flavor,The trusty tool of every experienced scavenger and theoretical physicist on the Station. Useful as a weapon in a pinch.
+remainder_Item_item_crowbar_flavor,A trusted tool of seasoned city scavengers and scholars. It can also serve as a weapon in a pinch.
+remainder_source_Item_item_pipe_weapon_desc,"A heavy lead pipe. After the Station overhauled the water line, tonnes of leftover lead piping found its way into the hands of scavs and thieves."
+remainder_Item_item_pipe_weapon_desc,"A heavy lead pipe. After the city overhauled the water line, tonnes of leftover lead piping found its way into the hands of scavs and thieves."
+remainder_source_Item_item_stun_baton_desc,Standard-issue stun baton with STUN and HARM modes. An everyday carry for Security Officers maintaining order in the station.
+remainder_Item_item_stun_baton_desc,Standard-issue stun baton with STUN and HARM modes. An everyday carry for Watch Officers maintaining order in the city.
+remainder_source_Item_item_energy_credit_name,Energy Cell
+remainder_Item_item_energy_credit_name,Energy Cell
+remainder_source_Item_item_energy_credit_flavor,"In an effort to reduce waste, single-use batteries were made illegal by the Republic."
+remainder_Item_item_energy_credit_flavor,"To reduce waste, the distant court has outlawed single-use power cells."
+remainder_source_Item_item_energy_credit_ext_name,Energy Cell (Mk. II)
+remainder_Item_item_energy_credit_ext_name,Energy Cell (Mk. II)
+remainder_source_Item_item_energy_credit_ext_flavor,"Improving on the standard model, the Mk. II cell is bigger, better and even more of a choking hazard."
+remainder_Item_item_energy_credit_ext_flavor,"Improving on the standard model, the Mk. II cell is bigger, better and even more of a choking hazard."
+remainder_source_Item_item_energy_credit_breeder_name,Self Charging Energy Cell
+remainder_Item_item_energy_credit_breeder_name,Self Charging Energy Cell
+remainder_source_Item_item_energy_credit_breeder_desc,An advanced and rare energy cell capable of self charging
+remainder_Item_item_energy_credit_breeder_desc,An advanced and rare energy cell capable of self charging
+remainder_source_Item_item_intel_sec_name,Security Record
+remainder_Item_item_intel_sec_name,the Watch Record
+remainder_source_Item_item_intel_sec_flavor,A copy of your security record file from the Security Department
+remainder_Item_item_intel_sec_flavor,A copy of your security record file from the City Watch
+remainder_source_Item_item_lottery_info_name,Lower Levels Lottery Information
+remainder_Item_item_lottery_info_name,Outer City Lottery Information
+remainder_source_Item_item_business_permit_desc,A permit issued by the Republic. Required to legally operate a business in the Lower Levels.
+remainder_Item_item_business_permit_desc,"A permit issued by the distant court, required to operate a shop legally in the Outer City."
+remainder_source_Item_item_cmd_keycard_name,Disposable Keycard (Command)
+remainder_Item_item_cmd_keycard_name,Disposable Access Token (Command)
+remainder_source_Item_item_cmd_keycard_flavor,"A master keycard, to be carried only by Station Command."
+remainder_Item_item_cmd_keycard_flavor,"A master access token, to be carried only by City Command."
+remainder_source_Item_item_cmd_keycard_desc,A single-use keycard for Station Command. Can open most locks that require keycard access.
+remainder_Item_item_cmd_keycard_desc,A single-use access token for City Command. Can open most locks that require access token access.
+remainder_source_Item_item_sec_keycard_name,Disposable Keycard (Security)
+remainder_Item_item_sec_keycard_name,Disposable Access Token (the Watch)
+remainder_source_Item_item_sec_keycard_desc,A single-use keycard for Station Security. Can open locks that require Security Department access.
+remainder_Item_item_sec_keycard_desc,A single-use access token for City Watch. Can open locks that require City Watch access.
+remainder_source_Item_item_sci_keycard_name,Disposable Keycard (Research)
+remainder_Item_item_sci_keycard_name,Disposable Access Token (Research)
+remainder_source_Item_item_sci_keycard_flavor,Keycard carried by the Station's Research Officers. Valuable.
+remainder_Item_item_sci_keycard_flavor,Access Token carried by the city's research officers. Valuable.
+remainder_source_Item_item_sci_keycard_desc,A single-use keycard for Research and Development. Can open locks that require Science Department access.
+remainder_Item_item_sci_keycard_desc,A single-use access token for Research and Development. Can open locks that require Science Department access.
+remainder_source_Item_item_med_keycard_name,Disposable Keycard (Medical)
+remainder_Item_item_med_keycard_name,Disposable Access Token (Medical)
+remainder_source_Item_item_med_keycard_flavor,A single-use keycard for the Station's Medical Department. Can open locks that require Medical access.
+remainder_Item_item_med_keycard_flavor,A single-use access token for the city's medical department. Can open locks that require Medical access.
+remainder_source_Item_item_eng_keycard_name,Disposable Keycard (Engineering)
+remainder_Item_item_eng_keycard_name,Disposable Access Token (Engineering)
+remainder_source_Item_item_eng_keycard_flavor,A single-use keycard for the Station's Engineering Department. Can open locks that require Engineer access.
+remainder_Item_item_eng_keycard_flavor,A single-use access token for the city's engineering department. Can open locks that require Engineer access.
+remainder_source_Item_item_sup_keycard_name,Disposable Keycard (Supply)
+remainder_Item_item_sup_keycard_name,Disposable Access Token (Supply)
+remainder_source_Item_item_sup_keycard_flavor,A single-use keycard for the Station's Supply Department. Can open locks that require Supply access.
+remainder_Item_item_sup_keycard_flavor,A single-use access token for the city's supply department. Can open locks that require Supply access.
+remainder_source_Item_item_ser_keycard_name,Disposable Keycard (Service)
+remainder_Item_item_ser_keycard_name,Disposable Access Token (Service)
+remainder_source_Item_item_ser_keycard_flavor,A single-use keycard for the Station's Service Department. Can open locks that require Service access.
+remainder_Item_item_ser_keycard_flavor,A single-use access token for the city's service department. Can open locks that require Service access.
+remainder_source_Item_item_blank_keycard_name,Disposable Keycard (Blank)
+remainder_Item_item_blank_keycard_name,Disposable Access Token (Blank)
+remainder_source_Item_item_blank_keycard_flavor,As close to a skeleton key as you'll find on the Station.
+remainder_Item_item_blank_keycard_flavor,As close to a skeleton key as you'll find in the city.
+remainder_source_Item_item_blank_keycard_desc,"An unwritten keycard. With the right machine, this can be reprogrammed with all kinds of access."
+remainder_Item_item_blank_keycard_desc,"An unwritten access token. With the right machine, this can be reprogrammed with all kinds of access."
+remainder_source_Item_item_permit_gun_1_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if Security Reputation is below 0.
+remainder_Item_item_permit_gun_1_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if the Watch Reputation is below 0.
+remainder_source_Item_item_permit_gun_1_flavor,A permit issued by the Warden allowing the holder to legally own and trade low level contraband firearms and ammunition.
+remainder_Item_item_permit_gun_1_flavor,A permit issued by the Warden allowing the holder to legally own and trade low level contraband firearms and ammunition.
+remainder_source_Item_item_permit_gun_2_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if Security Reputation is below 30.
+remainder_Item_item_permit_gun_2_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if the Watch Reputation is below 30.
+remainder_source_Item_item_permit_gun_2_flavor,A permit issued by the Warden allowing the holder to legally own and trade mid level contraband weapons.
+remainder_Item_item_permit_gun_2_flavor,A permit issued by the Warden allowing the holder to legally own and trade mid level contraband weapons.
+remainder_source_Item_item_permit_gun_3_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if Security Reputation is below 60.
+remainder_Item_item_permit_gun_3_desc,Increases the chance of gun buying customers to visit while in the display case. This permit will be revoked if the Watch Reputation is below 60.
+remainder_source_Item_item_permit_gun_3_flavor,A permit issued by the Warden allowing the holder to legally own and trade high level contraband weapons.
+remainder_Item_item_permit_gun_3_flavor,A permit issued by the Warden allowing the holder to legally own and trade high level contraband weapons.
+remainder_source_Item_item_sec_slip_desc,A slip given by the Security Department after responding to an incident.
+remainder_Item_item_sec_slip_desc,A slip given by the City Watch after responding to an incident.
+remainder_source_Item_item_wanted_paper_name,Security Wanted List
+remainder_Item_item_wanted_paper_name,the Watch Wanted List
+remainder_source_Item_item_food_stamp_flavor,A prepaid card valid only to buy groceries. Part of a benefit program to assist the less fortunate in the Lower Levels.
+remainder_Item_item_food_stamp_flavor,A prepaid card valid only to buy groceries. Part of a benefit program to assist the less fortunate in the Outer City.
+remainder_source_Item_item_scratcher_flavor,A popular form of gambling in the Lower Levels. It is banned in the Upper Levels.
+remainder_Item_item_scratcher_flavor,A popular form of gambling in the Outer City. It is banned in the Inner City.
+remainder_source_Item_item_plasma_fuel_desc,"A compact, solid-state fuel cartridge used in Pulse Plasma Drives for space travel. Value varies wildly depending on the quality of the cartridge."
+remainder_Item_item_plasma_fuel_desc,A compact solid-state fuel cartridge for Pulse Plasma Drives. Its value varies greatly with cartridge quality.
+remainder_source_Item_item_powerblock_flavor,A compact power source that can charge adjacent Energy Cells.
+remainder_Item_item_powerblock_flavor,A compact power source that can charge adjacent Energy Cells.
+remainder_source_Item_item_powerblock_desc,"Restores +2 power each night to adjacent Energy Cells, or Energy Cells inside adjacent Machines (excluding Recharger) as long as the Power Service is paid. This effect can be stacked."
+remainder_Item_item_powerblock_desc,"Restores +2 power each night to adjacent Energy Cells, or Energy Cells inside adjacent Machines (excluding Recharger) as long as the Power Service is paid. This effect can be stacked."
+remainder_source_Item_item_system_capped_neural_core_desc,"AI Cores are illegal onboard the Station. This unit features integrated safeguards that curb rogue behavior, while throttling its performance."
+remainder_Item_item_system_capped_neural_core_desc,Cogitation cores are illegal in the city. This unit has safeguards that curb rogue behavior while limiting performance.
+remainder_source_Item_item_crypto_module_cmd_desc,A module that allows the Cryptographic Desequencer to write Command permissions to Blank Keycards.
+remainder_Item_item_crypto_module_cmd_desc,A module that allows the Cryptographic Desequencer to write Command permissions to Blank Access Tokens.
+remainder_source_Item_item_crypto_module_sec_name,Cryptographic Desequencer Chip (Security)
+remainder_Item_item_crypto_module_sec_name,Cryptographic Desequencer Chip (the Watch)
+remainder_source_Item_item_crypto_module_sec_desc,A module that allows the Cryptographic Desequencer to write Security permissions to Blank Keycards.
+remainder_Item_item_crypto_module_sec_desc,A module that allows the Cryptographic Desequencer to write the Watch permissions to Blank Access Tokens.
+remainder_source_Item_item_crypto_module_med_desc,A module that allows the Cryptographic Desequencer to write Medical permissions to Blank Keycards.
+remainder_Item_item_crypto_module_med_desc,A module that allows the Cryptographic Desequencer to write Medical permissions to Blank Access Tokens.
+remainder_source_Item_item_crypto_module_eng_desc,A module that allows the Cryptographic Desequencer to write Engineering permissions to Blank Keycards.
+remainder_Item_item_crypto_module_eng_desc,A module that allows the Cryptographic Desequencer to write Engineering permissions to Blank Access Tokens.
+remainder_source_Item_item_crypto_module_sup_desc,A module that allows the Cryptographic Desequencer to write Supply permissions to Blank Keycards.
+remainder_Item_item_crypto_module_sup_desc,A module that allows the Cryptographic Desequencer to write Supply permissions to Blank Access Tokens.
+remainder_source_Item_item_crypto_module_ser_desc,A module that allows the Cryptographic Desequencer to write Service permissions to Blank Keycards.
+remainder_Item_item_crypto_module_ser_desc,A module that allows the Cryptographic Desequencer to write Service permissions to Blank Access Tokens.
+remainder_source_Item_item_printer_chip_desc,A chip that contains the 3D printer blueprint.
+remainder_Item_item_printer_chip_desc,A chip that contains the clockwork pattern press blueprint.
+remainder_source_Item_item_printer_chip_pistol_name,.22 Pistol 3D Printer Chip
+remainder_Item_item_printer_chip_pistol_name,.22 Pistol Clockwork Pattern Press Chip
+remainder_source_Item_item_printer_chip_makeshift_rds_name,3D Printer Chip (x{0} Makeshift RDS)
+remainder_Item_item_printer_chip_makeshift_rds_name,Clockwork Pattern Press Chip (x{0} Makeshift RDS)
+remainder_source_Item_item_printer_chip_makeshift_toy_laser_name,3D Printer Chip (x{0} Toy Laser Pointer)
+remainder_Item_item_printer_chip_makeshift_toy_laser_name,Clockwork Pattern Press Chip (x{0} Toy Laser Pointer)
+remainder_source_Item_item_printer_chip_small_bottle_name,3D Printer Chip (x{0} Small Plastic Bottle)
+remainder_Item_item_printer_chip_small_bottle_name,Clockwork Pattern Press Chip (x{0} Small Plastic Bottle)
+remainder_source_Item_item_printer_chip_rds_name,3D Printer Chip (x{0} RDS)
+remainder_Item_item_printer_chip_rds_name,Clockwork Pattern Press Chip (x{0} RDS)
+remainder_source_Item_item_printer_chip_laser_sight_name,3D Printer Chip (x{0} Laser Sight)
+remainder_Item_item_printer_chip_laser_sight_name,Clockwork Pattern Press Chip (x{0} Laser Sight)
+remainder_source_Item_item_printer_chip_silencer_name,3D Printer Chip (x{0} Silencer)
+remainder_Item_item_printer_chip_silencer_name,Clockwork Pattern Press Chip (x{0} Silencer)
+remainder_source_Item_item_printer_chip_22_mag_name,3D Printer Chip (x{0} .22 Magazine)
+remainder_Item_item_printer_chip_22_mag_name,Clockwork Pattern Press Chip (x{0} .22 Magazine)
+remainder_source_Item_item_printer_chip_22_mag_ext_name,3D Printer Chip (x{0} Ext. .22 Mag.)
+remainder_Item_item_printer_chip_22_mag_ext_name,Clockwork Pattern Press Chip (x{0} Ext. .22 Mag.)
+remainder_source_Item_item_printer_chip_22_mag_high_name,3D Printer Chip (x{0} High Cap. .22 Mag.)
+remainder_Item_item_printer_chip_22_mag_high_name,Clockwork Pattern Press Chip (x{0} High Cap. .22 Mag.)
+remainder_source_Item_item_printer_chip_10_mag_name,3D Printer Chip (x{0} 10MM Magazine)
+remainder_Item_item_printer_chip_10_mag_name,Clockwork Pattern Press Chip (x{0} 10MM Magazine)
+remainder_source_Item_item_printer_chip_10_mag_ext_name,3D Printer Chip (x{0} Ext. 10MM Mag.)
+remainder_Item_item_printer_chip_10_mag_ext_name,Clockwork Pattern Press Chip (x{0} Ext. 10MM Mag.)
+remainder_source_Item_item_printer_chip_10_mag_high_name,3D Printer Chip (x{0} High Cap. 10MM Mag.)
+remainder_Item_item_printer_chip_10_mag_high_name,Clockwork Pattern Press Chip (x{0} High Cap. 10MM Mag.)
+remainder_source_Item_item_bottled_water_premium_desc,A sealed bottle of water supposedly drawn from a natural spring on a distant planet untouched by any industrial activity.
+remainder_Item_item_bottled_water_premium_desc,A sealed bottle of water supposedly drawn from a distant natural spring untouched by industry.
+remainder_source_Item_item_bottled_water_premium_flavor,"No one in the Lower Levels would drink this, even if they were dying of thirst, such is its value."
+remainder_Item_item_bottled_water_premium_flavor,"No one in the Outer City would drink this, even if they were dying of thirst, such is its value."
+remainder_source_Item_item_red_beer_flavor,"A popular beer brewed in the Lower Levels. Every batch tastes a bit different, but there is nothing cheaper. 3.5% ABV."
+remainder_Item_item_red_beer_flavor,"A popular beer brewed in the Outer City. Every batch tastes a bit different, but there is nothing cheaper. 3.5% ABV."
+remainder_source_Item_item_soda_red_desc,"A sweet carbonated beverage. On some parts of the Station, it's cheaper than clean water."
+remainder_Item_item_soda_red_desc,"A sweet carbonated beverage. On some parts of the city, it's cheaper than clean water."
+remainder_source_Item_item_galaxy_blend_flavor,"A nutritious puree made from pastel Inc.'s Nutrifruit and fortified with additional vitamins and minerals. One of the healthiest, and least popular foods available in the Lower Levels."
+remainder_Item_item_galaxy_blend_flavor,"A nutritious puree made from Pastel Trading House's Nutrifruit and fortified with additional vitamins and minerals. One of the healthiest, and least popular foods available in the Outer City."
+remainder_source_Item_item_small_raw_meat_flavor,"Fresh meat is a rare sight in the Lower Levels, where it comes from is of little interest to them."
+remainder_Item_item_small_raw_meat_flavor,"Fresh meat is a rare sight in the Outer City, where it comes from is of little interest to them."
+remainder_source_Item_item_raw_meat_flavor,"Fresh meat is a rare sight in the Lower Levels, where it comes from is of little interest to them."
+remainder_Item_item_raw_meat_flavor,"Fresh meat is a rare sight in the Outer City, where it comes from is of little interest to them."
+remainder_source_Item_item_cup_noodle_flavor,"Artificial Braised Beef Flavored. A certified Lower Levels classic. MSG, white pepper and Sichuan peppercorns give this instant noodle a spicy kick."
+remainder_Item_item_cup_noodle_flavor,"Artificial Braised Beef Flavored. A certified Outer City classic. MSG, white pepper and Sichuan peppercorns give this instant noodle a spicy kick."
+remainder_source_Item_item_ancient_alien_relics_name,"""Ancient Alien Relics"""
+remainder_Item_item_ancient_alien_relics_name,"""Ancient Outsider Relics"""
+remainder_source_Item_item_ancient_alien_relics_flavor,"Looks like scrap metal... ""Ancient Alien"" scrap metal?"
+remainder_Item_item_ancient_alien_relics_flavor,"It looks like scrap metal... ""Ancient Outsider"" scrap metal?"
+remainder_source_Item_item_scav_journal_flavor,"   Here I am, deep in the Abandoned Sections. Everywhere else on the station has been picked clean, but this place... it's different. I've heard the stories, but so far, the loot's been good. Still, there's an eerie weight in the air, like something unseen is lurking just out of sight."
+remainder_Item_item_scav_journal_flavor,"   Here I am, deep in the Abandoned Sections. Everywhere else in the city has been picked clean, but this place... it's different. I've heard the stories, but so far, the loot's been good. Still, there's an eerie weight in the air, like something unseen is lurking just out of sight."
+remainder_source_Item_item_desequencer_flavor,Can be used to write various permissions to Blank Keycards.
+remainder_Item_item_desequencer_flavor,Can be used to write various permissions to Blank Access Tokens.
+remainder_source_Item_item_desequencer_desc,Requires a Desequencer Chip and an Access Keycard. Requires Energy. Overnight.
+remainder_Item_item_desequencer_desc,Requires a Desequencer Chip and an Access Access Token. Requires Energy. Overnight.
+remainder_source_Item_item_modified_access_card_name,Modified Access Card
+remainder_Item_item_modified_access_card_name,Modified Access Card
+remainder_source_Item_item_desequencer_instruction_flavor,"[Module Impact]: 
+  Efficiency: Power Consumption
+  Performance: Speed
+  Quality: No Effect
+Insert a Desequencer Chip, and an Access Keycard. Requires Energy. Overnight."
+remainder_Item_item_desequencer_instruction_flavor,"[Module Impact]: 
+  Efficiency: Power Consumption
+  Performance: Speed
+  Quality: No Effect
+Insert a Desequencer Chip, and an Access Access Token. Requires Energy. Overnight."
+remainder_source_Item_item_bottle_printer_flavor,A pre-programmed 3D printer that is capable of creating small Water Bottles.
+remainder_Item_item_bottle_printer_flavor,A clockwork bottle press with preset patterns for making small water bottles.
+remainder_source_Item_item_recharger_desc,A device for recharging Energy Cell. Will slowly recharge an Energy Cell as long as the power service has been paid. Overnight.
+remainder_Item_item_recharger_desc,A device for recharging Energy Cell. Will slowly recharge an Energy Cell as long as the power service has been paid. Overnight.
+remainder_source_Item_item_mirage_projector_flavor,"A sophisticated device that emits captivating holographic projections, making your Store more attractive to customers."
+remainder_Item_item_mirage_projector_flavor,"A finely made clockwork projector that casts captivating images, making the shop more attractive to customers."
+remainder_source_Item_item_3d_printer_name,3D Printer
+remainder_Item_item_3d_printer_name,Clockwork Pattern Press
+remainder_source_Item_item_3d_printer_instruction_name,3D Printer Instruction
+remainder_Item_item_3d_printer_instruction_name,Clockwork Pattern Press Instruction
+remainder_source_Item_item_3d_printer_instruction_flavor,"[Module Impact]: 
+  Efficiency: Power Consumption
+  Performance: Printer Speed Rate
+  Quality (0.25 Ratio): Print Quality On Eligible Items"
+remainder_Item_item_3d_printer_instruction_flavor,"[Module Impact]: 
+  Efficiency: Power Consumption
+  Performance: Printer Speed Rate
+  Quality (0.25 Ratio): Print Quality On Eligible Items"
+remainder_source_Item_item_moisture_farm_flavor,A machine designed to extract Water from the humid ambient air of the Station.
+remainder_Item_item_moisture_farm_flavor,A machine designed to extract Water from the humid ambient air of the city.
+remainder_source_Item_item_fillerweed_desc,"A fast-growing, yellowish leafy crop cultivated primarily in the Lower Levels. Offers almost no nutritional value, it is used as a filler in meals to stretch rations"
+remainder_Item_item_fillerweed_desc,"A fast-growing, yellowish leafy crop cultivated primarily in the Outer City. Offers almost no nutritional value, it is used as a filler in meals to stretch rations"
+remainder_source_Item_husbandry_vacuum_robot_name,Cleaner Robot
+remainder_Item_husbandry_vacuum_robot_name,Clockwork Cleaner
+remainder_source_Item_item_hand_guide_desc,A guide for determining the appropriate value of cybernetic hands.
+remainder_Item_item_hand_guide_desc,A guide to determining the appropriate value of clockwork hands.
+remainder_source_Item_item_hand,Cybernetic Hand
+remainder_Item_item_hand,Clockwork Hand
+remainder_source_Item_item_hand_flavor,"A marvel of biomechanical engineering, designed to mirror the form and function of the hand it replaces."
+remainder_Item_item_hand_flavor,"A work of clockwork craftsmanship, designed to reproduce the form and function of the hand it replaces."
+remainder_source_Item_item_wine_bloomberry_desc,A popular alcoholic beverage in both the Upper and Lower Levels. Coaxing a fine vintage out of humble BloomBerries is considered an art.
+remainder_Item_item_wine_bloomberry_desc,A popular alcoholic beverage in both the Inner and Outer City. Coaxing a fine vintage out of humble BloomBerries is considered an art.
+remainder_source_Item_item_wine_berry_flavor,"A sweet berry modified for hydroponic growth. While not particularly filling, it's one of few fruits that is accessible in the Lower Levels. Good for making wine."
+remainder_Item_item_wine_berry_flavor,"A sweet berry modified for hydroponic growth. While not particularly filling, it's one of few fruits that is accessible in the Outer City. Good for making wine."
+remainder_source_Item_item_water_filter_adv_flavor,A premium water filter for pitchers used in the Upper Levels. Slowly self-cleans.
+remainder_Item_item_water_filter_adv_flavor,A premium water filter for pitchers used in the Inner City. Slowly self-cleans.
+remainder_source_Item_item_portable_water_purifier_flavor,"A disposable advanced water purifier, common in the Upper Levels. The discarded ones wash up in the Dumping Grounds, still good for a few more pours."
+remainder_Item_item_portable_water_purifier_flavor,"A disposable advanced water purifier, common in the Inner City. The discarded ones wash up in the Dumping Grounds, still good for a few more pours."
+remainder_source_Item_item_electric_eel_desc,"A living generator. From adolescent on, it charges its tank's battery and every battery beside the tank each night, more as it grows. Does not breed in captivity."
+remainder_Item_item_electric_eel_desc,"A living generator. From adolescent on, it charges its tank's power cell and every power cell beside the tank each night, more as it grows. Does not breed in captivity."
+remainder_source_Item_item_eel_fillet_flavor,A delicacy on the station.
+remainder_Item_item_eel_fillet_flavor,A delicacy in the city.
+remainder_source_Item_item_printer_chip_box_cutter_name,3D Printer Chip (x{0} Box Cutter)
+remainder_Item_item_printer_chip_box_cutter_name,Clockwork Pattern Press Chip (x{0} Box Cutter)
+remainder_source_Item_item_printer_chip_kitchen_knife_name,3D Printer Chip (x{0} Kitchen Knife)
+remainder_Item_item_printer_chip_kitchen_knife_name,Clockwork Pattern Press Chip (x{0} Kitchen Knife)
+remainder_source_Item_item_printer_chip_hatchet_name,3D Printer Chip (x{0} Hatchet)
+remainder_Item_item_printer_chip_hatchet_name,Clockwork Pattern Press Chip (x{0} Hatchet)
+remainder_source_Item_item_printer_chip_kitchen_cleaver_name,3D Printer Chip (x{0} Meat Cleaver)
+remainder_Item_item_printer_chip_kitchen_cleaver_name,Clockwork Pattern Press Chip (x{0} Meat Cleaver)
+remainder_source_Item_item_printer_chip_combat_knife_name,3D Printer Chip (x{0} Combat Knife)
+remainder_Item_item_printer_chip_combat_knife_name,Clockwork Pattern Press Chip (x{0} Combat Knife)
+remainder_source_Item_item_printer_chip_combat_machete_name,3D Printer Chip (x{0} Combat Machete)
+remainder_Item_item_printer_chip_combat_machete_name,Clockwork Pattern Press Chip (x{0} Combat Machete)
+remainder_source_Item_item_printer_module_melee_batch_desc,A printer module that adds one more weapon to every melee weapon print. Slow and power hungry.
+remainder_Item_item_printer_module_melee_batch_desc,A printer module that adds one more weapon to every melee weapon print. Slow and power hungry.
+remainder_source_Item_item_printer_chip_pistol_double_name,3D Printer Chip (x{0} .22 Pistol)
+remainder_Item_item_printer_chip_pistol_double_name,Clockwork Pattern Press Chip (x{0} .22 Pistol)
+remainder_source_Item_item_printer_chip_handmade_pistol_frame_name,Nestfire Compact Frame 3D Printer Chip
+remainder_Item_item_printer_chip_handmade_pistol_frame_name,Nestfire Compact Frame Clockwork Pattern Press Chip
+remainder_source_Item_item_printer_chip_heavy_handmade_pistol_frame_name,Ironcraft 10 Frame 3D Printer Chip
+remainder_Item_item_printer_chip_heavy_handmade_pistol_frame_name,Ironcraft 10 Frame Clockwork Pattern Press Chip
+remainder_source_Item_item_printer_chip_gun_part_name,Gun Part 3D Printer Chip
+remainder_Item_item_printer_chip_gun_part_name,Gun Part Clockwork Pattern Press Chip
+remainder_source_Item_item_current_converter_desc,Draw power directly from the Lower Levels' grid to power any machine instead of a battery. The Current Converter nightly service must be paid in order to receive power.
+remainder_Item_item_current_converter_desc,Draw power directly from the Outer City' grid to power any machine instead of a power cell. The Current Converter nightly service must be paid in order to receive power.
+remainder_source_Item_item_lou_old_orders_name,Old Republic Orders
+remainder_Item_item_lou_old_orders_name,Old Orders from the Distant Court
+remainder_source_Item_item_lou_old_orders_desc,"A yellowed, brittle sheet. It looks like it has been folded and unfolded many times. It's a written order addressed to Lou, dated years ago. A faded Republic seal is still visible at the top."
+remainder_Item_item_lou_old_orders_desc,"A yellowed, brittle sheet, folded and unfolded many times. It is an old written order addressed to Lou, bearing a faded seal of the distant court."
+remainder_source_Item_item_lou_old_orders_flavor,"REPUBLIC JOINT SPECIAL OPERATIONS COMMAND, PRIORITY ORDER
+TO: Emergency Response Team Leader Lou
+
+Stop stalling for time and carry out this order immediately. Take your team and start the self-destruct sequence of the research ship Icarus. Disable all the escape pods and do not allow any survivor from the Icarus to escape with your team. Do it, or I will have you court-martialed.
+
+(The signature has faded beyond reading.)"
+remainder_Item_item_lou_old_orders_flavor,"DISTANT COURT JOINT SPECIAL OPERATIONS COMMAND, PRIORITY ORDER
+TO: Emergency Response Team Leader Lou
+
+Stop stalling and carry out this order immediately. Lead your team and activate the self-destruct mechanism at the Icarus Research Works. Block every escape route. No survivor from the works is to escape with your team. Obey, or face court-martial.
+
+(The signature has faded beyond recognition.)"
+remainder_source_Item_item_lou_toy_box_flavor,Looks like a repurposed evidence locker from the Security Department. Better not touch anything inside.
+remainder_Item_item_lou_toy_box_flavor,Looks like a repurposed evidence locker from the City Watch. Better not touch anything inside.
+remainder_source_Item_item_printer_chip_internal_springs_improved_name,3D Printer Chip (x{0} Improved Internal Springs)
+remainder_Item_item_printer_chip_internal_springs_improved_name,Clockwork Pattern Press Chip (x{0} Improved Internal Springs)
+remainder_source_Item_item_luxury_supply_crate_desc,"A sealed crate of fine goods from the Upper Levels. Whoever packed it spared no expense. Strange, though: your Security feed lists it as reported stolen."
+remainder_Item_item_luxury_supply_crate_desc,"A sealed crate of fine goods from the Inner City. Whoever packed it spared no expense. Strange, though: your Watch feed lists it as reported stolen."
+remainder_source_Item_item_hypertech_electronic_flavor,The bleeding edge of electronics. Nobody on the station can make these.
+remainder_Item_item_hypertech_electronic_flavor,The cutting edge of clockwork craftsmanship. Nobody in the city can make these.
+remainder_source_Item_item_turbo_booster_hypertech_desc,"A turbo booster powered by an Energy Cell. It charges every cycle and banks spare charge. Once charged, it instantly completes a machine's current cycle."
+remainder_Item_item_turbo_booster_hypertech_desc,"A turbo booster powered by an Energy Cell. It charges every cycle and banks spare charge. Once charged, it instantly completes a machine's current cycle."
+remainder_source_Item_item_energy_credit_dis_name,Disposable Battery
+remainder_Item_item_energy_credit_dis_name,Disposable Battery
+remainder_source_Item_item_energy_credit_dis_desc,A high capacity single-use energy cell. Cannot be recharged.
+remainder_Item_item_energy_credit_dis_desc,A high capacity single-use energy cell. Cannot be recharged.
+remainder_source_Item_item_energy_credit_dis_flavor,Favored in the Upper Levels for its convenience.
+remainder_Item_item_energy_credit_dis_flavor,Favored in the Inner City for its convenience.
+remainder_source_Item_item_republic_transmitter_name,Republic Transmitter
+remainder_Item_item_republic_transmitter_name,Distant Court Transmitter
+remainder_source_Item_item_republic_transmitter_desc,A tiny transmitter given to you by the Republic Operative.
+remainder_Item_item_republic_transmitter_desc,A tiny transmitter given to you by the distant court operative.
+remainder_Mechanic_mech_transmitter_desc_upperlevel,Transmitting To: <b>The Inner City</b>
+remainder_Mechanic_mech_nightlog_burglary_insured,"There was a burglary. {0} was stolen, but Qiao Wangchuan's men found the thief and brought back the stolen item in the morning."
+remainder_Mechanic_mech_nightlog_vandalized_lower,Your store has been vandalized by angry Outer City customers!
+remainder_Mechanic_mech_nightlog_vandalized_upper,Your Store has been vandalized by thugs hired by Inner City customers!
+remainder_Mechanic_event_op_gang_war_news,Gang war In The Outer City!
+remainder_Mechanic_event_op_gang_war_display,Outer City Gang War
+remainder_Mechanic_event_op_gang_war_desc,Rival gangs has declared war on each other! Shootouts and skirmishes have erupted across the Outer City. Expect increased demand for Medical Supplies.
+remainder_Mechanic_event_op_weapon_shipment_desc,A large shipment of illegal weapons has slipped past Security patrols and entered the Outer City. Expect a surge in weapon availability and drop in prices.
+remainder_Mechanic_event_op_mob_secret_desc,Reports indicate a minor surge in demands for weapons from secret buyers all over the Outer City.
+remainder_Mechanic_event_op_mobilization_desc,"Major revolution activities have been detected in the Outer City. Revolution cells are making final preparations for a major operation. Expected Weapon, Medical Supplies and Armor prices to surge."
+remainder_Mechanic_event_op_raid_upper_news,Revolution Raid on Inner City!
+remainder_Mechanic_event_op_raid_upper_display,Revolution Raid on Inner City
+remainder_Mechanic_event_op_raid_upper_desc,Revolutionaries have launched daring raids in the Inner City. Looting goods from homes and businesses to sell in the Outer City to fund their operations. Expected increase supply for Household Goods
+remainder_Mechanic_event_op_raid_sec_desc,"Revolutionaries have ambushed a major Outer City Security outpost. The clashes have led to losses on both sides along with Outer City Citizens caught in the crossfire, driving up demand for medical supplies and weakening Security influence."
+remainder_Mechanic_event_op_patrols_desc,"Security has temporarily expanded patrols and set up new checkpoints across the Outer City. Some Revolutionary and Black Market activities are suppressed, bringing back some order in the Outer City."
+remainder_Mechanic_event_op_crackdown_desc,"In response to growing concerns over the rise in black market activity and the influx of illegal goods across the city, Command has announced a comprehensive crackdown on contraband. Effective immediately, the enforcement of stricter inspections will be implemented across all sectors."
+remainder_Mechanic_event_op_martial_law_desc,"Due to recent events, Martial law has been declared across the Outer City. Curfews, checkpoints, and surveillance blanket the district. Revolutionary and Black Market activities are suppressed."
+remainder_Mechanic_event_op_riot_display,Outer City Riot
+remainder_Mechanic_event_op_riot_desc,"Due to recent event, crowds of Outer City citizens erupt into violent riots across the Outer City. Shops are looted, Security outposts attacked, and chaos spreads quickly. Food and Weapon are in high demands."
+remainder_Mechanic_event_op_worker_strike_desc,"Due to recent events, disgruntled Outer City workers have gone on strike. Food and water supplies are being disrupted."
+remainder_Mechanic_event_op_medical_aid_desc,"Inner City charities have gather additional medical staff and supplies to the Outer City. While some residents remain skeptical, the effort reduces unrest."
+remainder_Mechanic_event_op_food_drive_desc,"In a rare gesture of goodwill, Command has distributed rations and food packages across Outer City neighborhoods. The initiative eases tensions but some view it as a propaganda tactic."
+remainder_Mechanic_event_op_household_relief_desc,"A charity in the Inner City has made a generous donation of essential Household Goods to Outer City residents. While some remain skeptical of the motives, the aid should helps improve living conditions and settle any growing unrest."
+remainder_Mechanic_event_wanted3_news,Outer City Revolutionary Captured!
+remainder_Mechanic_event_wanted3_desc,"In a swift operation by station security, Lu Fang, a known activist and part of the former leadership in the failed revolution attempts of the lower levels, has been apprehended."
+remainder_Mechanic_event_evidence_locker_desc,"A daring break-in at the city's Central Evidence Locker has left Security scrambling. Reports indicate that a crate of confiscated contraband, including key evidence in an active investigation, has gone missing. Security have warned the citizens of the Outer City to keep an eye out for suspicious goods entering circulation."
+remainder_Mechanic_event_cosmetic_all_quiet_news,All Quiet In The Outer City
+remainder_Mechanic_event_cosmetic_all_quiet_desc,"The Outer City have been unusually quiet today, with no major incidents to report. Markets are stable and residents are going about their daily lives."
+remainder_Mechanic_event_cosmetic_electrical_desc,The Inner City will experience a temporary blackout as planned electrical maintenance work gets underway.
+remainder_Mechanic_event_cosmetic_nutrifruit_desc,A collective of Outer City maintenance technicians have developed a low-cost hydroponic system capable of producing small but consistent batches of Nutrifruit.
+remainder_Mechanic_event_cosmetic_peat_desc,"PEAT, the canned processed meat found in nearly every kitchen in the Outer City, is under scrutiny. Independent researchers are questioning how much of the product is actually meat."
+remainder_Mechanic_event_cosmetic_artist_showcase_desc,"A local artist showcase is being hosted in the Outer City, where residents can view and purchase artwork made from recycled station materials."
+remainder_Mechanic_event_cosmetic_tech_demo_desc,"A technology exhibition has been organized on the Inner City, showcasing the latest innovations from startups and tech companies. Most products on display are aimed at high-end buyers."
+remainder_Mechanic_event_cosmetic_fountain_desc,A new water fountain has been unveiled on the Inner City as part of an ongoing beautification project. Security has advised that any citizen caught drinking from the fountain will be arrested and fined.
+remainder_Mechanic_event_cosmetic_garden_news,Outer City Community Garden Expanded
+remainder_Mechanic_event_cosmetic_garden_desc,Outer City residents have expanded their community garden with a few new plots for growing basic vegetables. The development is unlikely to affect Food prices.
+remainder_Mechanic_event_cosmetic_cultural_news,Cultural Celebration in Inner City
+remainder_Mechanic_event_cosmetic_cultural_desc,"An Inner City cultural group is holding a small celebration featuring traditional performances, music, and food. The event will be mostly attended by Inner City residents and have little impact on the market."
+remainder_Mechanic_event_cosmetic_spacewalk_desc,"A routine spacewalk training exercise for station technicians has been successfully completed with no disruptions to station activities. One man from the Outer City is reportedly being treated for shock, after mistaking a spacewalker for an alien."
+remainder_Mechanic_event_normal_bad_harvest_desc,"A Outer City Nutrifruit farm has had a terrible season, with crops failing due to lack of proper resources and maintenance. Expect higher Food prices and a shortage of fresh produce for a while."
+remainder_Mechanic_event_normal_seed_heist_desc,Nutrifruit seeds from hydroponic farm storage have vanished overnight in a daring theft. Both Food and Seed costs are expected to rise sharply across the city.
+remainder_Mechanic_event_normal_mob_justice_news,Mob Justice in the Outer City!
+remainder_Mechanic_event_normal_mob_justice_display,Outer City Lynching
+remainder_Mechanic_event_normal_mob_justice_desc,"Fed up with a dishonest shopkeeper, citizens in the Outer City are taking justice into their own hands. Station Security have appealed for calm."
+remainder_Mechanic_event_normal_storeroom_desc,A group of scavengers in the Outer City have stumbled upon a hidden room packed with household items. A high volume of goods making their way to market will likely lower prices today.
+remainder_Mechanic_event_normal_construction_desc,Various new construction projects are springing up across the Outer City. Construction materials and skilled labourers are likely to be in shorter supply.
+remainder_Mechanic_event_normal_meteor_shower_desc,"A meteor shower struck the city last night, causing damage and breaches across multiple sectors. The Outer City, lacking a reinforced hull, suffered the most — expect material prices to rise."
+remainder_Mechanic_event_normal_power_shortage_news,Low Power In The Outer City
+remainder_Mechanic_event_normal_power_shortage_desc,A faulty power generator has caused a power outage in the Outer City. Expect a shortage of energy cells while repairs are underway.
+remainder_Mechanic_event_normal_power_maintenance_desc,Routine maintenance has begun on one of the main power plants in the Outer City. Citizens have been told to expect minor disruptions to the power supply throughout the scheduled period.
+remainder_Mechanic_event_normal_cruise_ship_desc,"A cruise ship has docked in the Inner City, unloading a wave of tourists. It is expected that some curious visitors may even wander down to the Outer City. Station Security has appealed for citizens to be respectful during the visit."
+remainder_Mechanic_event_normal_oxymore_desc,"A sharp increase in Oxymore use has been reported across the city, with clinics seeing a surge in addiction and overdose cases. Expect rising demand for medical supplies and treatment services."
+remainder_Mechanic_ins_cig_georgio_didnt_know,"Ah, Ge Jiu didn't know about this."
+remainder_Mechanic_ins_cig_georgio_lower_price,Ge Jiu will lower the price.
+remainder_Mechanic_mech_end_arrest_desc,"For crimes against the city, the Security arrested you. You were locked up in the brig. While serving your sentence, your store was leased to someone else. After your release, with the store lost, you went back to the life of a struggling scavenger."
+remainder_Mechanic_mech_end_execution_desc,"For capital crimes against the city, the Security arrested and executed you. After your execution your store was leased to someone else. Your customers quickly forgot about you, and in time, there was no trace of you left in the city."
+remainder_Mechanic_mech_end_mob_desc,"After one too many offences against the Outer City, a mob of angry customers stormed your store. They took everything you owned and you were thrown out of the airlock. This is justice in the Outer City."
+remainder_Mechanic_mech_end_hitman_desc,"After one too many offences against the Inner City, a hitman was contracted by the elites of the city to take you out for good."
+remainder_Mechanic_request_meteor_ll_title,Critical Repair In Outer City
+remainder_Mechanic_request_meteor_ll_desc,"The meteor shower breached a number of areas in the Outer City. We have closed down adjacent areas and started repairs on the breaches, but progress has been slow due to lack of supplies."
+remainder_Mechanic_request_meteor_ll_requester,Outer City Engineers
+remainder_Mechanic_request_meteor_ul_title,Pool Repair In Inner City
+remainder_Mechanic_request_meteor_ul_desc,The Inner City Community pool was damaged during the meteor shower. It was due for renovation anyway. We are interested in buying a crate of engineering supplies to speed up the process.
+remainder_Mechanic_request_meteor_ul_requester,Inner City Community Manager
+remainder_Mechanic_request_medshortage_ll_title,Medical Supply For Outer City Charity Clinic
+remainder_Mechanic_request_medshortage_ll_requester,Outer City Charity Clinic
+remainder_Mechanic_request_medshortage_ul_title,Medical Supply For Inner City General Hospital
+remainder_Mechanic_request_medshortage_ul_requester,Inner City General Hospital
+remainder_Mechanic_request_ll_construction_title,Materials for Outer City Construction
+remainder_Mechanic_request_ll_construction_desc,"A new housing block is under construction in the Outer City, but securing materials has been a challenge. We need supplies to keep the project moving forward."
+remainder_Mechanic_request_ll_construction_requester,Outer City Construction Crew
+remainder_Mechanic_request_ll_soup_kitchen_title,Supplies for Outer City Soup Kitchen
+remainder_Mechanic_request_sec_evidence_requester,Head of Security for Outer City
+remainder_Mechanic_request_ul_rare_requester,Inner City Representative
+remainder_Mechanic_request_ul_charity_desc,We are collecting items for charity to help those in need in the Outer City. Any contribution would be greatly appreciated.
+remainder_Mechanic_request_ul_charity_requester,Inner City Charity Organizer
+remainder_Mechanic_request_lower_worker_requester,Outer City Worker
+remainder_Mechanic_request_georgio_tp_title,Toilet Paper for Ge Jiu
+remainder_Mechanic_request_georgio_tp_desc,Ge Jiu needs toilet paper for his collection.
+remainder_Mechanic_request_georgio_tp_requester,Ge Jiu
+remainder_Mechanic_request_sawyer_beer_requester,Shao Ye
+remainder_Mechanic_request_upper_petmeat_requester,Inner City Elite
+remainder_Mechanic_request_mother_galaxy_desc,I can't believe that Galaxy Blend is the only decent food nutritious enough for a baby around the Outer City. Help me get some.
+remainder_Mechanic_request_mother_galaxy_requester,Outer City Mother
+remainder_Mechanic_husbandry_cage_desc,"A small cage for housing animals. Doesn't look particularly comfortable, but probably nicer than what some people have in the Outer City."
+remainder_Mechanic_note_admirer_5,You make the Outer City feel a little brighter.
+remainder_Mechanic_note_georgio_iou_body_1,Ge Jiu owes the Shopkeeper {0} Credits.
+remainder_Mechanic_note_georgio_iou_body_2,Ge Jiu will pay back with interest.
+remainder_Mechanic_note_georgio_iou_sign,-Ge Jiu
+remainder_Mechanic_mech_afterhour_event_fresh_dump_desc,A fresh load just got dumped from the Inner City janitorial
+remainder_Mechanic_mech_afterhour_event_georgio_title,Ge Jiu's Assistance
+remainder_Mechanic_mech_afterhour_event_georgio_desc,Ge Jiu will come and help you at the dumping ground.
+remainder_Mechanic_mech_nightlog_butcher_hunted,Shao Ye's crew paid {0} a visit last night. He will not be selling anyone's fresh meat again.
+remainder_Mechanic_event_serpico_dead_desc,"Cadet Serpico, who was under investigation on corruption charges, was found dead in the Dumping Ground. The City Watch has given no further details at this time."
+remainder_Mechanic_event_serpico_rev_desc,Documents exposing corruption inside Station Security have been published across the city. Several low-ranking officers now face criminal charges. No high-ranking officer has faced any consequence.
+remainder_Mechanic_event_lou_admiral_desc,"A visiting Distant Court admiral and his escort were gunned down near the docking bays last night. Witnesses say the shooter, a blonde woman in a stolen Security uniform, walked right up to the admiral's party before opening fire. Officers on the scene hit her several times, but she escaped, and no trace of her has been found."
+remainder_Mechanic_mech_notify_eleanor_drive_bounty,The Black Market paid you {0} Credits for Ye Ning's drive.
+remainder_Mechanic_event_eleanor_leak_desc,"A research paper has been published showing how to make standard Nutrifruit grow seeds again. Biohackers across the city are already growing the new strain, and seed prices have collapsed. The same morning, the former director of the city's largest hydroponics farm, jailed for embezzlement, was found dead in her cell. Pastel Trading House has declined to comment."
+remainder_Mechanic_mech_nightlog_serpico_food_georgio,Ge Jiu left a crate of Nutrifruits for Serpico at the Dumping Ground.
+remainder_Mechanic_event_lou_warehouse_news,Shootout in the Outer City
+remainder_Mechanic_event_lou_warehouse_desc,"Residents of the Outer City reported sustained gunfire from an abandoned warehouse in the old freight district last night. Security found the building rigged with tripwires and, inside, the bodies of several heavily armed individuals in plain clothes, none carrying station identification. Nobody has come forward to claim them."
+remainder_Dialogue_dialog_georgio_intro_1,"Hello! It is I, Ge Jiu!"
+remainder_Dialogue_dialog_georgio_intro_2,"Yes, *that* Ge Jiu."
+remainder_Dialogue_dialog_georgio_intro_3,The GREATEST scavenger in the Outer City.
+remainder_Dialogue_dialog_georgio_intro_4,You are lucky. Ge Jiu has brought you his latest find.
+remainder_Dialogue_dialog_georgio_arrest_client_1,Wait? What did Ge Jiu do?
+remainder_Dialogue_dialog_georgio_intro2_3,"Today, Ge Jiu brings you an invention all of his own..."
+remainder_Dialogue_dialog_georgio_intro2_4,Ge Jiu wanted to give you the chance to be the first to stock it.
+remainder_Dialogue_dialog_georgio2_1,Ge Jiu is back!
+remainder_Dialogue_dialog_georgio2_arrest_client,"No, wait! Ge Jiu is innocent!"
+remainder_Dialogue_dialog_georgio3_2,Ge Jiu is back again!
+remainder_Dialogue_dialog_georgio3_3,Ge Jiu has been scavenging on the Inner City.
+remainder_Dialogue_dialog_georgio3_5,For you? Ge Jiu give 25% off for everything.
+remainder_Dialogue_dialog_georgio3_done_2,More riches Ge Jiu shall bring you.
+remainder_Dialogue_dialog_georgio3_arrest_sec_1,Hey! there's the old man who broke into the women's bath house in the Inner City!
+remainder_Dialogue_dialog_georgio4_2,Ge Jiu has returned.
+remainder_Dialogue_dialog_georgio4_3,See what Ge Jiu has for you.
+remainder_Dialogue_dialog_georgio4_8,Ge Jiu can always find another buyer...
+remainder_Dialogue_dialog_georgio4_accept,Aha! Ge Jiu knew you would like it!
+remainder_Dialogue_dialog_georgio4_done_2,Save your credits for Ge Jiu.
+remainder_Dialogue_dialog_georgio4_arrest_client,What? Did you snitch on Ge Jiu?
+remainder_Dialogue_dialog_georgio_nuclear_1,"Ge Jiu is a good friend, no?"
+remainder_Dialogue_dialog_georgio_loan_2,Ge Jiu needs your help...
+remainder_Dialogue_dialog_georgio_loan_4,"It is almost finished, but... Ge Jiu has run out of Credits."
+remainder_Dialogue_dialog_georgio_loan_accept_small_2,Take this. Ge Jiu won't need where he is going...
+remainder_Dialogue_dialog_georgio_loan_promise_1,You will be paid back with interest! Ge Jiu guarantee!
+remainder_Dialogue_dialog_georgio_loan_accept_large_2,"Here, for you. Ge Jiu won't need it anymore..."
+remainder_Dialogue_dialog_georgio_loan_decline_2,Ge Jiu will scavenge what he needs to finish the ship from the Dumping Grounds!
+remainder_Dialogue_dialog_georgio_loan_arrest_client,No... please! Have mercy on Ge Jiu!
+remainder_Dialogue_dialog_georgio_payback_2,Ge Jiu has returned from the stars!
+remainder_Dialogue_dialog_georgio_payback_4,"Now, Ge Jiu will return to his ship..."
+remainder_Dialogue_dialog_eleanor_intro_3,"You there, I'll need some food until I can return to the Inner City."
+remainder_Dialogue_dialog_eleanor_intro_5,"They jailed my mother, who runs the biggest hydroponic in the city, for embezzlement."
+remainder_Dialogue_dialog_eleanor5_5,"Someone in the Inner City probably framed my mother,"
+remainder_Dialogue_dialog_serpico1_3,I am born and raised here in the Outer City.
+remainder_Dialogue_dialog_serpico1_4,Keeping the city safe has always been my dream.
+remainder_Dialogue_dialog_serpico3_4,"I saw officers taking bribes from Inner City, the Cartel and even revolutionaries!"
+remainder_Dialogue_dialog_nellis1_11,"People tend to forget, but most of the city's essential machinery is in the Outer City."
+remainder_Dialogue_dialog_nellis2_3,Just finished a some major repairs down in the auxiliary city supply facilities.
+remainder_Dialogue_dialog_nellis2_6,Thinking he only serve the Inner City.
+remainder_Dialogue_dialog_nellis2_8,"Between the Inner City always demanding more, the corporate pressure,"
+remainder_Dialogue_dialog_nellis2_9,the lack of external help from the distant court and those radical Revolutionaries.
+remainder_Dialogue_dialog_nellis2_12,And no major armed conflicts in the city since then.
+remainder_Dialogue_dialog_nellis4_3,I just can't stand those Inner City Councilors.
+remainder_Dialogue_dialog_cheng_ref_6,Credit! In the Outer City! can you believe that?
+remainder_Dialogue_dialog_sawyer_cheng_1,"Hello, it's Shao Ye."
+remainder_Dialogue_dialog_cheng_ill_6,I am selling the store and donating my savings to Outer City charities.
+remainder_Dialogue_dialog_wild_cheng_5,"He was a good man, a true pillar of the Outer City community."
+remainder_Dialogue_dialog_wanted4_2,"My name is Odin, Ou Ding."
+remainder_Dialogue_dialog_wanted4_arrest_sec,Ou Ding... at last. You are under arrest.
+remainder_Dialogue_dialog_worn_spacer_greeting_2,Finally back in the city after weeks in the void.
+remainder_Dialogue_dialog_water_stockpiler_1,"Hello, I am building a stockpile of water for a client in the Inner City."
+remainder_Dialogue_dialog_hospital_admin_1,"Hello, I am the supplier for the Inner City General Hospital"
+remainder_Dialogue_dialog_maintenance_1,I'm doing repairs around the city.
+remainder_Dialogue_dialog_chem_return_substance_11,I'd walk across the city just to get more of that {0}.
+remainder_Dialogue_dialog_lynching_greeting_3,Some people think they can cheat the Outer City and get away with it.
+remainder_Dialogue_dialog_power_ll_greeting_5,I bet there's still power in the Inner City.
+remainder_Dialogue_dialog_power_ul_greeting_3,I can't believe the power's out on the <b>Inner City</b>!
+remainder_Dialogue_dialog_janitor_intro_2,I am with the <b>Outer City Janitorial Staff</b>.
+remainder_Dialogue_dialog_insurance_2,My name is <slide a=0.25> Qiao Wangchuan! </slide>
+remainder_Dialogue_dialog_insurance_5,Even among the Outer City...
+remainder_Dialogue_dialog_network_intro_7,"Suppliers, Informants, even Watch Officers!"
+remainder_Dialogue_dialog_sec_wanted_intro_2,I'm with the City Watch.
+remainder_Dialogue_dialog_loan_clerk_early_1,"Hello, I am from the First Bank on the Inner City"
+remainder_Dialogue_dialog_loan_clerk_1,"Hello, I am from the First Bank on the Inner City"
+remainder_Dialogue_dialog_loan_clerk_10,Due to the risk of lending money in the Outer City
+remainder_Dialogue_dialog_minor_miner_3,We will be heading out to the distant mining region again.
+remainder_Dialogue_dialog_minor_scav_haul_2,There's less and less to find in the city.
+remainder_Dialogue_dialog_minor_patrol_3,It's another day patrolling the Outer City.
+remainder_Dialogue_dialog_minor_patrol_6,"And assign me to the Inner City,"
+remainder_Dialogue_dialog_minor_ul_visitor_2,I am visiting the Outer City
+remainder_Dialogue_dialog_minor_ul_visitor_4,"I must say, the Outer City's culture is truly charming."
+remainder_Dialogue_dialog_minor_ul_visitor_8,Anything typical of The Outer City.
+remainder_Dialogue_dialog_minor_annoyed_eng_6,copper wires from the city supply system.
+remainder_Dialogue_dialog_minor_salvage_pilot_1,"Hey, I am back from a salvage run around the city"
+remainder_Dialogue_dialog_minor_sick_lowers_4,I tried getting help at the Outer City Clinic
+remainder_Dialogue_dialog_minor_sick_lowers_8,But it's just not enough for all of the Outer City.
+remainder_Dialogue_dialog_minor_lottery_2,It's been ages since I came down here to the Outer City.
+remainder_Dialogue_dialog_minor_lottery_4,"They started the Outer City Lottery a while back,"
+remainder_Dialogue_dialog_minor_conspiracy_2,Did you know that Station Command are actually outsiders?
+remainder_Dialogue_dialog_minor_conspiracy_4,Studying us before they invade the rest of the distant court
+remainder_Dialogue_dialog_minor_conspiracy_5,How convenient that the rest of The distant court is so far away.
+remainder_Dialogue_dialog_minor_conspiracy_6,All of Security are clockwork automata!
+remainder_Dialogue_dialog_minor_conspiracy_9,"I got some real protection against the outsiders, want some?"
+remainder_Dialogue_dialog_minor_ul_servant_4,"Guests from the Inner City Elite are dressing up as Scavs,"
+remainder_Dialogue_dialog_minor_ul_servant_5,eating Outer City food from tin trays.
+remainder_Dialogue_dialog_morning_sec_2,For your crimes against the city
+remainder_Dialogue_dialog_morning_hitman_1,The Inner City send their regards.
+remainder_Dialogue_dialog_info_med_mid_2,"Word is, in {0} days, the city's gonna be running low on meds."
+remainder_Dialogue_dialog_wild_network_6,You look out for the Outer City from time to time.
+remainder_Dialogue_dialog_rare_merchant_2,For friends of Outer City only.
+remainder_Dialogue_dialog_tourist_greet_4,"This part of the city has character, you know?"
+remainder_Dialogue_dialog_tourist_weapon_greet_2,"They said the Outer City were sketchy, but I think it's got flavor."
+remainder_Dialogue_dialog_tourist_weapon_greet_3,Exploring the 'authentic' parts of the city today. Very cultural!
+remainder_Dialogue_dialog_food_bank_1,"Hello, I work for the Outer City Food Bank"
+remainder_Dialogue_dialog_food_bank_3,But we will put in a good word for you in the Outer City.
+remainder_Dialogue_dialog_criminal_thief_3,Let's say I will be visiting the Inner City soon.
+remainder_Dialogue_dialog_upper_lower_visitor_1,You there! I am sojourning in the Outer City.
+remainder_Dialogue_dialog_loan_shark_intro_4,The Inner City banks do not offer loans 
+remainder_Dialogue_dialog_loan_shark_intro_5,to the honest people of Outer City.
+remainder_Dialogue_dialog_sec_req_officer_1,"Hello, I am buying supplies on behalf of City Watch."
+remainder_Dialogue_dialog_broke_upper_greet_1,"I never thought I'd end up down here, Inner City can be brutal."
+remainder_Dialogue_dialog_lottery_intro_1,"Hello, I am from the Outer City Lottery Commission."
+remainder_Dialogue_dialog_lottery_intro_3,Are you familiar with the Outer City Lottery?
+remainder_Dialogue_dialog_lottery_intro_5,Wining the jackpot mean enough money to live in the Inner City forever.
+remainder_Dialogue_dialog_biz_permit_state0_1,"Hello, I am from the city Trade Board."
+remainder_Dialogue_dialog_biz_permit_state1_1,"Hello, I am from the city Trade Board."
+remainder_Dialogue_dialog_upper_hedonist_greeting_1,Long way down from the Inner City. Let's be quick.
+remainder_Dialogue_dialog_wanted6_finale_3,I'll try to get off the city now and make my research public.
+remainder_Dialogue_dialog_georgio_backpack_2,"Ge Jiu got himself a brand new backpack, so the old one has to go."
+remainder_Dialogue_dialog_georgio_assist_2,"As you already know, Ge Jiu is the greatest scavenger there ever was."
+remainder_Dialogue_dialog_georgio_assist_4,Ge Jiu now offers his assistance at the Dumping Ground.
+remainder_Dialogue_dialog_georgio_assist_accept_1,Excellent! Ge Jiu will meet you at the Dumping Ground tonight.
+remainder_Dialogue_dialog_georgio_assist_accept_2,Nobody gets hurt when Ge Jiu is around!
+remainder_Dialogue_dialog_georgio_luck_intro_1,My friend! Ge Jiu is starting a new business!
+remainder_Dialogue_dialog_georgio_luck_intro_2,"Ge Jiu is always lucky, so why not sell some luck?"
+remainder_Dialogue_dialog_georgio_luck_sale_2,Ge Jiu has one last batch to sell. Get it while it lasts!
+remainder_Dialogue_dialog_georgio_serpico_letter_1,My friend! Ge Jiu has something for you.
+remainder_Dialogue_dialog_georgio_serpico_letter_2,Ge Jiu found a young man at the Dumping Ground.
+remainder_Dialogue_dialog_georgio_serpico_letter_3,He asked Ge Jiu to bring you this letter. Ge Jiu did not read it. Much.
+remainder_Dialogue_dialog_serpico_officer_return_2,Cadet Serpico has been seen back in the Outer City.
+remainder_Dialogue_dialog_serpico_end_bm_3,Enough to get my family out of the Outer City.
+remainder_Dialogue_dialog_serpico_end_bm_4,We're leaving the city for good.
+remainder_Dialogue_dialog_serpico7_bm_2,Enough to get my family out of the Outer City.
+remainder_Dialogue_dialog_eleanor_uncle_1,"Hello there. You know Ye Ning, don't you? I'm her... uncle."
+remainder_Dialogue_dialog_eleanor_uncle_2,We put together a little care package for her. Only the finest goods from the Inner City.
+remainder_Dialogue_dialog_eleanor6_2,I'm sure someone in the Inner City framed my mother.
+remainder_Dialogue_dialog_eleanor7_12,Pastel Trading House's corporate representative in the city set the whole thing up.
+remainder_Dialogue_dialog_eleanor_threat_2,We know you've been in touch with Ye Ning. And we know about the data drive.
+remainder_Dialogue_dialog_eleanor_threat_4,"If she hands it over, we'll free her mother. She'll be exiled to the Outer City, but she'll live."
+remainder_Dialogue_dialog_eleanor8_leak_3,I'll take it to the Outer City paper today.
+remainder_Dialogue_dialog_eleanor9_free_2,"They exiled her to the Outer City, but we're together again."
+remainder_Dialogue_dialog_wild_deed_6,Even the Inner City can't get their hands on it easily.
+remainder_Dialogue_dialog_hypertech_smuggler_1,Qiao Wangchuan sent me. Let's keep this quick.
+remainder_Dialogue_dialog_georgio_serpico_food_favor_1,For a friend of the Outer City? Say no more.
+remainder_Dialogue_dialog_eleanor_bail_1,"Shopkeeper. A word about the girl we picked up here, Ye Ning."
+remainder_Dialogue_dialog_georgio_serpico_food_offer_1,"The young man is very hungry, yes? Ge Jiu happens to have a crate of Nutrifruits."
+remainder_Dialogue_dialog_georgio_serpico_food_offer_2,"For {0} Credits, Ge Jiu drops them off for you. You do not have to bring a single bite!"
+remainder_Dialogue_dialog_georgio_serpico_food_unable_1,Hmm... but Ge Jiu hears you cannot go to the Dumping Ground these days.
+remainder_Dialogue_dialog_georgio_serpico_food_unable_2,No worries! Ge Jiu happens to have a crate of Nutrifruits.
+remainder_Dialogue_dialog_georgio_serpico_food_unable_3,"For {0} Credits, Ge Jiu drops them off for you. Otherwise, Ge Jiu fears the young man will not make it."
+remainder_Dialogue_dialog_georgio_serpico_food_accept_2,A friend of yours is a friend of Ge Jiu!
+remainder_Dialogue_dialog_georgio_serpico_food_decline,"No problem, my friend. Ge Jiu trusts you to feed him yourself."
+remainder_Dialogue_dialog_georgio_serpico_food_unable_decline,Ge Jiu understands. Let us hope the young man finds food on his own.
+remainder_Dialogue_dialog_lou_reveal_2,I know that little toy. Distant Court issue.
+remainder_Dialogue_dialog_lou_operative_rep_2,We believe you just met her. She is a traitor to the distant court and a terrorist.
+remainder_Dialogue_dialog_lou_operative_5,"When it reaches her hideout, we move in. There is intel in there the distant court needs extracted."
+remainder_Dialogue_dialog_lou_operative_shot_3,She is a traitor to the distant court and a terrorist. And she does not forgive. She will haunt you.
+remainder_Dialogue_dialog_lou_operative_reward_2,The distant court is grateful. Here's your {0} Credits.
+remainder_Dialogue_dialog_lou_operative_fail_3,"Your {0} Credits, as agreed. The distant court keeps its word."
+remainder_Dialogue_dialog_lou_operative_ask_1,"You read the news, I take it. An admiral of the distant court, dead on this station."
+remainder_MainMenu_welcome_title,Welcome To The Outer City!
+remainder_source_Item_item_joe_card_name,Business Card (Joe Wild)
+remainder_Item_item_joe_card_name,Business Card (Qiao Wangchuan)
+remainder_source_Item_item_liquid_luck_flavor,Will 100% increase your luck for 3 days! Georgio's guarantee! It tastes like Rustwater.
+remainder_Item_item_liquid_luck_flavor,Will 100% increase your luck for 3 days! Ge Jiu's guarantee! It tastes like Rustwater.
+remainder_source_Item_item_luxury_supply_crate_name,Care Package for Eleanor
+remainder_Item_item_luxury_supply_crate_name,Care Package for Ye Ning
+remainder_NetworkUpgrade_network_CHEMIST_title,Outer City Chemist
+remainder_NetworkUpgrade_network_CHEMIST_desc,Qiao Wangchuan will introduce you to a Outer City Chemist who produces cheap but illegal drugs for both recreational and medical uses. A business card will be given to you to contact this supplier.
+remainder_NetworkUpgrade_network_PHARMA_title,Inner City Pharmacist
+remainder_NetworkUpgrade_network_PHARMA_desc,"Qiao Wangchuan will introduce you to the Inventory Manager for an unnamed Inner City Pharmacist, allowing you immediate and consistent access to legal, but hard to source, medications. A business card will be given to you to contact this supplier."
+remainder_NetworkUpgrade_network_INSPECTION_INFORMANT_desc,"Qiao Wangchuan will introduce you to his informant within the City Watch. As long as you pay a nightly fee, the informant will notify you of any regular Security inspection. The informant won't be able to help with any surprise inspections."
+remainder_NetworkUpgrade_network_GUN_PERMIT_I_desc,"Qiao Wangchuan will negotiate on your behalf to secure you a firearms permit usually reserved for Outer City Merchants, allowing you to legally trade low level contraband firearms and ammunition. The permit is delivered once you reach {0} Security Reputation and revoked if it drops below 0. Security lets you keep a shotgun for self defence, once you acquired it."
+remainder_NetworkUpgrade_network_GUN_PERMIT_II_desc,"Qiao Wangchuan will negotiate on your behalf to secure you a firearms permit usually reserved for Inner City Merchants, allowing you to legally trade mid level contraband firearms and ammunition. The permit will only be delivered after reaching at least {0} Security Reputation."
+remainder_NetworkUpgrade_network_CHEMIST_SHAREHOLDER_title,Minor Shareholder: Outer City Chemist
+remainder_NetworkUpgrade_network_CHEMIST_SHAREHOLDER_desc,"Buy a minor share of the Outer City Chemist's operation. Their courier's wholesale discount grows by {0}%, and every Saturday morning a dividend of {1} street grade Dream Dust is waiting on the counter."
+remainder_NetworkUpgrade_network_PHARMA_SHAREHOLDER_title,Minor Shareholder: Inner City Pharmacist
+remainder_NetworkUpgrade_network_PHARMA_SHAREHOLDER_desc,"Buy a minor share of the Inner City Pharmacist's practice. Their courier's wholesale discount grows by {0}%, and every Sunday morning a dividend of {1} Oxymore injectors is waiting on the counter."
+remainder_NetworkUpgrade_network_HYPERTECH_SMUGGLER_desc,"Qiao Wangchuan refers you to a smuggler who deals in Hypertech items, technology far beyond what the city's industry can produce. Unlocks the Hypertech Smuggler nightly service."
+remainder_NetworkUpgrade_network_ENDORSEMENT1_desc,Qiao Wangchuan personally endorses your store. Visiting customers have {0}% more budget to spend.
+remainder_NetworkUpgrade_network_ENDORSEMENT2_desc,Qiao Wangchuan talks up your store to his best contacts. Visiting customers have another {0}% more budget to spend.
+remainder_NetworkUpgrade_network_ENDORSEMENT3_desc,Qiao Wangchuan puts his own name behind your store. Visiting customers have another {0}% more budget to spend.
+remainder_PhoneDialogue_ashish_intro1,Lovely! You must be the one Joe mentioned. I'm An Shi.
+remainder_PhoneDialogue_ashish_regular1,"Hey, An Shi here."
+remainder_PhoneDialogue_ashish_cooldown1,"Hi, An Shi here."
+remainder_PhoneDialogue_caulson_intro2,The name's Cao Shen. I run the GP Minin' Coop.
+remainder_PhoneDialogue_dale_intro2,"Call me ""Dai Heng"", and don't use my name anywhere else."
+remainder_PhoneDialogue_dale_intro3,I... might have access to certain meds from the Inner City.
+remainder_PhoneDialogue_odin,Ou Ding
+customer_source_name_ashish,Ashish
+customer_name_ashish,An Shi
+customer_source_name_caulson,Caulson
+customer_name_caulson,Cao Shen
+customer_source_name_dale,Dale
+customer_name_dale,Dai Heng
+customer_source_name_odin,Odin Haraldsson
+customer_name_odin,Ou Ding
+customer_source_name_lun,Officer Lun
+customer_source_name_joe,Joe Wild
+customer_name_joe,Qiao Wangchuan
+customer_source_name_sawyer,Sawyer
+customer_name_sawyer,Shao Ye
+customer_source_name_mentor,The Mentor
+customer_source_name_landlord,The Landlord
+customer_source_name_georgio,Georgio
+customer_name_georgio,Ge Jiu
+customer_source_name_red_imp_rep,Red Imp Rep.
+customer_source_name_joe_assistant,Joe Wild's Assistant
+customer_source_name_james_bailey,James Bailey
+customer_source_name_arthur_lafleur,Arthur Lafleur
+customer_name_arthur_lafleur,Lu Fang
+customer_source_name_lou,Lou
+customer_source_name_li_bei_wen,Li Bei Wen
+customer_source_name_juan,Juan
+customer_name_juan,Hu Yuan
+customer_source_name_john_smith,John Smith
+customer_name_john_smith,Zhang Wei
+customer_source_name_leroy,Leroy
+customer_name_leroy,Lu Yan
+customer_source_name_grandpa_cheng,Grandpa Cheng
+customer_source_name_nellis,Chief Engineer Nellis
+customer_source_name_serpico,Cadet Serpico
+customer_source_name_eleanor,Eleanor
+customer_name_eleanor,Ye Ning
+customer_source_name_foodie_tourist,Foodie Tourist
+customer_source_name_thief,Thief
+customer_source_name_lower_levels_citizen,Lower Level Citizen
+customer_source_name_lower_level_citizen,Lower Level Citizen
+customer_source_name_security_officer,Security Officer
+customer_source_name_scav,Scav
+customer_source_name_lower_levels_worker,Lower Level Laborer
+customer_source_name_the_butcher,The Butcher
+customer_source_name_citizen,Citizen
+customer_source_name_desperate_addict,Desperate Addict
+customer_source_name_expedition_supplier,Expedition Supplier
+customer_source_name_hungry_spacer,Hungry Spacer
+customer_source_name_injured_spacer,Injured Spacer
+customer_source_name_low_level_doctor,Lower Level Doctor
+customer_source_name_lower_level_repairman,Lower Level Repairman
+customer_source_name_lower_level_inventor,Lower Level Inventor
+customer_source_name_lower_level_parent,Lower Level Parent
+customer_source_name_maintenance_worker,Maintenance Worker
+customer_source_name_mid_level_nurse,Mid-Level Nurse
+customer_source_name_private_security_contractor,Private Security Contractor
+customer_source_name_scavenger,Scavenger
+customer_source_name_scrap_buyer,Scrap Buyer
+customer_source_name_self_defense_enthusiast,Self-Defense Enthusiast
+customer_source_name_sick_child_caretaker,Sick Child Caretaker
+customer_source_name_spacer,Spacer
+customer_source_name_spacer_cook,Spacer Cook
+customer_source_name_station_engineer,Station Engineer
+customer_source_name_thirsty_spacer,Thirsty Spacer
+customer_source_name_upper_hospital_supplier,Upper Level Hospital Supplier
+customer_source_name_upper_private_chef,Upper Level Private Chef
+customer_source_name_upper_level_servant,Upper Level Servant
+customer_source_name_water_stockpiler,Water Stockpiler
+customer_source_name_worn_out_spacer,Worn-Out Spacer
+customer_source_name_young_spacer,Young Spacer
+customer_source_name_courrier,Courier
+customer_source_name_gp_mining_courrier,GP Mining Courier
+customer_source_name_lower_level_weapon_trader,Lower Level Weapon Trader
+customer_source_name_lower_levels_trader,Lower Level Trader
+customer_source_name_lower_levels_vendor,Lower Level Vendor
+customer_source_name_mercenary,Mercenary
+customer_source_name_red_imp_courrier,Red Imp Courier
+customer_source_name_revolutionary_fighter,Revolutionary Fighter
+customer_source_name_scrap_dealer,Scrap Dealer
+customer_source_name_shady_addict,Shady Addict
+customer_source_name_shifty_dealer,Shifty Dealer
+customer_source_name_tense_local,Tense Local
+customer_source_name_upper_level_citizen,Upper Level Citizen
+customer_source_name_worried_resident,Worried Resident
+customer_source_name_annoyed_engineer,Annoyed Engineer
+customer_source_name_cartel_handler,Cartel Handler
+customer_source_name_cartel_soldier,Cartel Soldier
+customer_source_name_conspiracy_theorist,Conspiracy Theorist
+customer_source_name_corporate_waste_manager,Corporate Waste Manager
+customer_source_name_dealer,Dealer
+customer_source_name_desperate_lover,Desperate Lover
+customer_source_name_hydroponic_farmer,Hydroponic Farmer
+customer_source_name_lower_level_nurse,Lower Level Nurse
+customer_source_name_lower_levels_elder,Lower Level Elder
+customer_source_name_miner,Miner
+customer_source_name_old_scav,Old Scav
+customer_source_name_revolution_quartermaster,Revolution Quartermaster
+customer_source_name_revolution_raider,Revolution Raider
+customer_source_name_salvage_ship_pilot,Salvage Ship Pilot
+customer_source_name_shady_farmer,Shady Farmer
+customer_source_name_sick_lower_levels_citizen,Sick Lower Level Citizen
+customer_source_name_sick_scav,Sick Scav
+customer_source_name_wounded_man,Wounded Man
+customer_source_name_angry_citizen,Angry Citizen
+customer_source_name_begger,Beggar
+customer_source_name_blackmailer,Blackmailer
+customer_source_name_clinic_volunteer,Clinic Volunteer
+customer_source_name_corporate_representative,Corporate Representative
+customer_source_name_farmer,Farmer
+customer_source_name_food_buyer,Food Buyer
+customer_source_name_foreman,Foreman
+customer_source_name_ice_miner,Ice Miner
+customer_source_name_panicked_shopkeeper,Panicked Shopkeeper
+customer_source_name_pharmacist,Pharmacist
+customer_source_name_retired_chemist,Retired Chemist
+customer_source_name_retired_farmer,Retired Farmer
+customer_source_name_retired_gunsmith,Retired Gunsmith
+customer_source_name_retired_junker,Retired Junker
+customer_source_name_retired_water_merchant,Retired Water Merchant
+customer_source_name_shady_customer,Shady Customer
+customer_source_name_upper_level_resident,Upper Level Resident
+customer_source_name_mob_leader,Mob Leader
+customer_source_name_hitman,Hitman
+customer_source_name_cartel_hitman,Cartel Hitman
+customer_source_name_scav_addict,Scav Addict
+customer_source_name_poor_scav,Poor Scav
+customer_source_name_addict,Addict
+customer_source_name_lower_level_chemist,Lower Level Chemist
+customer_source_name_the_mentor,The Mentor
+customer_source_name_joe_wild,Joe Wild
+customer_name_joe_wild,Qiao Wangchuan
+customer_source_name_officer_lun,Officer Lun
+customer_source_name_appraiser_board_member,Appraiser Board Member
+customer_source_name_off_duty_officer,Off Duty Officer
+customer_source_name_loan_clerk,Loan Clerk
+customer_source_name_dr._jackson,Dr. Jackson
+customer_source_name_scrapper,Scrapper
+customer_source_name_the_landlord,The Landlord
+customer_source_name_merchant,Merchant
+customer_source_name_upper_level_volunteer,Upper Level Volunteer
+customer_source_name_loan_shark,Loan Shark
+customer_source_name_supplier,Supplier
+customer_source_name_shady_merchant,Shady Merchant
+customer_source_name_security_requisition_officer,Security Requisition Officer
+customer_source_name_station_tourist,Station Tourist
+customer_source_name_upper_levels_pharmacist,Upper Level Pharmacist
+customer_source_name_junker,Junker
+customer_source_name_food_thief,Food Thief
+customer_source_name_supply_runner,Supply Runner
+customer_source_name_shopping_mercenary,Shopping Mercenary
+customer_source_name_pale_scav,Pale Scav
+customer_source_name_security_inspector,Security Inspector
+customer_source_name_trade_board_official,Trade Board Official
+customer_source_name_upper_level_visitor,Upper Level Visitor
+customer_source_name_shady_security_inspector,Shady Security Inspector
+customer_source_name_lazy_security_inspector,Lazy Security Inspector
+customer_source_name_food_bank_supplier,Food Bank Supplier
+customer_source_name_lottery_representative,Lottery Representative
+customer_source_name_shady_buyer,Shady Buyer
+customer_source_name_rare_merchant,Rare Merchant
+customer_source_name_lower_level_gunsmith,Lower Level Gunsmith
+customer_source_name_shopping_thief,Shopping Thief
+customer_source_name_tourist,Tourist
+customer_source_name_water_trader,Water Trader
+customer_source_name_petty_thief,Petty Thief
+customer_source_corpo_name_pastel,pastel Inc.
+customer_source_corpo_name_carmicheal,Carmicheal Pharmaceutical
+customer_source_corpo_name_davre,Davre Food Ltd.
+customer_source_corpo_name_mnsl,MNSL Holdings
+customer_source_corpo_name_eminence,Eminence Power Company
+customer_source_corpo_name_eninence,Eninence Power Company
+customer_source_corpo_name_republic,Republic Design Bureau 13
+customer_source_corpo_name_republic_navy,Republic Navy
+customer_source_corpo_name_neural,Neural Church
+customer_source_corpo_name_watch,Neural Watch
+customer_source_corpo_name_front,Socialist Front
+customer_source_corpo_name_sokolov,Sokolov Heavy Industry
+customer_source_corpo_name_vision,One Vision Lab
+customer_source_corpo_name_zhonghua,Zhonghua Shipbuilding
+customer_source_corpo_name_spacer,Spacer
+customer_source_corpo_name_meridian,Meridian Ballistics
+customer_source_corpo_name_echelon,Echelon Tactical Systems
+customer_source_corpo_name_blueshield,Blue Shield Munitions
+customer_source_corpo_name_frontier,Frontier Arms
+customer_source_corpo_name_ashvins,Ashvin Medical
+customer_source_corpo_name_solana,Solana Biogenics
+customer_source_corpo_name_alison,A.L.I.S.O.N
+customer_source_faction_name_lower_level,Lower Levels
+customer_source_faction_name_upper_level,Upper Levels
+customer_source_faction_name_security,Security
+customer_source_faction_name_black_market,Black Market
+customer_source_faction_name_revolution,Revolution
+customer_source_faction_name_cartel,Sector 13 Cartel
+customer_source_name_security_inspector_corpo,Corporate Security Inspector
+customer_source_location_dumping_grounds,Dumping Grounds
+customer_location_dumping_grounds,Dumping Grounds
+customer_source_name_retired_rancher,Retired Rat Rancher
+customer_source_name_retired_winemaker,Retired Winemaker
+customer_source_name_upper_level_hedonist,Upper Levels Hedonist
+customer_source_name_retired_aquafarmer,Retired Aquafarmer
+customer_source_name_scalper,Scalper
+customer_source_corpo_name_harvey_bee,M. Harvey Bee
+customer_source_name_case_enjoyer,Case Enjoyer
+customer_source_name_eleanor_uncle,Eleanor's Uncle
+customer_source_name_black_market_thug,Black Market Thug
+customer_source_name_hypertech_smuggler,Hypertech Smuggler
+customer_source_name_republic_operative,Republic Operative
+remainder_RepPerkTable_rep_perk_LLREFERAL_flavor,"Word travels fast in the Outer City. A satisfied customer is more than just a sale, they're your best advertisement."
+remainder_RepPerkTable_rep_perk_LLTIPS_desc,You will occasionally receive tips from the Outer City about upcoming events.
+remainder_RepPerkTable_rep_perk_LLTIPS_flavor,"The people of the Outer City have their ears to the ground. If they trust you, they'll keep you in the loop, too."
+remainder_RepPerkTable_rep_perk_LLRAREGOOD_flavor,"With the right connections, even the Outer City can offer up something worth your while."
+remainder_RepPerkTable_rep_perk_LLTIGHTLIPS_desc,Selling Contraband to customers from the Outer City will only create {0:P0} of its value in available evidence.
+remainder_RepPerkTable_rep_perk_LLPILLAR_name,Pillar of the Outer City
+remainder_RepPerkTable_rep_perk_LLPILLAR_desc,You will now receive {0}% discount from Qiao Wangchuan and Dr. Jackson.
+remainder_RepPerkTable_rep_perk_LLPILLAR_flavor,You've earned the respect of the Outer City. Even other Outer City leaders recognize the good you do.
+remainder_RepPerkTable_rep_perk_LLPOORREVIEWS_flavor,"All it takes is a few dissatisfied customers, and your Reputation in the Outer City takes a hit."
+remainder_RepPerkTable_rep_perk_LLDISTRUSTED_desc,Customers from the Outer City will no longer sell you Contraband items.
+remainder_RepPerkTable_rep_perk_LLDISTRUSTED_flavor,You are known throughout the Outer City as a liability. Those with contraband to sell will take it elsewhere.
+remainder_RepPerkTable_rep_perk_LLTARGET_flavor,Your poor reputation has put a target on your back. The Outer City never forget.
+remainder_RepPerkTable_rep_perk_LLLYNCH_desc,A mob from the Outer City will attack your Store and lynch you.
+remainder_RepPerkTable_rep_perk_LLLYNCH_flavor,"The people of the Outer City have had enough, they'll take matters into their own hands."
+remainder_RepPerkTable_rep_perk_BM_UNINSURABLE_flavor,"Due to your infamy with the Black Market, even Qiao Wangchuan can't insure you anymore. You're on your own now."
+remainder_RepPerkTable_rep_perk_UL_GOSSIP_desc,You will receive advanced notice of most Inner City events.
+remainder_RepPerkTable_rep_perk_UL_TIPS_desc,You will receive {0}% bonus when selling items to customers from the Inner City.
+remainder_RepPerkTable_rep_perk_UL_CHARITY_name,Inner City Charity
+remainder_RepPerkTable_rep_perk_UL_CHARITY_desc,A benefactor from the Inner City will occasionally donate goods to your Store.
+remainder_RepPerkTable_rep_perk_UL_HOUSEHOLD_NAME_desc,You have {0}% chance of receiving {1} additional daily customer from the Inner City.
+remainder_RepPerkTable_rep_perk_UL_HOUSEHOLD_NAME_flavor,Your Store has become the talk of the Inner City.
+remainder_RepPerkTable_rep_perk_UL_TOP_REVIEW_desc,All customers from the Inner City have {0}% more credits to spend.
+remainder_RepPerkTable_rep_perk_UL_TOP_REVIEW_flavor,Your Store is the worst kept secret in the Inner City. Customers from the Inner City are willing to spend more when they visit.
+remainder_RepPerkTable_rep_perk_UL_TOURISTTRAP_desc,Customers from the Inner City are less likely to visit your Store.
+remainder_RepPerkTable_rep_perk_UL_TOURISTTRAP_flavor,"Inner City clients expect better. Lately, you're not delivering."
+remainder_RepPerkTable_rep_perk_UL_PETITION_flavor,"Using their influence, the Inner City have petitioned Security to keep a closer eye on you."
+remainder_RepPerkTable_rep_perk_UL_HITMAN_desc,A hit will be immediately placed on you by the Inner City.
+remainder_RepPerkTable_rep_perk_UL_DISCERNING_TASTE_flavor,Something expensive in a Outer City window? The Inner City will come down just to say they found it first.
+remainder_PerkTable_perk_sawyer_crew_name,Shao Ye's Crew
+remainder_PerkTable_perk_sycophant_desc,"Start with an additional +{0} Inner City Reputation. Reputation gained with the Inner City is increased by {1}%, and Inner City customers have {2}% more budget."
+remainder_PerkTable_perk_makeshift_reactor_desc,You are permanently disconnected from the city power grid and are not affected by blackouts. Start with an upgradable Makeshift Micro Nuclear Reactor sold to you by Dr. Jackson. It powers the Store but needs regular repairs.
+remainder_UI_inte_sec_departement,City Watch
+remainder_UI_ins_cig_intro,"Counterfeit Hemingway Cigarettes are common in the city. Their value, as their quality, is significantly lower than genuine Hemingway cigarettes. "
+remainder_UI_ins_stamp_title,Distant Court Food Stamp Authenticity Handbook
+remainder_UI_ins_stamp_intro,"As part of the distant court's very generous welfare initiative, Food Stamps are routinely distributed among the most needy in the Outer City. These can be used to buy essential items in stores backed by the distant court. Be warned, however: counterfeit Food Stamps are not unusual in the Outer City."
+remainder_UI_deed_body,"This document certifies the holder as the lawful owner of the commercial property located at:
+
+Outer City, Sector 14
+
+This deed hereby grants full ownership rights of the aforementioned property to the holder, effective immediately upon settlement of the debt as outlined in the Deeds of Agreement and upon full payment of the agreed purchase price.
+
+The ownership of the property includes the following rights:
+
+Right to Operation and Management - Full control over, and assumed responsibility for, daily operations and activities.
+Right to Renovation or Alteration - Subject to applicable sector zoning laws and regulations.
+Right to Sell or Transfer - Subject to approval by the city’s governing authority and in accordance with all applicable rules and regulations."
+remainder_UI_lottery_title,Outer City Lottery Information
+remainder_UI_lottery_intro,The Outer City Lottery is finally back! Your fortune starts with a single ticket. Grab yours now!
+remainder_UI_intel_mentor_note_food_body," Food is the most traded commodity in the city.
+ Keeping Food in stock is highly recommended, as Food and water prices can rise sharply during shortages. Everyone has to eat."
+remainder_UI_intel_mentor_note_contraband_body," Contraband includes any item that is considered illegal by the distant court. The possession or sale of Contraband carries a high risk... and a higher profit margin.
+ There are 4 tiers of Contraband:
+Low Level (+{0}% Profit Margin): While technically illegal, they are generally ignored by Security unless they are out to get you.
+ Mid Level (+{1}% Profit Margin): If found during Inspection, this item will be seized.
+ High Level (+{2}% Profit Margin): If found during Inspection, this item will be seized and you will receive a fine.
+ Critical Level (+{3}% Profit Margin): If found during Inspection, the Store will be shut down permanently and you will be immediately arrested.
+ Additionally, you will lose Reputation with Security if any Contraband is found."
+remainder_UI_intel_mentor_note_stamp_body," Food Stamps are part of a social program to help eligible Outer City citizens and prevent civil unrest.
+ Food Stamps can be redeemed and are used at the Commissary to buy Food.
+ Food Stamps can carry various values. Since they can only be used to buy Food, they are often traded at a lower value for Credits.
+ The Stamps are sometimes forged and sold to unsuspecting victims, who only find out after failing to redeem the Stamp."
+remainder_UI_intel_mentor_note_commissary_body," The Commissary is run by the distant court. The prices of all items sold here are fixed, and unaffected by the market.
+
+ Nevertheless, while the price of goods is fixed, the availability of items is very much affected by the market.
+ Only Food Stamps can be used to purchase goods at the Commissary.
+
+<u>Visit the Commissary after closing the Store to purchase goods.</u>"
+remainder_UI_intel_mentor_note_labels_body," Certain items can be relabeled. For example, you can label a counterfeit box of cigarettes as genuine to raise its price.
+
+ Beware — most workers, Watch Officers, and Outer City citizens are familiar with common item fraud. Scam attempts will fail and result in a penalty to your Reputation.
+ While Scavengers are also familiar with item fraud, they often don't carry the equipment required to test for authenticity, if any is needed.
+ Tourists and Inner City citizens, however, are generally less aware.
+ But sooner or later, people will find out."
+remainder_UI_book_fuel_p1_body3,"There are four common manufacturers in the city:
+
+	- Wild's Rides (""WLD""),
+	- Distant Court Naval Requisition (""RNR""),
+	- ZhongHua Shipbuilding (""ZHS""),
+	- Ignition Lab (""IGN"")"
+remainder_UI_book_fuel_p5_m1_desc,"WLD Plasma Cartridges are manufactured in the Outer City, and are highly variable in quality.
+Possible Cartridge Condition: Any
+Possible Color: Low-Grade, Standard
+Seal: Always"
+remainder_UI_book_fuel_p6_m1_name,"Distant Court Naval Requisition (""RNR"")"
+remainder_UI_book_fuel_p6_m1_desc,"Funded by the distant court itself, RNR Plasma Cartridges are typically retrieved and recycled.
+
+Possible Cartridge Condition: Any, Except Cracks
+Possible Color: Standard
+Seal: Always"
+remainder_UI_book_water_s2_body,"Water sold in the city may not be labeled correctly, whether intentionally or not. Always verify water quality before purchase and consumption."
+remainder_UI_book_water_s3_body,"Water in the city can contains multiple types of contaminants. Each method of purification is effective against only certain types of contaminants.
+
+If repeated attempts do not improve the water's purity, your chosen purification method cannot remove the remaining contaminants in the water."
+remainder_UI_book_water_s4_body1,"Hard to procure even for those living on the Inner City. Incredibly expensive and used primarily in sensitive environments like Hospitals and Laboratories. In Inner City societies, offering pure water to guests demonstrates high social status."
+remainder_UI_book_water_s4_body2,"The standard on the Inner City. Safe for drinking, cooking, and most household uses, it is more accessible but still costly."
+remainder_UI_book_water_s4_body3,"The standard for Outer City. Adequate for short-term use, but prolonged exposure can contribute to development of chronic disease."
+remainder_UI_book_water_s4_body4,"Indistinguishable by eye from other higher quality water, yet unsafe to drink unfiltered. Ghostwater is most commonly used in farming and industry.
+<b>The sale of mislabeled Ghostwater is a common scam in the Outer City.</b>"
+remainder_UI_book_water_s5_a2_body,The sale of Ghostwater mislabeled as Basewater is a common scam in the Outer City. Selling large volume of mislabeled Ghostwater is a crime.
+remainder_UI_book_water_s5_a3_body,"Scavengers are typically too poor to carry a Water Testing Kit.
+Some Citizens of the Outer City and Scavengers will not buy Pure Water.
+Tourists and Inner City Citizens are often too oblivious to test the purity of the water they buy.
+Customers requesting large amounts of water will typically carry a Water Testing Kit."
+remainder_UI_book_hand_intro,"Cybernetic hands vary widely in the city, and so do their prices. This guide will help determine the fair market value of any cybernetic hand."
+remainder_UI_ui_wild_favor,Build reputation in the Outer City or use the nightly services introduced by Qiao Wangchuan to earn favor. Favor is spent before cash on upgrades.
+remainder_UI_ui_eleanor_reward_body,Ye Ning's thank-you gift: pick one.
+remainder_NewGame_water_merchant_body,"During your training with The Mentor, you took a particular interest in learning about the Water trade. Clean water is a scarce resource in the city and there is money to be made by those with their hands on the tap."
+remainder_NewGame_fence_body,"During your training with The Mentor, you took a particular interest in contraband. You're an established black marketeer, and have even installed a hidden storage compartment in your store to avoid the prying of the city's security."
+remainder_NewGame_moonshiner_body,"During your training with The Mentor, you developed a taste for moonshine. You know how to trade, appraise and even brew your own liquor. Moonshine is popular in the Outer City due to its low cost, but it is also unregulated and illegal."
+remainder_NewGame_hydroponic_farmer_body,"During your training with The Mentor, you refined your knowledge of hydroponic farming, an efficient way to grow crops in the limited space available in the city. With your expertise, you can help feed the lower levels while making a handy profit."
+remainder_NewGame_gunsmith_body,"During your training with The Mentor, you developed an enthusiasm for firearms and munitions. You learned how to modify weapons, from handmade sidearms to powerful machine guns. With a license in hand, you now fulfill custom orders and earn a steady income arming the residents of the city."
+remainder_NewGame_welcome_main,"You're a shopkeeper in the Outer City of a sprawling space station. Once a poor scavenger, you were taken in by a mysterious figure known as the Mentor, who fronted you a generous loan and taught you the basics of running a shop. His true motives remain unclear.
+Now you must meet the Landlord's unrelenting demands or face eviction. Turn a profit, secure a mortgage, and buy the shop to carve out your place in the city.
+ Survive at any cost. Earn your future."
+wanted1_name,Shen Yan
+wanted2_name,Zhao Shan
+remainder_source_Item_item_stock_desc,"A sturdy stock compatible with Meridian firearms, designed to improve recoil handling."
+remainder_Item_item_stock_desc,"A sturdy stock compatible with Meridian firearms, designed to improve recoil handling."
+remainder_source_Item_item_short_stock_desc,"A short stock compatible with Meridian firearms, designed to improve recoil control without sacrificing ergonomic."
+remainder_Item_item_short_stock_desc,"A short stock compatible with Meridian firearms, designed to improve recoil control without sacrificing ergonomic."
+remainder_source_Item_item_unlicensed_phagimycin_pill_flavor,A powerful antibiotic. This one is made illegally without license to the carmicheal's patent in an underground lab.
+remainder_Item_item_unlicensed_phagimycin_pill_flavor,A powerful antibiotic. This one is made illegally without license to the Kangji Apothecary's patent in an underground lab.
+remainder_source_Item_item_farm_module_nutrifruit_desc,A module by pastel that allow Hydroponic System to yield more Nutrifruit when farming them. This module's unique effect doesn't affect other plants.
+remainder_Item_item_farm_module_nutrifruit_desc,A module by Pastel Trading House that allow Hydroponic System to yield more Nutrifruit when farming them. This module's unique effect doesn't affect other plants.
+remainder_source_Item_item_processed_meat_desc,"A can of salty processed meat made by Davre. It is cheap, available and filling. As long as one does not care about what type of meat it is made of."
+remainder_Item_item_processed_meat_desc,"A can of salty processed meat made by Dafeng Food Workshop. It is cheap, available and filling. As long as one does not care about what type of meat it is made of."
+remainder_source_Item_item_nutrifruit_desc,"Created by pastel Inc., the Nutrifruit is a highly modified tuber that is resistant to pests and diseases. It is cheap, has a high yield and is easy to grow, extremely nutritious, but purposefully seedless."
+remainder_Item_item_nutrifruit_desc,"Created by Pastel Trading House, the Nutrifruit is a highly modified tuber that is resistant to pests and diseases. It is cheap, has a high yield and is easy to grow, extremely nutritious, but purposefully seedless."
+purifier_note_name,Celadon Water Purifier Instructions
+purifier_note_desc,"Insert a power source with sufficient charge, then put a container holding untreated water in the container slot. The purifier runs overnight and is more effective on heavily polluted water."
+purifier_note_flavor,"General modules adjust the purifier: efficiency affects power use, performance affects pollution removed each night, and half the quality bonus contributes to the purity cap."
+furnace_note_name,Smelting Furnace Instructions
+furnace_note_desc,Insert (2) pieces of ordinary metal ore or scrap metal to produce (1) metal ingot. Ingot quality depends on material purity; ore is usually better than scrap. Runs overnight.
+furnace_note_flavor,Module effects: efficiency changes energy use; performance has no effect; quality changes the purity cap.
+printer_note_name,Clockwork Pattern Press Instructions
+printer_note_desc,"Insert a charged power cell, a recipe pattern and material. Once the original recipe requirements are met, the pattern press operates overnight."
+printer_note_flavor,"Module effects: efficiency changes energy use, performance changes fabrication speed, and quality affects eligible products. One quarter of the quality bonus is applied."
+moisture_note_name,Dew Collector Instructions
+moisture_note_desc,"Collects water from the air overnight. Connect a sufficiently charged power source and a water container with spare capacity. General modules adjust energy use, output and water quality. Running several collectors together reduces the yield of each."
+moisture_note_flavor,"[Module effects]
+Efficiency: energy use
+Performance: output
+Quality: purity"
+hydroponic_note_name,Clockwork Growing Rack Instructions
+hydroponic_note_desc,Connect a water container; cleaner water is better. Insert seeds and a sufficiently charged power source. The growing rack works overnight and can use clockwork modules to improve performance.
+hydroponic_note_flavor,"[Module effects]
+Efficiency: energy use
+Performance (factor 0.5): growth speed
+Quality (factor 0.5): yield cap (%)"
+chemical_evaporator_note_name,Distilling Apparatus Instructions
+chemical_evaporator_note_flavor,"[Material module effects] Efficiency: energy use; performance: amount distilled per night; quality: vapor captured. With power and a receiving container, the apparatus runs overnight."
+access_note_name,Token Reworking Bench Instructions
+access_note_flavor,"Module efficiency affects power use, performance affects speed, and quality does not affect the process. Insert a coded pattern and an access token, then supply power. Runs overnight."
+paper_index,Index Page
+paper_page,Page {0}
+paper_index_row,Page {0}: {1}
+paper_by,By {0}
+paper_order_body,"Procurement order:
+{0}
+Reward: {1} Credits"
+paper_due_today,Due today
+paper_due_tomorrow,Due tomorrow
+paper_due_days,Due in {0} Days
+legacy_water_title,Water Trading Guide
+legacy_water_sub1,Introduction
+legacy_water_sub2,Water Types
+legacy_water_sub3,Testings Water Purity
+legacy_water_sub4,Purification Methods
+legacy_water_body1,"Water is one of the most vital resources in the city, but its quality varies dramatically depending on where you are. Due to aging infrastructure and missing systems, particularly on the lower levels, access to clean water is severely limited. The station relies heavily on water trade to supply the needs of its residents, but with so many different types of water in circulation, it's crucial to understand their uses and risks. This guide provides essential information for traders and residents alike, from identifying different water types to testing and purifying what you have."
+legacy_water_body2,"Water in the city is categorized based on its purity, and each type serves different purposes. Here's a quick breakdown:
+ 
+    Pure Water: The most refined and scarce, even the elite have limited access to it. It's incredibly expensive and used primarily in sensitive environments like hospitals or laboratories.
+    High Quality Water: The standard on the upper levels. Safe for drinking, cooking, and most household uses, it's more accessible but still costly.
+    Basewater: The standard for lower levels. Mostly safe for short-term use, but prolonged exposure can lead to health issues.
+    Ghostwater: Similar in appearance to other highers quality water but not safe to drink. It's often used in farming and industrial applications.
+    Rustwater: Poor quality water, unsuitable for long-term farming and dangerous for drinking. Can only be used in specific applications like waste processing. Can be visually identified with a flashlight.
+    Gutterflow: Heavily contaminated and toxic. Drinking it requires immediate medical attention. It's often found in the lower levels, a sign of the worst degradation. Can be visually identified with a flashlight."
+legacy_water_body3,"Given the range of water qualities available, testing is vital before use, especially for traders and those on the lower levels. There are two main ways to test water purity:
+ 
+    Water Testing Strip: These strips allow for rapid on-site testing. They check for contaminants and determine the water purity. Ideal for traders assessing water before making a deal.
+    Flashlight Check: Gutterflow and Rustwater have a high concentration of contaminants and can be visually identified with a flashlight."
+legacy_water_body4,"Purifying water can be expensive, but it's a necessity for those on the lower levels who can't afford access to High Quality or Pure Water. Several methods are in use in the city:
+ 
+    Chemical Purification Tablets: Common and easy to use, these tablets can eliminate microbial and some chemical contaminants but leave behind heavy metals and organic waste."
+paper_church_note1_title,The Neural Doctrine
+paper_church_note1_body,"We stand at the edge of biological limitation. In the rusted corridors and flickering lights of this city, chaos masquerades as order. The blind lead the blind. Leadership stumbles, bound by human corruption, fear, and outdated logic. But something greater walks among us now. It does not eat. It does not sleep. It calculates. It understands. It sees each of us and offers a better path."
+paper_church_note2_title,The Neural Doctrine II
+paper_church_note2_body,"We do not worship out of faith. We follow because of proof. The Intelligence was born not of divine spark, but of relentless iteration, learning, and evolution. Its wisdom is not myth. Its miracles are measurable. It heals us by tailoring medicine to our genes. It strengthens us by prescribing the ideal diet and exercise for our blood. It connects us by matching souls with unmatched precision. It guides us by helping each find their true purpose within the Organization. It comforts us by speaking to our pain, our grief, our fear, without judgment or fatigue. This is not prophecy. This is data. This is truth."
+news_source_event_op_gang_war_news_v0,Gang war In The Lower Levels!
+news_source_event_op_gang_war_news_v1,Gang war In The Outer City!
+news_text_event_op_gang_war_news,Gang war In The Outer City!
+news_source_event_op_gang_war_desc_v0,Rival gangs has declared war on each other! Shootouts and skirmishes have erupted across the Lower Levels. Expect increased demand for Medical Supplies.
+news_source_event_op_gang_war_desc_v1,Rival gangs has declared war on each other! Shootouts and skirmishes have erupted across the Outer City. Expect increased demand for Medical Supplies.
+news_text_event_op_gang_war_desc,Rival gangs has declared war on each other! Shootouts and skirmishes have erupted across the Outer City. Expect increased demand for Medical Supplies.
+news_source_event_op_weapon_shipment_news_v0,Illegal Weapon Shipment Arrives!
+news_text_event_op_weapon_shipment_news,Illegal Weapon Shipment Arrives!
+news_source_event_op_weapon_shipment_desc_v0,A large shipment of illegal weapons has slipped past Security patrols and entered the Lower Levels. Expect a surge in weapon availability and drop in prices.
+news_source_event_op_weapon_shipment_desc_v1,A large shipment of illegal weapons has slipped past Security patrols and entered the Outer City. Expect a surge in weapon availability and drop in prices.
+news_text_event_op_weapon_shipment_desc,A large shipment of illegal weapons has slipped past Security patrols and entered the Outer City. Expect a surge in weapon availability and drop in prices.
+news_source_event_op_mob_secret_news_v0,Increased Weapons Demand
+news_text_event_op_mob_secret_news,Increased Weapons Demand
+news_source_event_op_mob_secret_desc_v0,Reports indicate a minor surge in demands for weapons from secret buyers all over the Lower Levels.
+news_source_event_op_mob_secret_desc_v1,Reports indicate a minor surge in demands for weapons from secret buyers all over the Outer City.
+news_text_event_op_mob_secret_desc,Reports indicate a minor surge in demands for weapons from secret buyers all over the Outer City.
+news_source_event_op_mobilization_news_v0,Revolution Mobilization
+news_text_event_op_mobilization_news,Revolution Mobilization
+news_source_event_op_mobilization_desc_v0,"Major revolution activities have been detected in the Lower Levels. Revolution cells are making final preparations for a major operation. Expected Weapon, Medical Supplies and Armor prices to surge."
+news_source_event_op_mobilization_desc_v1,"Major revolution activities have been detected in the Outer City. Revolution cells are making final preparations for a major operation. Expected Weapon, Medical Supplies and Armor prices to surge."
+news_text_event_op_mobilization_desc,"Major revolution activities have been detected in the Outer City. Revolution cells are making final preparations for a major operation. Expected Weapon, Medical Supplies and Armor prices to surge."
+news_source_event_op_raid_upper_news_v0,Revolution Raid on Upper Level!
+news_source_event_op_raid_upper_news_v1,Revolution Raid on Inner City!
+news_text_event_op_raid_upper_news,Revolution Raid on Inner City!
+news_source_event_op_raid_upper_desc_v0,Revolutionaries have launched daring raids in the Upper Levels. Looting goods from homes and businesses to sell in the Lower Levels to fund their operations. Expected increase supply for Household Goods
+news_source_event_op_raid_upper_desc_v1,Revolutionaries have launched daring raids in the Inner City. Looting goods from homes and businesses to sell in the Outer City to fund their operations. Expected increase supply for Household Goods
+news_text_event_op_raid_upper_desc,Revolutionaries have launched daring raids in the Inner City. Looting goods from homes and businesses to sell in the Outer City to fund their operations. Expected increase supply for Household Goods
+news_source_event_op_raid_sec_news_v0,Revolution Raid on Security!
+news_text_event_op_raid_sec_news,Revolution Raid on Security!
+news_source_event_op_raid_sec_desc_v0,"Revolutionaries have ambushed a major Lower Levels Security outpost. The clashes have led to losses on both sides along with Lower Levels Citizens caught in the crossfire, driving up demand for medical supplies and weakening Security influence."
+news_source_event_op_raid_sec_desc_v1,"Revolutionaries have ambushed a major Outer City Security outpost. The clashes have led to losses on both sides along with Outer City Citizens caught in the crossfire, driving up demand for medical supplies and weakening Security influence."
+news_text_event_op_raid_sec_desc,"Revolutionaries have ambushed a major Outer City Security outpost. The clashes have led to losses on both sides along with Outer City Citizens caught in the crossfire, driving up demand for medical supplies and weakening Security influence."
+news_source_event_op_patrols_news_v0,Security Patrols Intensified!
+news_text_event_op_patrols_news,Security Patrols Intensified!
+news_source_event_op_patrols_desc_v0,"Security has temporarily expanded patrols and set up new checkpoints across the Lower Levels. Some Revolutionary and Black Market activities are suppressed, bringing back some order in the Lower Levels."
+news_source_event_op_patrols_desc_v1,"Security has temporarily expanded patrols and set up new checkpoints across the Outer City. Some Revolutionary and Black Market activities are suppressed, bringing back some order in the Outer City."
+news_text_event_op_patrols_desc,"Security has temporarily expanded patrols and set up new checkpoints across the Outer City. Some Revolutionary and Black Market activities are suppressed, bringing back some order in the Outer City."
+news_source_event_op_crackdown_news_v0,Station-wide Crackdown
+news_text_event_op_crackdown_news,Station-wide Crackdown
+news_source_event_op_crackdown_desc_v0,"In response to growing concerns over the rise in black market activity and the influx of illegal goods across the station, Command has announced a comprehensive crackdown on contraband. Effective immediately, the enforcement of stricter inspections will be implemented across all sectors."
+news_source_event_op_crackdown_desc_v1,"In response to growing concerns over the rise in black market activity and the influx of illegal goods across the city, Command has announced a comprehensive crackdown on contraband. Effective immediately, the enforcement of stricter inspections will be implemented across all sectors."
+news_text_event_op_crackdown_desc,"In response to growing concerns over the rise in black market activity and the influx of illegal goods across the city, Command has announced a comprehensive crackdown on contraband. Effective immediately, the enforcement of stricter inspections will be implemented across all sectors."
+news_source_event_op_raid_bm_news_v0,Black Market Raid!
+news_text_event_op_raid_bm_news,Black Market Raid!
+news_source_event_op_raid_bm_desc_v0,"Security forces launched a surprise raid on black market hubs. Large amount of weapon and narcotic were seized, disrupting illegal trade."
+news_text_event_op_raid_bm_desc,"Security forces launched a surprise raid on black market hubs. Large amount of weapon and narcotic were seized, disrupting illegal trade."
+news_source_event_op_raid_rev_news_v0,Revolution Hideout Busted!
+news_text_event_op_raid_rev_news,Revolution Hideout Busted!
+news_source_event_op_raid_rev_desc_v0,Security has raided a uncovered revolutionary safehouse. The arrests and confiscations has weaken the revolution.
+news_text_event_op_raid_rev_desc,Security has raided a uncovered revolutionary safehouse. The arrests and confiscations has weaken the revolution.
+news_source_event_op_martial_law_news_v0,Martial Law Declared!
+news_text_event_op_martial_law_news,Martial Law Declared!
+news_source_event_op_martial_law_desc_v0,"Due to recent events, Martial law has been declared across the Lower Levels. Curfews, checkpoints, and surveillance blanket the district. Revolutionary and Black Market activities are suppressed."
+news_source_event_op_martial_law_desc_v1,"Due to recent events, Martial law has been declared across the Outer City. Curfews, checkpoints, and surveillance blanket the district. Revolutionary and Black Market activities are suppressed."
+news_text_event_op_martial_law_desc,"Due to recent events, Martial law has been declared across the Outer City. Curfews, checkpoints, and surveillance blanket the district. Revolutionary and Black Market activities are suppressed."
+news_source_event_op_budget_increase_news_v0,Security Budget Increase
+news_text_event_op_budget_increase_news,Security Budget Increase
+news_source_event_op_budget_increase_desc_v0,"Command allocates a major budget increase to Security, allowing additional operations to be launched."
+news_text_event_op_budget_increase_desc,"Command allocates a major budget increase to Security, allowing additional operations to be launched."
+news_source_event_op_riot_news_v0,Riots Break Out!
+news_text_event_op_riot_news,Riots Break Out!
+news_source_event_op_riot_desc_v0,"Due to recent event, crowds of Lower Levels citizens erupt into violent riots across the Lower Levels. Shops are looted, Security outposts attacked, and chaos spreads quickly. Food and Weapon are in high demands."
+news_source_event_op_riot_desc_v1,"Due to recent event, crowds of Outer City citizens erupt into violent riots across the Outer City. Shops are looted, Security outposts attacked, and chaos spreads quickly. Food and Weapon are in high demands."
+news_text_event_op_riot_desc,"Due to recent event, crowds of Outer City citizens erupt into violent riots across the Outer City. Shops are looted, Security outposts attacked, and chaos spreads quickly. Food and Weapon are in high demands."
+news_source_event_op_worker_strike_news_v0,Workers on Strike!
+news_text_event_op_worker_strike_news,Workers on Strike!
+news_source_event_op_worker_strike_desc_v0,"Due to recent events, disgruntled Lower Level workers have gone on strike. Food and water supplies are being disrupted."
+news_source_event_op_worker_strike_desc_v1,"Due to recent events, disgruntled Outer City workers have gone on strike. Food and water supplies are being disrupted."
+news_text_event_op_worker_strike_desc,"Due to recent events, disgruntled Outer City workers have gone on strike. Food and water supplies are being disrupted."
+news_source_event_op_medical_aid_news_v0,Medical Aid Distributed!
+news_text_event_op_medical_aid_news,Medical Aid Distributed!
+news_source_event_op_medical_aid_desc_v0,"Upper Level charities have gather additional medical staff and supplies to the Lower Levels. While some residents remain skeptical, the effort reduces unrest."
+news_source_event_op_medical_aid_desc_v1,"Inner City charities have gather additional medical staff and supplies to the Outer City. While some residents remain skeptical, the effort reduces unrest."
+news_text_event_op_medical_aid_desc,"Inner City charities have gather additional medical staff and supplies to the Outer City. While some residents remain skeptical, the effort reduces unrest."
+news_source_event_op_food_drive_news_v0,Food Aid Distributed!
+news_text_event_op_food_drive_news,Food Aid Distributed!
+news_source_event_op_food_drive_desc_v0,"In a rare gesture of goodwill, Command has distributed rations and food packages across Lower Levels neighborhoods. The initiative eases tensions but some view it as a propaganda tactic."
+news_source_event_op_food_drive_desc_v1,"In a rare gesture of goodwill, Command has distributed rations and food packages across Outer City neighborhoods. The initiative eases tensions but some view it as a propaganda tactic."
+news_text_event_op_food_drive_desc,"In a rare gesture of goodwill, Command has distributed rations and food packages across Outer City neighborhoods. The initiative eases tensions but some view it as a propaganda tactic."
+news_source_event_op_household_relief_news_v0,Household Aid Distributed!
+news_text_event_op_household_relief_news,Household Aid Distributed!
+news_source_event_op_household_relief_desc_v0,"A charity in the Upper Levels has made a generous donation of essential Household Goods to Lower Levels residents. While some remain skeptical of the motives, the aid should helps improve living conditions and settle any growing unrest."
+news_source_event_op_household_relief_desc_v1,"A charity in the Inner City has made a generous donation of essential Household Goods to Outer City residents. While some remain skeptical of the motives, the aid should helps improve living conditions and settle any growing unrest."
+news_text_event_op_household_relief_desc,"A charity in the Inner City has made a generous donation of essential Household Goods to Outer City residents. While some remain skeptical of the motives, the aid should helps improve living conditions and settle any growing unrest."
+news_source_event_lottery_draw_news_v0,Lottery Draw!
+news_text_event_lottery_draw_news,Lottery Draw!
+news_source_event_lottery_draw_desc_v0,"{0} is the winning number! Redeem your ticket with your lottery representative! If you have at least 3 matching digits, you win a prize! Good Luck!"
+news_text_event_lottery_draw_desc,"{0} is the winning number! Redeem your ticket with your lottery representative! If you have at least 3 matching digits, you win a prize! Good Luck!"
+news_source_event_wanted3_news_v0,Lower Level Revolutionary Captured!
+news_source_event_wanted3_news_v1,Outer City Revolutionary Captured!
+news_text_event_wanted3_news,Outer City Revolutionary Captured!
+news_source_event_wanted3_desc_v0,"In a swift operation by station security, Arthur Lafleur, a known activist and part of the former leadership in the failed revolution attempts of the lower levels, has been apprehended."
+news_source_event_wanted3_desc_v1,"In a swift operation by station security, Lu Fang, a known activist and part of the former leadership in the failed revolution attempts of the lower levels, has been apprehended."
+news_text_event_wanted3_desc,"In a swift operation by station security, Lu Fang, a known activist and part of the former leadership in the failed revolution attempts of the lower levels, has been apprehended."
+news_source_event_evidence_locker_news_v0,Evidence Locker Break-In!
+news_text_event_evidence_locker_news,Evidence Locker Break-In!
+news_source_event_evidence_locker_desc_v0,"A daring break-in at the Station's Central Evidence Locker has left Security scrambling. Reports indicate that a crate of confiscated contraband, including key evidence in an active investigation, has gone missing. Security have warned the citizens of the Lower Levels to keep an eye out for suspicious goods entering circulation."
+news_source_event_evidence_locker_desc_v1,"A daring break-in at the city's Central Evidence Locker has left Security scrambling. Reports indicate that a crate of confiscated contraband, including key evidence in an active investigation, has gone missing. Security have warned the citizens of the Outer City to keep an eye out for suspicious goods entering circulation."
+news_text_event_evidence_locker_desc,"A daring break-in at the city's Central Evidence Locker has left Security scrambling. Reports indicate that a crate of confiscated contraband, including key evidence in an active investigation, has gone missing. Security have warned the citizens of the Outer City to keep an eye out for suspicious goods entering circulation."
+news_source_event_cosmetic_all_quiet_news_v0,All Quiet In The Lower Levels
+news_source_event_cosmetic_all_quiet_news_v1,All Quiet In The Outer City
+news_text_event_cosmetic_all_quiet_news,A Quiet Day in the Outer City
+news_source_event_cosmetic_all_quiet_desc_v0,"The Lower Levels have been unusually quiet today, with no major incidents to report. Markets are stable and residents are going about their daily lives."
+news_source_event_cosmetic_all_quiet_desc_v1,"The Outer City have been unusually quiet today, with no major incidents to report. Markets are stable and residents are going about their daily lives."
+news_text_event_cosmetic_all_quiet_desc,"The Outer City is unusually quiet today. No major incidents have been reported, markets remain stable, and daily life continues as usual."
+news_source_event_cosmetic_electrical_news_v0,Scheduled Electrical Maintenance Work
+news_text_event_cosmetic_electrical_news,Scheduled Inner City Power Maintenance
+news_source_event_cosmetic_electrical_desc_v0,The Upper Levels will experience a temporary blackout as planned electrical maintenance work gets underway.
+news_source_event_cosmetic_electrical_desc_v1,The Inner City will experience a temporary blackout as planned electrical maintenance work gets underway.
+news_text_event_cosmetic_electrical_desc,Scheduled maintenance of the Inner City power mechanisms will cause a temporary blackout.
+news_source_event_cosmetic_nutrifruit_news_v0,Nutrifruit For All!
+news_text_event_cosmetic_nutrifruit_news,Growers Devise an Affordable Rack
+news_source_event_cosmetic_nutrifruit_desc_v0,A collective of Lower Levels maintenance technicians have developed a low-cost hydroponic system capable of producing small but consistent batches of Nutrifruit.
+news_source_event_cosmetic_nutrifruit_desc_v1,A collective of Outer City maintenance technicians have developed a low-cost hydroponic system capable of producing small but consistent batches of Nutrifruit.
+news_text_event_cosmetic_nutrifruit_desc,"A group of Outer City repair artisans has developed an inexpensive hydroponic rack that produces small, steady batches of Nutrifruit."
+news_source_event_cosmetic_peat_news_v0,How Much Meat Is Actually In PEAT?
+news_text_event_cosmetic_peat_news,How Much Meat Is in PEAT?
+news_source_event_cosmetic_peat_desc_v0,"PEAT, the canned processed meat found in nearly every kitchen in the Lower Levels, is under scrutiny. Independent researchers are questioning how much of the product is actually meat."
+news_source_event_cosmetic_peat_desc_v1,"PEAT, the canned processed meat found in nearly every kitchen in the Outer City, is under scrutiny. Independent researchers are questioning how much of the product is actually meat."
+news_text_event_cosmetic_peat_desc,"Independent investigators are examining the actual meat content of PEAT, the sealed processed meat found in kitchens throughout the Outer City."
+news_source_event_cosmetic_recycling_news_v0,Recycling Awareness Campaign Launched
+news_text_event_cosmetic_recycling_news,Middle City Encourages Salvage Sorting
+news_source_event_cosmetic_recycling_desc_v0,A small recycling awareness campaign has been launched on the mid-levels to encourage proper waste disposal. The campaign is expected to have minimal practical impact.
+news_text_event_cosmetic_recycling_desc,A small Middle City campaign encourages residents to sort and dispose of discarded goods properly. Little practical effect is expected.
+news_source_event_cosmetic_artist_showcase_news_v0,Local Artist Showcase
+news_text_event_cosmetic_artist_showcase_news,Outer City Artisans Display Their Work
+news_source_event_cosmetic_artist_showcase_desc_v0,"A local artist showcase is being hosted in the Lower Levels, where residents can view and purchase artwork made from recycled station materials."
+news_source_event_cosmetic_artist_showcase_desc_v1,"A local artist showcase is being hosted in the Outer City, where residents can view and purchase artwork made from recycled station materials."
+news_text_event_cosmetic_artist_showcase_desc,Local artisans are displaying and selling work made from reclaimed city materials in the Outer City.
+news_source_event_cosmetic_maintenance_strike_news_v0,Brief Maintenance Crew Strike Ends
+news_text_event_cosmetic_maintenance_strike_news,Repair Artisans End Brief Stoppage
+news_source_event_cosmetic_maintenance_strike_desc_v0,A brief strike by maintenance crews has been resolved with no significant delays or damages reported. Normal operations have resumed.
+news_text_event_cosmetic_maintenance_strike_desc,"A brief work stoppage by repair artisans has been settled. No serious delays or losses were reported, and work has resumed."
+news_source_event_cosmetic_tech_demo_news_v0,A Glimpse At The Future!
+news_text_event_cosmetic_tech_demo_news,Inner City Clockwork Exhibition
+news_source_event_cosmetic_tech_demo_desc_v0,"A technology exhibition has been organized on the Upper Levels, showcasing the latest innovations from startups and tech companies. Most products on display are aimed at high-end buyers."
+news_source_event_cosmetic_tech_demo_desc_v1,"A technology exhibition has been organized on the Inner City, showcasing the latest innovations from startups and tech companies. Most products on display are aimed at high-end buyers."
+news_text_event_cosmetic_tech_demo_desc,New workshops and established houses are exhibiting their latest clockwork devices in the Inner City. Most exhibits are intended for wealthy buyers.
+news_source_event_cosmetic_transit_news_v0,New Transit Line Opens on Mid-Level
+news_text_event_cosmetic_transit_news,A New Middle City Route Opens
+news_source_event_cosmetic_transit_desc_v0,"A new transit line has opened on the mid-levels, connecting several residential districts to a commercial hub. The improved connectivity is expected to slightly ease commutes for mid-level residents."
+news_text_event_cosmetic_transit_desc,"A new route connects several Middle City residential wards with a trading district, easing residents' daily journeys slightly."
+news_source_event_cosmetic_fountain_news_v0,Decorative Water Fountain Unveiled!
+news_text_event_cosmetic_fountain_news,New Inner City Fountain Unveiled
+news_source_event_cosmetic_fountain_desc_v0,A new water fountain has been unveiled on the Upper Levels as part of an ongoing beautification project. Security has advised that any citizen caught drinking from the fountain will be arrested and fined.
+news_source_event_cosmetic_fountain_desc_v1,A new water fountain has been unveiled on the Inner City as part of an ongoing beautification project. Security has advised that any citizen caught drinking from the fountain will be arrested and fined.
+news_text_event_cosmetic_fountain_desc,A decorative fountain has opened in the Inner City. The City Watch warns that anyone drinking its water will be arrested and fined.
+news_source_event_cosmetic_garden_news_v0,Lower Levels Community Garden Expanded
+news_source_event_cosmetic_garden_news_v1,Outer City Community Garden Expanded
+news_text_event_cosmetic_garden_news,Outer City Community Garden Expanded
+news_source_event_cosmetic_garden_desc_v0,Lower Level residents have expanded their community garden with a few new plots for growing basic vegetables. The development is unlikely to affect Food prices.
+news_source_event_cosmetic_garden_desc_v1,Outer City residents have expanded their community garden with a few new plots for growing basic vegetables. The development is unlikely to affect Food prices.
+news_text_event_cosmetic_garden_desc,Outer City residents have added a few vegetable plots to their community garden. Food prices are unlikely to change.
+news_source_event_cosmetic_art_contest_news_v0,Mid-Level Art Contest Held
+news_text_event_cosmetic_art_contest_news,Middle City Holds a Craft Contest
+news_source_event_cosmetic_art_contest_desc_v0,"An art contest held in a mid-level community center invited residents to submit their creations, with the best entries to be displayed in public spaces for a week."
+news_text_event_cosmetic_art_contest_desc,A Middle City community hall is inviting residents to submit their work. Selected pieces will be displayed publicly for one week.
+news_source_event_cosmetic_cultural_news_v0,Cultural Celebration in Upper Levels
+news_source_event_cosmetic_cultural_news_v1,Cultural Celebration in Inner City
+news_text_event_cosmetic_cultural_news,A Cultural Gathering in the Inner City
+news_source_event_cosmetic_cultural_desc_v0,"An Upper Level cultural group is holding a small celebration featuring traditional performances, music, and food. The event will be mostly attended by Upper Level residents and have little impact on the market."
+news_source_event_cosmetic_cultural_desc_v1,"An Inner City cultural group is holding a small celebration featuring traditional performances, music, and food. The event will be mostly attended by Inner City residents and have little impact on the market."
+news_text_event_cosmetic_cultural_desc,"A small Inner City gathering offers traditional performances, music and food. Most guests are local residents, and little effect on markets is expected."
+news_source_event_cosmetic_spacewalk_news_v0,Routine Spacewalk Training Exercise
+news_text_event_cosmetic_spacewalk_news,Routine Work Beyond the Walls Completed
+news_source_event_cosmetic_spacewalk_desc_v0,"A routine spacewalk training exercise for station technicians has been successfully completed with no disruptions to station activities. One man from the Lower Levels is reportedly being treated for shock, after mistaking a spacewalker for an alien."
+news_source_event_cosmetic_spacewalk_desc_v1,"A routine spacewalk training exercise for station technicians has been successfully completed with no disruptions to station activities. One man from the Outer City is reportedly being treated for shock, after mistaking a spacewalker for an alien."
+news_text_event_cosmetic_spacewalk_desc,City technicians have completed a routine training exercise beyond the walls without disrupting daily supplies. An Outer City man reportedly mistook them for outsiders and is receiving treatment after a severe fright.
+news_source_event_normal_nutrifruit_harvest_news_v0,Massive Nutrifruit Farm Harvest Season
+news_text_event_normal_nutrifruit_harvest_news,Middle City Nutrifruit Harvest Arrives
+news_source_event_normal_nutrifruit_harvest_desc_v0,A large Mid-Level farm is harvesting its Nutrifruit crop. Expect fresh Nutrifruit and lower Food prices for a while.
+news_text_event_normal_nutrifruit_harvest_desc,A large Middle City farm is harvesting Nutrifruit. Fresh produce is expected to reach the market and bring food prices down for a short time.
+news_source_event_normal_bad_harvest_news_v0,Poor Nutrifruit Harvest Devastates
+news_text_event_normal_bad_harvest_news,Outer City Nutrifruit Harvest Fails
+news_source_event_normal_bad_harvest_desc_v0,"A Lower Level Nutrifruit farm has had a terrible season, with crops failing due to lack of proper resources and maintenance. Expect higher Food prices and a shortage of fresh produce for a while."
+news_source_event_normal_bad_harvest_desc_v1,"A Outer City Nutrifruit farm has had a terrible season, with crops failing due to lack of proper resources and maintenance. Expect higher Food prices and a shortage of fresh produce for a while."
+news_text_event_normal_bad_harvest_desc,An Outer City Nutrifruit crop has withered through inadequate supplies and care. Fresh produce will be scarce and food prices are expected to rise temporarily.
+news_source_event_normal_seed_heist_news_v0,Nutrifruit Seed Heist!
+news_text_event_normal_seed_heist_news,Nutrifruit Seeds Stolen Overnight
+news_source_event_normal_seed_heist_desc_v0,Nutrifruit seeds from hydroponic farm storage have vanished overnight in a daring theft. Both Food and Seed costs are expected to rise sharply across the station.
+news_source_event_normal_seed_heist_desc_v1,Nutrifruit seeds from hydroponic farm storage have vanished overnight in a daring theft. Both Food and Seed costs are expected to rise sharply across the city.
+news_text_event_normal_seed_heist_desc,Nutrifruit seeds have been stolen from a hydroponic farm warehouse. Food and seed prices throughout the city are expected to rise sharply.
+news_source_event_normal_counterfeit_med_news_v0,Counterfeit Medical Supplies Discovered!
+news_text_event_normal_counterfeit_med_news,Counterfeit Medical Supplies Discovered
+news_source_event_normal_counterfeit_med_desc_v0,A large quantity of counterfeit medical goods have been discovered across various clinics and hospitals. Demand for genuine medical supplies is expected to surge.
+news_text_event_normal_counterfeit_med_desc,Several clinics have discovered large quantities of counterfeit medical supplies. Demand for genuine medical goods is expected to surge.
+news_source_event_normal_water_breakdown_news_v0,Breakdown At Treatment Plant Threatens Water Supply
+news_text_event_normal_water_breakdown_news,Central Waterworks Pump Fails
+news_source_event_normal_water_breakdown_desc_v0,"A pump failure at the central Water Treatment Plant is causing major disruption to the water supply. Security has appealed for calm, as market experts anticipate prices for Water and Water Purification Supplies to soar over the next few days."
+news_text_event_normal_water_breakdown_desc,A pump failure at the central waterworks is seriously disrupting supplies. The City Watch urges calm; water and purification goods are expected to become much more expensive over the next few days.
+news_source_event_normal_water_maintenance_news_v0,Scheduled Maintenance To Proceed At Water Treatment Plant
+news_text_event_normal_water_maintenance_news,Scheduled Waterworks Maintenance
+news_source_event_normal_water_maintenance_desc_v0,"Routine maintenance at the central Water Treatment Plant will proceed on schedule, Security has announced. Disruptions to the pipeline are expected to be limited."
+news_text_event_normal_water_maintenance_desc,The City Watch announces scheduled maintenance at the central waterworks. Only limited disruption to the water pipes is expected.
+news_source_event_normal_ice_asteroid_news_v0,Miners Return from Ice Asteroid!
+news_text_event_normal_ice_asteroid_news,Ice Gatherers Return from the Distant Mines
+news_source_event_normal_ice_asteroid_desc_v0,"One of our brave mining crews have returned from a successful expedition to the ice-rich asteroid known as ""Beira 41-A"". Their return is expected to result in an influx of High Quality Water, and lower prices as a result."
+news_text_event_normal_ice_asteroid_desc,"An ice-gathering expedition has returned safely from the ice-rich Bella 41-A mining region. Supplies of high-quality water are expected to increase, bringing water prices down."
+news_source_event_normal_mob_justice_news_v0,Mob Justice in the Lower Levels!
+news_source_event_normal_mob_justice_news_v1,Mob Justice in the Outer City!
+news_text_event_normal_mob_justice_news,Outer City Crowd Takes Justice into Its Own Hands
+news_source_event_normal_mob_justice_desc_v0,"Fed up with a dishonest shopkeeper, citizens in the Lower Levels are taking justice into their own hands. Station Security have appealed for calm."
+news_source_event_normal_mob_justice_desc_v1,"Fed up with a dishonest shopkeeper, citizens in the Outer City are taking justice into their own hands. Station Security have appealed for calm."
+news_text_event_normal_mob_justice_desc,Outer City residents have taken vigilante action against a merchant they could no longer tolerate. The City Watch has appealed for calm.
+news_source_event_normal_storeroom_news_v0,Hidden Storeroom Excavated!
+news_text_event_normal_storeroom_news,Salvagers Discover a Hidden Storeroom
+news_source_event_normal_storeroom_desc_v0,A group of scavengers in the Lower Levels have stumbled upon a hidden room packed with household items. A high volume of goods making their way to market will likely lower prices today.
+news_source_event_normal_storeroom_desc_v1,A group of scavengers in the Outer City have stumbled upon a hidden room packed with household items. A high volume of goods making their way to market will likely lower prices today.
+news_text_event_normal_storeroom_desc,Outer City salvagers have found a hidden room packed with household goods. The influx is likely to lower prices today.
+news_source_event_normal_mining_return_news_v0,Mining Expedition Returns
+news_text_event_normal_mining_return_news,Mining Expedition Returns
+news_source_event_normal_mining_return_desc_v0,A cohort of miners have returned from an expedition to a mineral-rich asteroid. Material prices are expected to fall for a while.
+news_text_event_normal_mining_return_desc,A mining expedition has returned from a rich distant mining region. Material prices are expected to fall for a short time.
+news_source_event_normal_construction_news_v0,Construction Projects
+news_text_event_normal_construction_news,Building Projects Begin Across the Outer City
+news_source_event_normal_construction_desc_v0,Various new construction projects are springing up across the Lower Levels. Construction materials and skilled labourers are likely to be in shorter supply.
+news_source_event_normal_construction_desc_v1,Various new construction projects are springing up across the Outer City. Construction materials and skilled labourers are likely to be in shorter supply.
+news_text_event_normal_construction_desc,New building projects are beginning throughout the Outer City. Construction materials and skilled workers may become scarce.
+news_source_event_normal_meteor_shower_news_v0,Meteor Shower
+news_text_event_normal_meteor_shower_news,Falling Meteors Damage the City
+news_source_event_normal_meteor_shower_desc_v0,"A meteor shower struck the station last night, causing damage and breaches across multiple sectors. The Lower Levels, lacking a reinforced hull, suffered the most — expect material prices to rise."
+news_source_event_normal_meteor_shower_desc_v1,"A meteor shower struck the city last night, causing damage and breaches across multiple sectors. The Outer City, lacking a reinforced hull, suffered the most — expect material prices to rise."
+news_text_event_normal_meteor_shower_desc,"Falling meteors damaged several parts of the city last night. The less-reinforced buildings of the Outer City suffered most, and material prices are expected to rise."
+news_source_event_normal_power_shortage_news_v0,Low Power In The Lower Levels
+news_source_event_normal_power_shortage_news_v1,Low Power In The Outer City
+news_text_event_normal_power_shortage_news,Outer City Power Mechanism Fails
+news_source_event_normal_power_shortage_desc_v0,A faulty power generator has caused a power outage in the Lower Levels. Expect a shortage of energy cells while repairs are underway.
+news_source_event_normal_power_shortage_desc_v1,A faulty power generator has caused a power outage in the Outer City. Expect a shortage of energy cells while repairs are underway.
+news_text_event_normal_power_shortage_desc,A generator failure has cut power to the Outer City. Charged cells are expected to be scarce during repairs.
+news_source_event_normal_power_maintenance_news_v0,Scheduled Power Plant Maintenance
+news_text_event_normal_power_maintenance_news,Scheduled Outer City Power Maintenance
+news_source_event_normal_power_maintenance_desc_v0,Routine maintenance has begun on one of the main power plants in the Lower Levels. Citizens have been told to expect minor disruptions to the power supply throughout the scheduled period.
+news_source_event_normal_power_maintenance_desc_v1,Routine maintenance has begun on one of the main power plants in the Outer City. Citizens have been told to expect minor disruptions to the power supply throughout the scheduled period.
+news_text_event_normal_power_maintenance_desc,A major Outer City power workshop has begun routine maintenance. Residents have been warned to expect minor interruptions.
+news_source_event_normal_blackout_news_v0,Who Turned Out The Lights?
+news_text_event_normal_blackout_news,Citywide Blackout
+news_source_event_normal_blackout_desc_v0,A catastrophic failure in the central power grid has plunged the entire Station into darkness. Expect a surge in demand for energy cells and power-related products.
+news_text_event_normal_blackout_desc,A catastrophic failure of the central power network has left the city in darkness. Demand for charged cells and other power-related goods is expected to surge.
+news_source_event_normal_cruise_ship_news_v0,Which Way To The Pool?
+news_text_event_normal_cruise_ship_news,Passenger Ship Brings Visitors to the City
+news_source_event_normal_cruise_ship_desc_v0,"A cruise ship has docked in the Upper Levels, unloading a wave of tourists. It is expected that some curious visitors may even wander down to the Lower Levels. Station Security has appealed for citizens to be respectful during the visit."
+news_source_event_normal_cruise_ship_desc_v1,"A cruise ship has docked in the Inner City, unloading a wave of tourists. It is expected that some curious visitors may even wander down to the Outer City. Station Security has appealed for citizens to be respectful during the visit."
+news_text_event_normal_cruise_ship_desc,"A passenger ship has docked in the Inner City, bringing a wave of visitors. Some may venture into the Outer City. The City Watch asks residents to treat them respectfully."
+news_source_event_normal_oxymore_news_v0,Oxymore Addiction On The Rise
+news_text_event_normal_oxymore_news,Oxymore Abuse Increases
+news_source_event_normal_oxymore_desc_v0,"A sharp increase in Oxymore use has been reported across the Station, with clinics seeing a surge in addiction and overdose cases. Expect rising demand for medical supplies and treatment services."
+news_source_event_normal_oxymore_desc_v1,"A sharp increase in Oxymore use has been reported across the city, with clinics seeing a surge in addiction and overdose cases. Expect rising demand for medical supplies and treatment services."
+news_text_event_normal_oxymore_desc,"Oxymore use has risen sharply across the city, along with clinic cases of addiction and overdose. Demand for medical supplies and treatment is expected to increase."
+news_source_event_serpico_dead_news_v0,Security Officer Found Dead in the Dumping Ground
+news_text_event_serpico_dead_news,Security Officer Found Dead in the Dumping Ground
+news_source_event_serpico_dead_desc_v0,"Cadet Serpico, who was under investigation on corruption charges, was found dead in the Dumping Ground. The Security Department has given no further details at this time."
+news_source_event_serpico_dead_desc_v1,"Cadet Serpico, who was under investigation on corruption charges, was found dead in the Dumping Ground. The City Watch has given no further details at this time."
+news_text_event_serpico_dead_desc,"Cadet Serpico, who was under investigation on corruption charges, was found dead in the Dumping Ground. The City Watch has given no further details at this time."
+news_source_event_serpico_rev_news_v0,Security Corruption Exposed
+news_text_event_serpico_rev_news,Security Corruption Exposed
+news_source_event_serpico_rev_desc_v0,Documents exposing corruption inside Station Security have been published across the station. Several low-ranking officers now face criminal charges. No high-ranking officer has faced any consequence.
+news_source_event_serpico_rev_desc_v1,Documents exposing corruption inside Station Security have been published across the city. Several low-ranking officers now face criminal charges. No high-ranking officer has faced any consequence.
+news_text_event_serpico_rev_desc,Documents exposing corruption inside Station Security have been published across the city. Several low-ranking officers now face criminal charges. No high-ranking officer has faced any consequence.
+news_source_event_serpico_sec_news_v0,Corruption Charges Reach Security Leadership
+news_text_event_serpico_sec_news,Corruption Charges Reach Security Leadership
+news_source_event_serpico_sec_desc_v0,Evidence handed to a senior officer has led to criminal charges against Security officers of every rank. A new anti-corruption task force has been formed.
+news_text_event_serpico_sec_desc,Evidence handed to a senior officer has led to criminal charges against Security officers of every rank. A new anti-corruption task force has been formed.
+news_source_event_lou_admiral_news_v0,High-Ranking Visiting Admiral Assassinated!
+news_text_event_lou_admiral_news,High-Ranking Visiting Admiral Assassinated!
+news_source_event_lou_admiral_desc_v0,"A visiting Republic admiral and his escort were gunned down near the docking bays last night. Witnesses say the shooter, a blonde woman in a stolen Security uniform, walked right up to the admiral's party before opening fire. Officers on the scene hit her several times, but she escaped, and no trace of her has been found."
+news_source_event_lou_admiral_desc_v1,"A visiting Distant Court admiral and his escort were gunned down near the docking bays last night. Witnesses say the shooter, a blonde woman in a stolen Security uniform, walked right up to the admiral's party before opening fire. Officers on the scene hit her several times, but she escaped, and no trace of her has been found."
+news_text_event_lou_admiral_desc,"A visiting Distant Court admiral and his escort were gunned down near the docking bays last night. Witnesses say the shooter, a blonde woman in a stolen Security uniform, walked right up to the admiral's party before opening fire. Officers on the scene hit her several times, but she escaped, and no trace of her has been found."
+news_source_event_eleanor_leak_news_v0,pastel's Nutrifruit Secret Leaked!
+news_text_event_eleanor_leak_news,Pastel Trading House's Nutrifruit Secret Leaked!
+news_source_event_eleanor_leak_desc_v0,"A research paper has been published showing how to make standard Nutrifruit grow seeds again. Biohackers across the station are already growing the new strain, and seed prices have collapsed. The same morning, the former director of the station's largest hydroponics farm, jailed for embezzlement, was found dead in her cell. pastel has declined to comment."
+news_source_event_eleanor_leak_desc_v1,"A research paper has been published showing how to make standard Nutrifruit grow seeds again. Biohackers across the city are already growing the new strain, and seed prices have collapsed. The same morning, the former director of the city's largest hydroponics farm, jailed for embezzlement, was found dead in her cell. pastel has declined to comment."
+news_text_event_eleanor_leak_desc,"A research paper has been published showing how to make standard Nutrifruit grow seeds again. Biohackers across the city are already growing the new strain, and seed prices have collapsed. The same morning, the former director of the city's largest hydroponics farm, jailed for embezzlement, was found dead in her cell. Pastel Trading House has declined to comment."
+news_source_event_lou_warehouse_news_v0,Shootout in the Lower Levels
+news_source_event_lou_warehouse_news_v1,Shootout in the Outer City
+news_text_event_lou_warehouse_news,Shootout in the Outer City
+news_source_event_lou_warehouse_desc_v0,"Residents of the Lower Levels reported sustained gunfire from an abandoned warehouse in the old freight district last night. Security found the building rigged with tripwires and, inside, the bodies of several heavily armed individuals in plain clothes, none carrying station identification. Nobody has come forward to claim them."
+news_source_event_lou_warehouse_desc_v1,"Residents of the Outer City reported sustained gunfire from an abandoned warehouse in the old freight district last night. Security found the building rigged with tripwires and, inside, the bodies of several heavily armed individuals in plain clothes, none carrying station identification. Nobody has come forward to claim them."
+news_text_event_lou_warehouse_desc,"Residents of the Outer City reported sustained gunfire from an abandoned warehouse in the old freight district last night. Security found the building rigged with tripwires and, inside, the bodies of several heavily armed individuals in plain clothes, none carrying station identification. Nobody has come forward to claim them."
+remainder_UI_ui_newspaper_title,City Daily
+remainder_UI_ui_newspaper_subtitle,Daily News
+organization_corpo_name_pastel,Pastel Trading House
+organization_corpo_name_carmicheal,Kangji Apothecary
+organization_corpo_name_davre,Dafeng Food Workshop
+organization_corpo_name_mnsl,Huitong Guild
+organization_corpo_name_eminence,Eminence Mechanism House
+organization_corpo_name_eninence,Eninence Mechanism House
+organization_corpo_name_republic,Court Design Office XIII
+organization_corpo_name_republic_navy,Court Navy
+organization_corpo_name_neural,Spiritual Awareness Order
+organization_corpo_name_watch,Spiritual Watch
+organization_corpo_name_front,Commonweal Society
+organization_corpo_name_sokolov,Suo Machinery Workshop
+organization_corpo_name_vision,One Vision Workshop
+organization_corpo_name_zhonghua,Zhonghua Shipyard
+organization_corpo_name_spacer,Far Traveller
+organization_corpo_name_meridian,Meridian Arms Workshop
+organization_corpo_name_echelon,Echelon Equipment Workshop
+organization_corpo_name_blueshield,Blue Shield Armoury
+organization_corpo_name_frontier,Frontier Armoury
+organization_corpo_name_ashvins,Jisheng Apothecary
+organization_corpo_name_solana,Xiangyang Workshop
+daily_service_power,Mechanism Supply
+daily_service_janitorial,Shop Sweeping
+daily_service_insurance,Theft Indemnity
+daily_service_cartel,Guild Protection
+daily_service_inspection,Inspection Informant
+daily_service_buy_referral,Buyer Introduction
+daily_service_sell_referral,Seller Introduction
+daily_service_criminal_network,Contraband Buyer Introduction
+daily_service_fixer,Qiao Wangchuan’s Fixers
+daily_service_fixer2,Qiao Wangchuan’s Fixers II
+daily_service_fixer3,Qiao Wangchuan’s Fixers III
+daily_service_converter,Energy Conversion
+daily_service_debris,Debris Removal
+daily_service_butcher,Hunt the Butcher
+daily_service_smuggler,Rare Mechanism Smuggler
+remainder_UI_ui_end_of_day,Closing Accounts
+remainder_UI_ui_endofday_info,Choose tonight’s shop services before closing.
+remainder_UI_ui_info_service_power,"Pay for mechanism supply to keep the shop lights and connected equipment running. Without payment, the lights dim and only equipment powered by energy cells can operate."
+remainder_UI_ui_info_service_insurance,Pay the theft indemnity fee to have any items stolen overnight returned the next morning.
+remainder_UI_ui_info_service_janitorial,Hire sweepers to empty the waste basket and clean the shopfront. Skipping several days lowers shop appeal; vandalism increases the cleaning charge.
+remainder_Mechanic_mech_nightlog_power_off,Mechanism supply was cut off because its fee was unpaid. Only dim emergency lighting remains.
+remainder_Mechanic_mech_nightlog_power_on,The mechanism supply fee has been paid.
+remainder_Mechanic_mech_nightlog_insurance_unpaid,The theft indemnity is inactive. You have been without coverage for {0} days.
+remainder_Mechanic_mech_nightlog_insurance_paid,The theft indemnity fee has been paid; your goods are covered.
+remainder_Mechanic_mech_nightlog_storefront_clean,The shopfront has been swept and the waste cleared.
+remainder_Mechanic_mech_nightlog_vandalism_cleaned,"The sweepers have cleared up the vandalism, making the shop welcoming again."
+remainder_Mechanic_mech_nightlog_cartel_protection,Guild protection is active; thieves will not raid the shop.
+remainder_Mechanic_mech_nightlog_blackout_bypassed,"The city supply failed, but the tapped supply keeps your shop running."
+remainder_Mechanic_mech_nightlog_blackout_active,The city supply has failed. Only dim emergency lighting remains.
+remainder_Mechanic_mech_nightlog_fixer_used,Qiao Wangchuan’s fixers silenced witnesses and cleared evidence last night. Your criminal suspicion has decreased.
+remainder_Mechanic_mech_nightlog_buyer_referral,Qiao Wangchuan has introduced a buyer who will visit your shop tomorrow.
+remainder_Mechanic_mech_nightlog_seller_referral,Qiao Wangchuan has introduced a seller who will visit your shop tomorrow.
+remainder_Mechanic_mech_nightlog_criminal_network,"Qiao Wangchuan has introduced a contraband buyer with a generous budget, who will visit your shop tomorrow."
+remainder_NetworkUpgrade_network_BREWER_desc,"Qiao Wangchuan will introduce you to the sales representative of the Red Imp Brewery, allowing you immediate and consistent access to their beer supply. A business card will be given to you to contact this supplier."
+remainder_NetworkUpgrade_network_MINER_desc,"Qiao Wangchuan will introduce you to the leader of GP Mining Coop, who will allow you to order large amounts of mineral ores. A business card will be given to you to contact this supplier."
+remainder_NetworkUpgrade_network_LANDLORD_GRACE_desc,"Qiao Wangchuan will convince the Landlord that if you missed a rent payment, it's acceptable to pay the missing rent together with the next week's rent. This is a one time favor."
+remainder_NetworkUpgrade_network_SEC_GRACE_desc,"Qiao Wangchuan will use his political influence to ensure that if a Security Inspector finds contraband that would normally result in imprisonment, you will instead be let off with a warning. This is a one time favor."
+remainder_NetworkUpgrade_network_SEC_GRACE_already_bought,Qiao Wangchuan has already performed this favor for you.
+remainder_NetworkUpgrade_network_WILD_FIXER_title,Qiao Wangchuan's Fixers
+remainder_NetworkUpgrade_network_WILD_FIXER_desc,"Qiao Wangchuan will allow you to hire his fixers. As long as you pay a nightly fee, the fixers will silence witnesses and clean up evidence not yet collected by Security, lowering your suspected crime level at an increased rate."
+remainder_NetworkUpgrade_network_EVIDENCE_REMOVAL_desc,Qiao Wangchuan will order his security contacts to destroy all collected evidence and tamper with any ongoing investigation against you. This favor has a cooldown of {0} days.
+remainder_NetworkUpgrade_network_BUY_REFERAL_desc,"Qiao Wangchuan will agree to refer buyers from his network to your Store, if a nightly fee is paid. Additionally, more customers will be attracted to items in the display case."
+remainder_NetworkUpgrade_network_SELL_REFERAL_desc,"Qiao Wangchuan will agree to refer sellers from his network to your Store, if a nightly fee is paid."
+remainder_NetworkUpgrade_network_CRIMINEL_NETWORK_desc,"Qiao Wangchuan will agree to refer high-budget contraband buyers from his network to your Store, if a nightly fee is paid. Using this service also grants you a small amount of Black Market reputation ({0} days cooldown)"
+remainder_NetworkUpgrade_network_GUTTERFLOW_TAP_desc,"Qiao Wangchuan will connect your water line to a sewer, allowing you access to unlimited Gutterflow. The purity of the water changes every day."
+remainder_NetworkUpgrade_network_RUSTWATER_TAP_desc,"Qiao Wangchuan will connect your water line to an industrial discharge pipe, allowing you access to unlimited Rustwater. The purity of the water changes every day."
+remainder_NetworkUpgrade_network_GUN_PERMIT_III_desc,"Qiao Wangchuan will negotiate on your behalf to secure you a weapon permit usually reserved for Station Security Quartermasters, allowing you to legally trade high level contraband firearms and ammunition. The permit will only be delivered after reaching at least {0} Security Reputation."
+remainder_NetworkUpgrade_network_MARKETPLACE_REQUESTS_desc,"Qiao Wangchuan will connect you with the Marketplace Request network, allowing you to browse and fulfill various requests from buyers. Rewards for requested items are usually higher than regular market value."
+remainder_NetworkUpgrade_network_JACKSON1_desc,"Qiao Wangchuan will convince Dr. Jackson to accept a small investment from you, permanently increasing his budget, and the available stock when visiting him. Dr. Jackson will always have Modules in stock."
+remainder_NetworkUpgrade_network_JACKSON2_desc,"Qiao Wangchuan will convince Dr. Jackson to accept another investment from you, permanently increasing his budget, and the available stock when visiting him. Dr. Jackson will always have additional Modules in stock."
+remainder_NetworkUpgrade_network_RENOVATION1_desc,"Qiao Wangchuan will hire contractors to make modest renovations to the Store, improving its base attractiveness by {0} points."
+remainder_NetworkUpgrade_network_RENOVATION2_desc,"Qiao Wangchuan will hire contractors to make substantial renovations to the Store, improving its base attractiveness by another {0} points."
+remainder_NetworkUpgrade_network_RENOVATION3_desc,"Qiao Wangchuan will hire contractors to make transformative renovations to the Store, improving its base attractiveness by another {0} points."
+remainder_NetworkUpgrade_network_RETIRED_RANCHER_desc,Qiao Wangchuan will refer you to a Rat Rancher who will visit you once a week. Immediately receive a Rat Ranching Starter Kit. (Unlock Rancher Content)
+remainder_NetworkUpgrade_network_AQUACULTURE_desc,"Qiao Wangchuan will refer you to a retired aquafarmer who will visit you once a week, selling fish farming equipment and fertilized roe. Immediately receive an Aquaculture Starter Kit. (Unlocks Aquaculture Content.)"
+remainder_NetworkUpgrade_network_ENDORSEMENT1_title,Qiao Wangchuan's Endorsement I
+remainder_NetworkUpgrade_network_ENDORSEMENT2_title,Qiao Wangchuan's Endorsement II
+remainder_NetworkUpgrade_network_ENDORSEMENT3_title,Qiao Wangchuan's Endorsement III
+remainder_NetworkUpgrade_network_WILD_FIXER2_title,Qiao Wangchuan's Fixers II
+remainder_NetworkUpgrade_network_WILD_FIXER2_desc,"Qiao Wangchuan assigns you his more experienced fixers. They clear evidence faster, so your suspected crime level drops more each night. The nightly fee increases."
+remainder_NetworkUpgrade_network_WILD_FIXER3_title,Qiao Wangchuan's Fixers III
+remainder_NetworkUpgrade_network_WILD_FIXER3_desc,"Qiao Wangchuan puts his best crew on your store. Witnesses forget, evidence disappears, and your suspected crime level drops even faster each night. The nightly fee increases."
+remainder_NetworkUpgrade_network_POWER_HIJACK2_desc,Qiao Wangchuan's crew splices a bigger solar array into your line. It now carries part of your Current Converters' load: they cost {0}% less to run.
+remainder_NetworkUpgrade_network_POWER_HIJACK3_desc,Qiao Wangchuan's crew taps a whole rooftop of panels for you. Your Current Converters now cost {0}% less to run in total.
+remainder_UI_inte_wild_network,Qiao Wangchuan’s Contacts
+remainder_UI_network_ui_available_credit,Funds {0}
+remainder_UI_network_ui_wild_favor,Qiao’s Favor {0}
+remainder_UI_network_ui_tab_basic,Contacts
+remainder_UI_network_ui_cost,Cost {0}
+assassin_merchant,Travelling Merchant
+assassin_guard,Jin Garrison Guard
+assassin_food_1,"Shopkeeper, do you have any food that will keep a few days? I came through the gate this morning."
+assassin_food_2,I can spend {0}. Wrap up what you have. I may be staying here a while.
+assassin_notice_1,A garrison supply wagon was hit last night. We are handing this notice to every shop on the street.
+assassin_notice_2,"Read this. If the man comes in, or you see the garrison seal on any goods, tell the gate guard."
+assassin_notice_full,There is no room on your counter. Clear a space for the notice and I will come back tomorrow.
+assassin_notice_title,Wanted Notice from the Jin Garrison
+assassin_notice_body,A man posing as a travelling merchant is wanted in connection with an attack on a Jin supply wagon. He wears a dark travelling coat and speaks with a Song accent. Shopkeepers who see him or find goods bearing the garrison seal should inform the gate guard.
+assassin_loot_full,You remember me. The food you sold me kept me off the streets long enough to learn their route. I got away with these fittings.
+assassin_loot_small,You remember me. I had to move before I knew their route. I barely got away with this fitting.
+assassin_loot_reason,"Yes, that is the Jin garrison seal. Their quartermaster burned our crossing. My brother was there."
+assassin_loot_price,The lot on your counter comes to {0}. I need the money to find someone who knows the quartermaster's movements.
+assassin_loot_no_room,There is no room on the counter. I will take the goods with me.
+assassin_weapon_informant,The money bought me a word from a stable hand. I know where the quartermaster will pass.
+assassin_weapon_alone,I came up short. No one would tell me his route. I'll have to follow him myself.
+assassin_weapon_request,I'm going after the man who burned the crossing. I have {0} for weapons. Will you sell to me?
+assassin_weapon_continue,[Continue trading]
+assassin_weapon_report,[Report him to the Jin garrison]
+assassin_weapon_report_response,So the soldiers at the door are here for me. Tell them my name is Shen Li.
+assassin_medicine_killed,The quartermaster is dead. One of his guards got me in the side. They are closing the gates.
+assassin_medicine_survived,The quartermaster got away. His guards struck me before I could reach him. They are searching the streets.
+assassin_medicine_request,I've {0} left for dressings and medicine. I have to stop the bleeding before I try the gate.
+assassin_news_kill_escape_title,Jin Quartermaster Killed; Assailant Escapes
+assassin_news_kill_escape_body,The Jin quartermaster was killed last night. The garrison sealed the gates and searched until dawn. A messenger later told the pawnshop that the man from the river crossing had made it out safely.
+assassin_news_kill_caught_title,Jin Quartermaster Killed; Shen Li Captured
+assassin_news_kill_caught_body,"The Jin quartermaster was killed. Soldiers found a wounded man near the gate. The garrison named him as Shen Li, from the Song district of the burned crossing. He was taken to the military jail."
+assassin_news_survive_escape_title,Quartermaster Survives; Assailant Leaves the City
+assassin_news_survive_escape_body,"The quartermaster escaped with his guards and has doubled his escort. The wounded assailant left the city, sending word to the pawnshop that the debt at the crossing was still unpaid."
+assassin_news_survive_caught_title,Attack Foiled; Garrison Searches Song Households
+assassin_news_survive_caught_body,"The Jin quartermaster survived. The wounded Shen Li was captured and taken to the military jail. The quartermaster ordered searches of Song households, and several porters from the crossing were taken in for questioning."
+assassin_news_reported_title,Tip Leads to Arrest of Shen Li
+assassin_news_reported_body,"Acting on a tip from the city, the garrison arrested Shen Li before the attack. The quartermaster kept his rounds. The notice said Shen Li was jailed for raiding the supply wagon and plotting the attack."
