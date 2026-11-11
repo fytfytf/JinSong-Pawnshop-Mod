@@ -3,10 +3,9 @@
   <ID>jinsong_poc</ID>
   <Name>金宋当铺 · V0.1 首批</Name>
   <Author>JinSong POC</Author>
-  <ModVersion>0.1.2-alpha262</ModVersion>
-  <Description>金宋题材独立 MOD，包含店铺、人物与商品换装，机巧加工、净水、蓄能及通行符筹等原功能，兼容物品详情。启用或停用后重启生效。</Description>
+  <ModVersion>0.1.2-alpha277</ModVersion>
+  <Description>金宋题材独立 MOD，包含店铺、人物与商品换装，以及沈砺和《城门将晓》剧情。《城门将晓》从第 7 天起推进，围城后可触发三种结局。启用或停用后重启生效。</Description>
   <GameVersions><Version>0.46D</Version></GameVersions>
-  <Prerequisites><Mod>item_details</Mod></Prerequisites>
   <Assemblies><Assembly>JinSongPoc.dll</Assembly></Assemblies>
   <Capabilities />
 </Manifest>

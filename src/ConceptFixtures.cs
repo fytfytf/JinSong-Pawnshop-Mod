@@ -42,6 +42,8 @@ namespace JinSongPoc
         private static GameObject memo;
         private static GameObject hiddenClientele;
         private static SpriteRenderer liftedBanner;
+        private static SpriteRenderer cityEmblem;
+        private static CityRules.Ending cityEmblemKind;
         private static GameObject alcoveClose;
 
         private sealed class Fixture
@@ -75,7 +77,7 @@ namespace JinSongPoc
             internal Color OriginalColor;
             internal bool OriginalAutoSize, OriginalOverride;
             internal TextAlignmentOptions OriginalAlignment;
-            internal bool Ledger, Counter;
+            internal bool Ledger, Counter, AmountOnly;
             internal FontStyles OriginalStyle;
             internal bool OriginalEnabled;
             internal Text InkText;
@@ -256,6 +258,65 @@ namespace JinSongPoc
             }
         }
 
+        internal static void RefreshCityEmblem()
+        {
+            if (sceneRoot == null) return;
+            CityRules.Ending ending = CityStory.MorningEmblem();
+            if (cityEmblem != null)
+            {
+                if (cityEmblemKind == ending) return;
+                UnityEngine.Object.Destroy(cityEmblem.gameObject);
+                cityEmblem = null;
+            }
+            if (ending != CityRules.Ending.Song && ending != CityRules.Ending.Commendation) return;
+            bool song = ending == CityRules.Ending.Song;
+            Sprite sprite = song ? CreateSongFlag() : CreateCommendationFlag();
+            if (sprite == null) return;
+            cityEmblemKind = ending;
+            var emblem = new GameObject("JinSong.CityEndingEmblem");
+            emblem.transform.SetParent(sceneRoot, false);
+            // The near flag stands in front of the stall props and behind the window wall.
+            emblem.transform.position = song ? World(543, 84) : World(358, 112) + Vector3.back * .02f;
+            cityEmblem = emblem.AddComponent<SpriteRenderer>();
+            cityEmblem.sprite = sprite;
+            cityEmblem.sortingOrder = song ? 1 : 2;
+        }
+
+        private static Sprite CreateCommendationFlag()
+        {
+            Texture2D texture;
+            if (Mod.Assets == null || !Mod.Assets.Textures.TryGetValue("jin_city_commendation_flag", out texture) || texture == null)
+                return null;
+            return CreateSprite("jinsong_poc.city_commendation_flag", texture.GetPixels32(), texture.width, texture.height,
+                new Vector2(.5f, .5f), Vector4.zero);
+        }
+
+        private static Sprite CreateSongFlag()
+        {
+            const int width = 24, height = 36, scale = 2, inkY = 7;
+            string[] lettering = {
+                "00000100000", "00000010000", "01111111110", "01000000010",
+                "00000100000", "00111111100", "00001110000", "00010101000",
+                "00100100100", "01000100010", "00000100000"
+            };
+            var pixels = new Color32[width * height];
+            int inkX = (width - lettering[0].Length * scale) / 2;
+            for (int y = 0; y < height; y++)
+                for (int x = 0; x < width; x++)
+                {
+                    if (y < 3 || (y < 9 && Math.Abs(x - width / 2) < 9 - y)) continue;
+                    int edge = Math.Min(Math.Min(x, width - 1 - x), Math.Min(y, height - 1 - y));
+                    int tone = (x * 17 + y * 7) % 8;
+                    Color32 color = new Color32((byte)(122 + tone), 42, 31, 255);
+                    if (edge == 1 || y >= height - 2) color = new Color32(153, 109, 56, 255);
+                    int col = x - inkX, row = height - 1 - y - inkY;
+                    if (col >= 0 && col < lettering[0].Length * scale && row >= 0 && row < lettering.Length * scale
+                        && lettering[row / scale][col / scale] == '1') color = new Color32(232, 193, 117, 255);
+                    pixels[y * width + x] = color;
+                }
+            return CreateSprite("jinsong_poc.city_emblem", pixels, width, height, new Vector2(.5f, .5f), Vector4.zero);
+        }
+
         private static void BindHotspots(LoadedMod assets, Transform room, Transform controls)
         {
             ShopHotspots.Bind(room);
@@ -281,7 +342,7 @@ namespace JinSongPoc
             BindHotspot(controls.Find("_MagnifyingWindowCollapsed"), 12);
             BindHotspot(controls.Find("wall_phone"), 13);
             BindHotspot(controls.Find("Recorder"), 14);
-            BindHotspot(controls.Find("transferButton"), 15);
+            BindHotspot(controls.Find("transferButton"), ShopHotspots.StockButtonZone);
             BindHotspot(controls.Find("dismissButton"), 16);
             BindHotspot(room.Find("NutruifruitPoster"), 17);
             BindHotspot(controls.Find("SleepingBag"), 20);
@@ -297,8 +358,7 @@ namespace JinSongPoc
             if (UnifiedInterior.HasCounterLayout)
             {
                 RememberLabel(calendar.dayTMP, ShopHotspots.ToScene(new RectInt(292, 49, 198, 43)), 0.43f, true);
-                // D2: increase the balance by 20% while retaining its center, ink font and currency layer.
-                RememberLabel(cash.creditDisplayText, ShopHotspots.ToScene(new RectInt(765, 577, 144, 24)), 0.86f, true);
+                RememberLabel(cash.creditDisplayText, ShopHotspots.LedgerInk, .94f, ledger: true, amountOnly: true);
             }
             else
             {
@@ -638,13 +698,14 @@ namespace JinSongPoc
         }
 
         private static void RememberLabel(TMP_Text text, RectInt target, float fontRatio = 0.30f,
-            bool ledger = false, bool counter = false)
+            bool ledger = false, bool counter = false, bool amountOnly = false)
         {
             if (text == null) return;
             Labels.Add(new TextSlot { Text = text, Target = target, OriginalAnchor = text.rectTransform.anchoredPosition,
                 OriginalSize = text.rectTransform.sizeDelta, OriginalFont = text.fontSize, FontRatio = fontRatio, OriginalColor = text.color,
                 OriginalAlignment = text.alignment, OriginalAutoSize = text.enableAutoSizing,
-                OriginalOverride = text.overrideColorTags, Ledger = ledger, Counter = counter, OriginalEnabled = text.enabled,
+                OriginalOverride = text.overrideColorTags, Ledger = ledger, Counter = counter, AmountOnly = amountOnly,
+                OriginalEnabled = text.enabled,
                 OriginalStyle = text.fontStyle });
         }
 
@@ -679,7 +740,15 @@ namespace JinSongPoc
             string value = label.Text.text;
             string currency = label.Ledger ? GeneralHelper.CreditIcon(false) : null;
             bool hasCurrency = currency != null && value != null && value.EndsWith(currency, StringComparison.Ordinal);
-            if (hasCurrency) value = value.Substring(0, value.Length - currency.Length);
+            if (hasCurrency) value = value.Substring(0, value.Length - currency.Length).TrimEnd();
+            if (label.AmountOnly)
+            {
+                hasCurrency = false;
+                if (PlayerStore.Instance != null)
+                    value = PlayerStore.Instance.playerCash.ToString(System.Globalization.CultureInfo.InvariantCulture);
+                if (font == null)
+                    font = label.InkText == null ? Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") : label.InkText.font;
+            }
             bool useInk = font != null && !String.IsNullOrEmpty(value);
             if (useInk)
                 foreach (char character in value)
@@ -694,33 +763,17 @@ namespace JinSongPoc
                 rect.offsetMin = rect.offsetMax = Vector2.zero;
                 label.InkText = ink.AddComponent<Text>();
                 label.InkText.font = font;
+                if (label.AmountOnly) label.InkText.fontStyle = FontStyle.Bold;
                 label.InkText.raycastTarget = false;
                 label.InkText.supportRichText = false;
                 label.InkText.alignment = TextAnchor.MiddleCenter;
                 label.InkText.horizontalOverflow = HorizontalWrapMode.Overflow;
                 label.InkText.verticalOverflow = VerticalWrapMode.Overflow;
             }
-            if (label.InkText != null)
-            {
-                label.InkText.enabled = useInk && label.OriginalEnabled;
-                label.InkText.fontSize = Mathf.Max(1, Mathf.RoundToInt(label.Text.fontSize));
-                label.InkText.color = label.Text.color;
-                label.InkText.text = value;
-                if (useInk && (label.Counter || UnifiedInterior.HasCounterLayout))
-                {
-                    float needed = label.InkText.preferredWidth + (hasCurrency ? label.Text.fontSize * 1.3f : 0f);
-                    if (needed > label.Text.rectTransform.rect.width)
-                    {
-                        label.Text.fontSize *= label.Text.rectTransform.rect.width / needed;
-                        label.InkText.fontSize = Mathf.Max(1, Mathf.FloorToInt(label.Text.fontSize));
-                    }
-                }
-                label.InkText.rectTransform.offsetMax = hasCurrency ? new Vector2(-label.Text.fontSize, 0f) : Vector2.zero;
-            }
             if (hasCurrency && useInk && label.Currency == null)
             {
                 GameObject symbol = new GameObject("JinSong.LedgerCurrency", typeof(RectTransform));
-                symbol.transform.SetParent(label.InkText.rectTransform, false);
+                symbol.transform.SetParent(label.Text.rectTransform, false);
                 label.Currency = symbol.AddComponent<TextMeshProUGUI>();
                 label.Currency.font = label.Text.font;
                 label.Currency.spriteAsset = label.Text.spriteAsset;
@@ -728,21 +781,51 @@ namespace JinSongPoc
                 label.Currency.alignment = TextAlignmentOptions.Center;
                 label.Currency.text = currency;
             }
+            float gap = 0f, symbolWidth = 0f;
+            if (label.InkText != null)
+            {
+                label.InkText.enabled = useInk && label.OriginalEnabled;
+                label.InkText.fontSize = Mathf.Max(1, Mathf.RoundToInt(label.Text.fontSize));
+                label.InkText.color = label.Text.color;
+                label.InkText.text = value;
+                MeasureLedgerCurrency(label, hasCurrency && useInk, out gap, out symbolWidth);
+                if (useInk && (label.Counter || UnifiedInterior.HasCounterLayout))
+                {
+                    float available = label.Text.rectTransform.rect.width;
+                    float needed = label.InkText.preferredWidth + gap + symbolWidth;
+                    if (needed > available)
+                    {
+                        label.Text.fontSize *= available / needed;
+                        label.InkText.fontSize = Mathf.Max(1, Mathf.FloorToInt(label.Text.fontSize));
+                        MeasureLedgerCurrency(label, hasCurrency, out gap, out symbolWidth);
+                    }
+                }
+                label.InkText.rectTransform.offsetMax = new Vector2(-gap - symbolWidth, 0f);
+            }
             if (label.Currency != null)
             {
                 label.Currency.enabled = useInk && hasCurrency && label.OriginalEnabled;
                 label.Currency.color = label.Text.color;
-                label.Currency.fontSize = label.Text.fontSize;
-                label.Currency.rectTransform.anchoredPosition = Vector2.right * (label.InkText.preferredWidth + label.Text.fontSize) * 0.5f;
-                label.Currency.rectTransform.sizeDelta = new Vector2(label.Text.fontSize * 2f, label.Text.rectTransform.rect.height);
+                label.Currency.rectTransform.anchoredPosition = new Vector2((label.InkText.preferredWidth + gap) * .5f,
+                    -label.Currency.fontSize * .11f);
+                label.Currency.rectTransform.sizeDelta = new Vector2(symbolWidth + 2f, label.Text.rectTransform.rect.height);
             }
-            if (!useInk && label.Counter)
+            if (!useInk && (label.Counter || hasCurrency))
             {
-                float needed = label.Text.GetPreferredValues(value).x;
+                float needed = label.Text.GetPreferredValues(label.Text.text).x;
                 if (needed > label.Text.rectTransform.rect.width)
                     label.Text.fontSize *= label.Text.rectTransform.rect.width / needed;
             }
             label.Text.enabled = !useInk && label.OriginalEnabled;
+        }
+
+        private static void MeasureLedgerCurrency(TextSlot label, bool shown, out float gap, out float width)
+        {
+            gap = width = 0f;
+            if (!shown || label.Currency == null) return;
+            label.Currency.fontSize = label.InkText.fontSize;
+            gap = label.Currency.fontSize * .14f;
+            width = label.Currency.GetPreferredValues(label.Currency.text).x;
         }
 
         private static void PlaceLabel(TextSlot label)
@@ -750,9 +833,16 @@ namespace JinSongPoc
             if (label.Text == null) return;
             RectTransform rect = label.Text.rectTransform;
             RectTransform parent = rect.parent as RectTransform;
+            Vector3 bottomLeft = World(label.Target.xMin, label.Target.yMax);
+            Vector3 topRight = World(label.Target.xMax, label.Target.yMin);
+            Vector3 paperBottom, paperTop;
+            if (label.AmountOnly && LocationArt.TryWorkshopBalanceArea(out paperBottom, out paperTop))
+            {
+                bottomLeft = paperBottom;
+                topRight = paperTop;
+            }
             Vector2 min, max;
-            if (parent == null || !Project(parent, World(label.Target.xMin, label.Target.yMax), out min)
-                || !Project(parent, World(label.Target.xMax, label.Target.yMin), out max)) return;
+            if (parent == null || !Project(parent, bottomLeft, out min) || !Project(parent, topRight, out max)) return;
             rect.position = parent.TransformPoint((min + max) * 0.5f);
             rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, max.x - min.x);
             rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, max.y - min.y);
@@ -997,6 +1087,8 @@ namespace JinSongPoc
             NativeOutlines.Clear();
             if (memo != null) UnityEngine.Object.Destroy(memo);
             if (liftedBanner != null) UnityEngine.Object.Destroy(liftedBanner.gameObject);
+            if (cityEmblem != null) UnityEngine.Object.Destroy(cityEmblem.gameObject);
+            cityEmblem = null;
             if (alcoveClose != null) UnityEngine.Object.Destroy(alcoveClose);
             alcoveClose = null;
             memo = null;
@@ -1035,6 +1127,7 @@ namespace JinSongPoc
                 label.Text.overrideColorTags = label.OriginalOverride;
                 if (!label.Ledger && !label.Counter) continue;
                 if (label.InkText != null) UnityEngine.Object.Destroy(label.InkText.gameObject);
+                if (label.Currency != null) UnityEngine.Object.Destroy(label.Currency.gameObject);
                 label.Text.enabled = label.OriginalEnabled;
                 label.Text.fontStyle = label.OriginalStyle;
             }

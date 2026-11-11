@@ -23,7 +23,9 @@ namespace JinSongPoc
             ModHook.OnModAssetsLoaded += AssetsLoaded;
             ModHook.OnGameLoadedLate += GameLoaded;
             ModHook.OnGenerateCustomerVeryLate += AssassinStory.Queue;
+            ModHook.OnGenerateCustomerVeryLate += CityStory.Queue;
             ModHook.OnWakingUpLate += AssassinStory.PublishNews;
+            ModHook.OnWakingUpEarly += CityStory.OnMorning;
             SceneManager.sceneLoaded += SceneLoaded;
             host = new GameObject("JinSongPoc.Runtime");
             UnityEngine.Object.DontDestroyOnLoad(host);
@@ -36,7 +38,9 @@ namespace JinSongPoc
             ModHook.OnModAssetsLoaded -= AssetsLoaded;
             ModHook.OnGameLoadedLate -= GameLoaded;
             ModHook.OnGenerateCustomerVeryLate -= AssassinStory.Queue;
+            ModHook.OnGenerateCustomerVeryLate -= CityStory.Queue;
             ModHook.OnWakingUpLate -= AssassinStory.PublishNews;
+            ModHook.OnWakingUpEarly -= CityStory.OnMorning;
             SceneManager.sceneLoaded -= SceneLoaded;
             ShopAudio.Restore();
             DirectShopAudio.Restore();
@@ -46,6 +50,7 @@ namespace JinSongPoc
             ReportedUiSkin.Restore();
             CommonUiArt.Restore();
             SceneActionArt.Restore();
+            CityEndingPresentation.Dispose();
             MapCards.Dispose();
             LocationArt.Restore();
             FixtureText.RestoreGuideTip();
@@ -62,11 +67,7 @@ namespace JinSongPoc
         }
         private static void AssetsLoaded(LoadedMod mod)
         {
-            if (mod.Manifest.ID != Id)
-            {
-                if (mod.Manifest.ID == "item_details") ShopGoods.BindItemDetails();
-                return;
-            }
+            if (mod.Manifest.ID != Id) return;
             Assets = mod;
             Visuals.Load(mod);
             GameLoaded();
@@ -75,14 +76,18 @@ namespace JinSongPoc
         {
             if (mode == LoadSceneMode.Single && scene.buildIndex != 0) MenuBackdrop.Restore();
             Visuals.Apply();
+            if (scene.buildIndex == 0) CommonUiArt.Refresh(true);
+            LocationArt.Apply();
+            ShopMenuSkin.RefreshGuideImages();
             ShopAudio.Apply();
         }
         private static void GameLoaded()
         {
             ShopAudio.Apply();
-            ShopGoods.BindItemDetails();
             if (SceneManager.GetActiveScene().buildIndex == 1) DialoguePresentation.BindCurrent();
             Visuals.Apply();
+            LocationArt.Apply();
+            CommonUiArt.Refresh(true);
         }
         internal static bool Chinese
         {
@@ -120,11 +125,22 @@ namespace JinSongPoc
     public sealed class PresentationDriver : MonoBehaviour
     {
         private float next;
+        private void Start()
+        {
+            if (!Mod.Active || SceneManager.GetActiveScene().buildIndex != 0) return;
+            MenuBackdrop.Apply(Mod.Assets);
+            CommonUiArt.Refresh(true);
+        }
+
         private void Update()
         {
             if (Time.unscaledTime < next) return;
             next = Time.unscaledTime + 0.25f;
-            if (Mod.Active) { Visuals.Apply(); MapCards.Refresh(); LocationArt.Apply(); SerializedLabels.Refresh(); FixtureText.RefreshGuideTip(); ShopMenuSkin.RefreshGuideImages(); PaperText.Refresh(); CommonUiArt.Refresh(); ReportedUiSkin.Refresh(); NpcNames.RefreshSpeakerLabels(); SceneActionArt.RefreshMenu(); }
+            if (Mod.Active)
+            {
+                Visuals.Apply(); MapCards.Refresh(); LocationArt.Apply(); SerializedLabels.Refresh(); FixtureText.RefreshGuideTip(); ShopMenuSkin.RefreshGuideImages(); PaperText.Refresh(); CommonUiArt.Refresh(); ReportedUiSkin.Refresh(); NpcNames.RefreshSpeakerLabels(); SceneActionArt.RefreshMenu();
+                if (SceneManager.GetActiveScene().buildIndex == 1) ConceptFixtures.RefreshCityEmblem();
+            }
         }
         private void LateUpdate()
         {
@@ -657,7 +673,7 @@ namespace JinSongPoc
     [HarmonyPatch(typeof(MapUIManager), "ActivateClientOutsideStore")]
     internal static class OnOutsideClient
     {
-        private static void Postfix() { Visuals.ApplyPortrait(); }
+        private static void Postfix() { LocationArt.Apply(); Visuals.ApplyPortrait(); }
     }
     [HarmonyPatch(typeof(DialogUIManager), "DisplayClientText")]
     internal static class ClientText

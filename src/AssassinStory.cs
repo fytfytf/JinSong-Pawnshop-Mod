@@ -32,20 +32,6 @@ namespace JinSongPoc
 
         private enum Ending { None, KillEscape, KillCaught, SurviveEscape, SurviveCaught, Reported }
 
-        private sealed class Trade
-        {
-            internal bool Arrived;
-            internal long OpeningValue;
-            internal long Paid;
-
-            internal void Record(int price)
-            {
-                if (price > 0) Paid += price;
-            }
-
-            internal bool Passed { get { return OpeningValue > 0 && Paid * 100 >= OpeningValue * 66; } }
-        }
-
         internal static void Queue(StoreClientManager manager)
         {
             PlayerStore store = PlayerStore.Instance;
@@ -123,7 +109,7 @@ namespace JinSongPoc
         private static StoreClient CreateBuyer(string id, int budget, string category, string excluded, Action<bool> settle)
         {
             StoreClient client = CreateClient(id, StoreClient.ClientIntent.BUY);
-            var trade = new Trade { OpeningValue = budget };
+            var trade = new WindowTrade { OpeningValue = budget };
             client.clientBuyingTagList.Add(category);
             if (excluded != null) client.clientBlackTagList.Add(excluded);
             client.SetBudget(budget);
@@ -163,7 +149,7 @@ namespace JinSongPoc
         private static StoreClient CreateLootSeller(bool provisioned)
         {
             StoreClient client = CreateClient(LootClient, StoreClient.ClientIntent.SELL);
-            var trade = new Trade();
+            var trade = new WindowTrade();
             var stock = new HashSet<GameItem>();
             string[] lot = provisioned
                 ? new[] { "system_module_efficiancy", "system_module_quality", "system_module_performance" }

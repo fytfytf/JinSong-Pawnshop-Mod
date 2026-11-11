@@ -30,6 +30,26 @@ namespace JinSongPoc
             Bind(map.scavengingScene, "DumpingGround", "dumping_ground", "dumping_ground");
         }
 
+        internal static bool TryWorkshopBalanceArea(out Vector3 bottomLeft, out Vector3 topRight)
+        {
+            bottomLeft = topRight = Vector3.zero;
+            MapUIManager map = MapUIManager.Instance;
+            if (map == null || !(map.Current is DrJacksonLocation)) return false;
+            foreach (Binding row in Bound)
+            {
+                SpriteRenderer renderer = row.Renderer;
+                if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy || renderer.name != "inventor_scene"
+                    || renderer.sprite != row.Applied) continue;
+                // The paper face in the 960 by 540 workshop backdrop, inset from the edges.
+                Vector3 origin = row.Applied.bounds.min;
+                float unit = 1f / row.Applied.pixelsPerUnit;
+                bottomLeft = renderer.transform.TransformPoint(origin + new Vector3(181, 389, 0) * unit);
+                topRight = renderer.transform.TransformPoint(origin + new Vector3(253, 421, 0) * unit);
+                return true;
+            }
+            return false;
+        }
+
         private static void Bind(GameObject root, string childName, string nativeName, string key)
         {
             if (root == null || root.scene.buildIndex != 1) return;

@@ -86,7 +86,7 @@ namespace JinSongPoc
             state.AppliedColor = tint;
             state.ColorChanged = true;
             painting = true;
-            try { image.color = tint; }
+            try { if (image.color != tint) image.color = tint; }
             finally { painting = false; }
         }
 
@@ -141,9 +141,10 @@ namespace JinSongPoc
 
         private static void Apply(Image image, bool nativeBubble = false)
         {
-            if (painting || !Mod.Active || Mod.Assets == null || image == null) return;
+            if (painting || ReportedUiSkin.Painting || !Mod.Active || image == null) return;
+            if (ReportedUiSkin.OwnsSprite(image)) return;
             int scene = image.gameObject.scene.buildIndex;
-            if (scene != 0 && scene != 1) return;
+            if (scene != 0 && (scene != 1 || Mod.Assets == null)) return;
             State state;
             Images.TryGetValue(image, out state);
             Sprite source = image.overrideSprite;
@@ -179,9 +180,32 @@ namespace JinSongPoc
             TintDecoration(image, state);
         }
 
-        internal static void Refresh()
+        // Hand the original override to a more specific skin before it takes ownership.
+        internal static Sprite NativeSprite(Image image)
         {
-            if (!Mod.Active || Time.unscaledTime < next) return;
+            Sprite current = image.overrideSprite;
+            State state;
+            if (Images.TryGetValue(image, out state) && current == state.Applied)
+                return (state.Base == image.sprite ? state.NativeOverride : null) ?? image.sprite;
+            return current;
+        }
+
+        internal static Sprite Release(Image image)
+        {
+            Sprite current = NativeSprite(image);
+            State state;
+            if (Images.TryGetValue(image, out state))
+            {
+                RestoreColor(image, state);
+                Images.Remove(image);
+            }
+            return current == image.sprite ? null : current;
+        }
+
+        internal static void Refresh(bool force = false)
+        {
+            if (!Mod.Active || (Mod.Assets == null && UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex != 0)
+                || (!force && Time.unscaledTime < next)) return;
             next = Time.unscaledTime + 2f;
             // Initial serialized and newly instantiated UI only; native setter hooks handle state transitions.
             foreach (Image image in UnityEngine.Object.FindObjectsOfType<Image>(true)) Apply(image);
@@ -224,7 +248,7 @@ namespace JinSongPoc
                 DialogUIManager shop = __instance as DialogUIManager;
                 if (shop != null)
                 {
-                    Apply(shop.clientNameBubbleImage, true);
+                    ReportedUiSkin.RefreshSpeech();
                     if (shop.secNameBubble != null) Apply(shop.secNameBubble.GetComponent<Image>(), true);
                 }
                 DialoguePhoneUIManager phone = __instance as DialoguePhoneUIManager;
@@ -247,7 +271,21 @@ namespace JinSongPoc
                 yield return AccessTools.PropertySetter(typeof(Image), "sprite");
                 yield return AccessTools.PropertySetter(typeof(Image), "overrideSprite");
             }
-            private static void Postfix(Image __instance) { Apply(__instance); }
+            private static void Postfix(Image __instance)
+            {
+                if (!painting && !ReportedUiSkin.Painting && !ReportedUiSkin.RefreshChangedImage(__instance))
+                    Apply(__instance);
+            }
+        }
+
+        [HarmonyPatch(typeof(Graphic), "OnEnable")]
+        private static class SerializedImageEnabled
+        {
+            private static void Postfix(Graphic __instance)
+            {
+                Image image = __instance as Image;
+                if (image != null) Apply(image);
+            }
         }
 
         [HarmonyPatch(typeof(Graphic), "set_color")]

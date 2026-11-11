@@ -15,6 +15,11 @@ foreach ($reference in $references) {
 }
 $arguments += Join-Path $projectRoot 'src\JinSongPoc.cs'
 $arguments += Join-Path $projectRoot 'src\AssassinStory.cs'
+$arguments += Join-Path $projectRoot 'src\CityStory.cs'
+$arguments += Join-Path $projectRoot 'src\CityStoryCampaign.cs'
+$arguments += Join-Path $projectRoot 'src\CityEndingPresentation.cs'
+$arguments += Join-Path $projectRoot 'src\CityRules.cs'
+$arguments += Join-Path $projectRoot 'src\WindowTrade.cs'
 $arguments += Join-Path $projectRoot 'src\MenuBackdrop.cs'
 $arguments += Join-Path $projectRoot 'src\MenuBrand.cs'
 $arguments += Join-Path $projectRoot 'src\OrdinaryPortraits.cs'
@@ -69,6 +74,10 @@ foreach ($image in Get-ChildItem -LiteralPath $textureSource -Filter '*.png' -Fi
     # Use the refined originals and retain enough detail for the wanted poster crop.
     $original = [System.Drawing.Bitmap]::new($image.FullName)
     try {
+        if ($original.Width -eq 720 -and $original.Height -eq 528) {
+            Copy-Item -LiteralPath $image.FullName -Destination $target -Force
+            continue
+        }
         $packed = [System.Drawing.Bitmap]::new(720, 528, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
         try {
             $graphics = [System.Drawing.Graphics]::FromImage($packed)

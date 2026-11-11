@@ -106,10 +106,9 @@ namespace JinSongPoc
                         Stamp(painting, fixtures, new Rect(0.51f, 0.607f, 0.472f, 0.257f), ShopHotspots.SideAbacus);
                         Stamp(painting, fixtures, new Rect(0.073f, 0.06f, 0.335f, 0.38f), ShopHotspots.SideScale);
                     }
-                    Texture2D cashbook;
-                    if (assets.Textures.TryGetValue("jin_cash_ledger", out cashbook) && cashbook != null)
-                        Stamp(painting, cashbook, new Rect(0, 0, 1, 1), ShopHotspots.LedgerArt);
-                    else Stamp(painting, fixtures, new Rect(0.023f, 0.575f, 0.46f, 0.33f), ShopHotspots.LedgerArt);
+                    Texture2D wallLedger;
+                    if (assets.Textures.TryGetValue("jin_wall_ledger", out wallLedger) && wallLedger != null)
+                        Stamp(painting, wallLedger, new Rect(0, 0, 1, 1), ShopHotspots.LedgerArt);
                     Stamp(painting, plaque, new Rect(0, 0, 1, 1), ShopHotspots.CalendarArt);
                 }
                 if (hasQueuePaper)

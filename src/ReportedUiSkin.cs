@@ -14,7 +14,8 @@ namespace JinSongPoc
         private sealed class ImageState
         {
             internal Color Native, Applied;
-            internal Sprite Override, AppliedSprite;
+            internal Sprite Base, Override, AppliedSprite;
+            internal WildNetworkFrame Network;
         }
         private sealed class TextState { internal Color Native, Applied; }
         private static readonly Dictionary<Image, ImageState> Images = new Dictionary<Image, ImageState>();
@@ -28,6 +29,46 @@ namespace JinSongPoc
         private static readonly Color NetworkInactive = new Color32(105, 74, 49, 255);
         private static readonly Color NetworkRecommended = new Color32(126, 77, 36, 255);
         private static bool busy;
+        internal static bool Painting { get { return busy; } }
+
+        internal static bool OwnsSprite(Image image)
+        {
+            ImageState state;
+            return Images.TryGetValue(image, out state) && (state.Network != null
+                || (state.AppliedSprite != null && image.overrideSprite == state.AppliedSprite));
+        }
+
+        internal static bool RefreshChangedImage(Image image)
+        {
+            ImageState state;
+            if (!Mod.Active || Mod.Assets == null || image == null || !Images.TryGetValue(image, out state)
+                || state.Network == null || !state.Network.gameObject.activeInHierarchy) return false;
+            busy = true;
+            try { SkinNetworkImage(state.Network, image); }
+            finally { busy = false; }
+            return true;
+        }
+
+        private static Sprite NativeSprite(Image image, ImageState state)
+        {
+            Sprite current = image.overrideSprite;
+            if (state != null && current == state.AppliedSprite)
+                return (state.Base == image.sprite ? state.Override : null) ?? image.sprite;
+            return CommonUiArt.NativeSprite(image);
+        }
+
+        private static void ApplySprite(Image image, ImageState state, Sprite art)
+        {
+            if (image.overrideSprite != state.AppliedSprite || state.Base != image.sprite)
+            {
+                Color previous = image.color;
+                state.Override = image.overrideSprite == state.AppliedSprite ? null : CommonUiArt.Release(image);
+                if (previous != image.color) state.Native = image.color;
+            }
+            state.Base = image.sprite;
+            state.AppliedSprite = art;
+            if (image.overrideSprite != art) image.overrideSprite = art;
+        }
 
         private static bool Foreign(Sprite sprite)
         {
@@ -118,7 +159,7 @@ namespace JinSongPoc
                 ImageState state;
                 if (!Images.TryGetValue(image, out state))
                 {
-                    state = new ImageState { Native = image.color, Override = image.overrideSprite == image.sprite ? null : image.overrideSprite };
+                    state = new ImageState { Native = image.color };
                     Images.Add(image, state);
                 }
                 else if (image.color != state.Applied) state.Native = image.color;
@@ -126,10 +167,7 @@ namespace JinSongPoc
                 Sprite stock = image.sprite;
                 if (stock != null && (stock.name == "tablet" || stock.name == "calendar_stripped" || stock.name == "new_game_bg"))
                 {
-                    if (image.overrideSprite != state.AppliedSprite && state.AppliedSprite != null)
-                        state.Override = image.overrideSprite == stock ? null : image.overrideSprite;
-                    state.AppliedSprite = Panel(stock, profession);
-                    image.overrideSprite = state.AppliedSprite;
+                    ApplySprite(image, state, Panel(stock, profession));
                     color = Color.white;
                 }
                 else if (stock != null && (stock.name == "slot_normal" || stock.name == "slot_selected"
@@ -146,7 +184,8 @@ namespace JinSongPoc
                     else if (image.name == "Border" || image.name == "HeaderRule" || image.name == "LockRule")
                         color = Alpha(Gold, state.Native.a);
                 }
-                state.Applied = color; image.color = color;
+                state.Applied = color;
+                if (image.color != color) image.color = color;
             }
             foreach (TMP_Text text in root.GetComponentsInChildren<TMP_Text>(true))
             {
@@ -162,7 +201,8 @@ namespace JinSongPoc
                     color = Alpha(Paper, state.Native.a);
                 if (profession && text.name == "HeaderTitle") color = Alpha(Paper, state.Native.a);
                 if (text.GetComponentInParent<NewGamePerkTooltip>() != null) color = Alpha(Ink, state.Native.a);
-                state.Applied = color; text.color = color;
+                state.Applied = color;
+                if (text.color != color) text.color = color;
             }
         }
 
@@ -188,63 +228,7 @@ namespace JinSongPoc
         private static void SkinNetwork(WildNetworkFrame frame)
         {
             foreach (Image image in frame.GetComponentsInChildren<Image>(true))
-            {
-                Sprite stock = image.sprite;
-                if (Foreign(stock) || Foreign(image.overrideSprite)) continue;
-                Sprite art = null;
-                Color? tint = null;
-                if (stock != null)
-                {
-                    if (stock == frame.windowFrame) art = NetworkFace(stock, Paper, true);
-                    else if (stock == frame.headerBar)
-                        art = NetworkFace(stock, Wood, true);
-                    else if (stock == frame.cardHeaderPlate)
-                        art = NetworkFace(stock, image.transform.parent.name == "card_recommended" ? NetworkRecommended : Wood, true);
-                    else if (stock == frame.tabNormal)
-                    {
-                        Button tab = image.GetComponent<Button>();
-                        bool selected = tab != null && !tab.interactable;
-                        art = NetworkFace(stock, selected ? NetworkRecommended : Wood, true);
-                    }
-                    else if (stock == frame.tabActive || stock == frame.tabHover)
-                        art = NetworkFace(stock, NetworkInactive, true);
-                    else if (stock == frame.cardPlate) art = NetworkFace(stock, NetworkCard, true);
-                    else if (stock == frame.priceTagNormal) art = NetworkFace(stock, Paper);
-                    else if (stock == frame.slotFrame || stock == frame.slotInset || stock == frame.slotBorderNormal
-                        || stock == frame.connector || stock == frame.scrollThumb || stock == frame.frame2Square)
-                        art = NetworkFace(stock, Gold);
-                    else if (stock == frame.scrollTrack) art = NetworkFace(stock, NetworkCard);
-                }
-                else if (image.name == "icon_bg" || image.name == "UseButton") tint = Wood;
-                else if (image.name == "StatFunds" || image.name == "StatFavor") tint = NetworkCard;
-                else if (image.name == "SeparatorH" || image.name == "SeparatorV" || image.name == "Divider") tint = Gold;
-
-                ImageState state;
-                if (art == null && !tint.HasValue)
-                {
-                    // A native state can replace the normal price or slot frame with a warning or selection sprite.
-                    if (Images.TryGetValue(image, out state) && state.AppliedSprite != null && image.overrideSprite == state.AppliedSprite)
-                    {
-                        image.overrideSprite = state.Override;
-                        if (image.color == state.Applied) image.color = state.Native;
-                        Images.Remove(image);
-                    }
-                    continue;
-                }
-                if (!Images.TryGetValue(image, out state))
-                {
-                    Sprite current = image.overrideSprite;
-                    Sprite originalOverride = current != null && current != stock
-                        && !current.name.StartsWith("jinsong_poc.common.", StringComparison.Ordinal) ? current : null;
-                    Images.Add(image, state = new ImageState { Native = image.color, Override = originalOverride });
-                }
-                else if (image.color != state.Applied) state.Native = image.color;
-                if (art != null && image.overrideSprite != art) image.overrideSprite = art;
-                state.AppliedSprite = art;
-                state.Applied = art != null ? Alpha(Color.white, state.Native.a)
-                    : Alpha(tint.Value, image.name == "StatFunds" || image.name == "StatFavor" ? .9f : state.Native.a);
-                image.color = state.Applied;
-            }
+                SkinNetworkImage(frame, image);
             foreach (TMP_Text text in frame.GetComponentsInChildren<TMP_Text>(true))
             {
                 if (text == frame.infoMessage) continue;
@@ -257,6 +241,64 @@ namespace JinSongPoc
                 }
                 SpeechText(text, light ? Paper : Ink);
             }
+        }
+
+        private static void SkinNetworkImage(WildNetworkFrame frame, Image image)
+        {
+            ImageState state;
+            Images.TryGetValue(image, out state);
+            Sprite stock = NativeSprite(image, state);
+            if (Foreign(image.sprite) || Foreign(stock)) return;
+            Sprite art = null;
+            Color? tint = null;
+            if (stock != null)
+            {
+                if (stock == frame.windowFrame) art = NetworkFace(stock, Paper, true);
+                else if (stock == frame.headerBar)
+                    art = NetworkFace(stock, Wood, true);
+                else if (stock == frame.cardHeaderPlate)
+                    art = NetworkFace(stock, image.transform.parent.name == "card_recommended" ? NetworkRecommended : Wood, true);
+                else if (stock == frame.tabNormal)
+                {
+                    Button tab = image.GetComponent<Button>();
+                    bool selected = tab != null && !tab.interactable;
+                    art = NetworkFace(stock, selected ? NetworkRecommended : Wood, true);
+                }
+                else if (stock == frame.tabActive || stock == frame.tabHover)
+                    art = NetworkFace(stock, NetworkInactive, true);
+                else if (stock == frame.cardPlate) art = NetworkFace(stock, NetworkCard, true);
+                else if (stock == frame.priceTagNormal) art = NetworkFace(stock, Paper);
+                else if (stock == frame.slotFrame || stock == frame.slotInset || stock == frame.slotBorderNormal
+                    || stock == frame.connector || stock == frame.scrollThumb || stock == frame.frame2Square)
+                    art = NetworkFace(stock, Gold);
+                else if (stock == frame.scrollTrack) art = NetworkFace(stock, NetworkCard);
+            }
+            else if (image.name == "icon_bg" || image.name == "UseButton") tint = Wood;
+            else if (image.name == "StatFunds" || image.name == "StatFavor") tint = NetworkCard;
+            else if (image.name == "SeparatorH" || image.name == "SeparatorV" || image.name == "Divider") tint = Gold;
+
+            if (art == null && !tint.HasValue)
+            {
+                // A native state can replace the normal price or slot frame with a warning or selection sprite.
+                if (state != null)
+                {
+                    if (state.AppliedSprite != null && image.overrideSprite == state.AppliedSprite)
+                        image.overrideSprite = stock == image.sprite ? null : stock;
+                    if (image.color == state.Applied) image.color = state.Native;
+                    state.Base = image.sprite;
+                    state.AppliedSprite = null;
+                }
+                return;
+            }
+            if (state == null)
+            {
+                Images.Add(image, state = new ImageState { Native = image.color, Network = frame });
+            }
+            else if (image.color != state.Applied) state.Native = image.color;
+            if (art != null) ApplySprite(image, state, art);
+            state.Applied = art != null ? Alpha(Color.white, state.Native.a)
+                : Alpha(tint.Value, image.name == "StatFunds" || image.name == "StatFavor" ? .9f : state.Native.a);
+            if (image.color != state.Applied) image.color = state.Applied;
         }
 
         private static Sprite NetworkFace(Sprite stock, Color32 material, bool solid = false)
@@ -302,12 +344,21 @@ namespace JinSongPoc
             if (ui.clientNameTMP != null) SpeechText(ui.clientNameTMP, Paper);
         }
 
+        internal static void RefreshSpeech()
+        {
+            if (busy || !Mod.Active || Mod.Assets == null) return;
+            busy = true;
+            try { SkinSpeech(); }
+            finally { busy = false; }
+        }
+
         private static void SpeechText(TMP_Text text, Color color)
         {
             TextState state;
             if (!Texts.TryGetValue(text, out state)) Texts.Add(text, state = new TextState { Native = text.color });
             else if (text.color != state.Applied) state.Native = text.color;
-            state.Applied = Alpha(color, state.Native.a); text.color = state.Applied;
+            state.Applied = Alpha(color, state.Native.a);
+            if (text.color != state.Applied) text.color = state.Applied;
         }
 
         private static void SpeechImage(Image image, bool title)
@@ -315,8 +366,8 @@ namespace JinSongPoc
             if (image == null || image.sprite == null || Foreign(image.sprite) || Foreign(image.overrideSprite)) return;
             ImageState state;
             if (!Images.TryGetValue(image, out state))
-                Images.Add(image, state = new ImageState { Native = image.color, Override = image.overrideSprite == image.sprite ? null : image.overrideSprite });
-            Sprite stock = image.sprite;
+                Images.Add(image, state = new ImageState { Native = image.color });
+            Sprite stock = NativeSprite(image, state) ?? image.sprite;
             string key = "speech." + stock.GetInstanceID() + "." + title;
             Sprite art;
             if (!Art.TryGetValue(key, out art))
@@ -342,8 +393,9 @@ namespace JinSongPoc
                 art.name = "jinsong_poc.reported.speech." + stock.name;
                 Art.Add(key, art);
             }
-            state.AppliedSprite = art; image.overrideSprite = art;
-            state.Applied = Color.white; image.color = Color.white;
+            ApplySprite(image, state, art);
+            state.Applied = Color.white;
+            if (image.color != Color.white) image.color = Color.white;
         }
 
         internal static void Restore()
@@ -394,6 +446,18 @@ namespace JinSongPoc
                 foreach (TMP_Text text in Texts.Keys) if (text == null) oldTexts.Add(text);
                 foreach (TMP_Text text in oldTexts) Texts.Remove(text);
                 Refresh();
+            }
+        }
+
+        [HarmonyPatch(typeof(AdvCalendarUIManager), "ToggleUI", new Type[0])]
+        private static class LedgerToggled
+        {
+            private static void Postfix(AdvCalendarUIManager __instance)
+            {
+                if (busy || !Mod.Active || Mod.Assets == null || __instance.UIPanel == null) return;
+                busy = true;
+                try { Skin(__instance.UIPanel.transform, false); }
+                finally { busy = false; }
             }
         }
     }

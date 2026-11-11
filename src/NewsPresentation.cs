@@ -43,8 +43,8 @@ namespace JinSongPoc
         {
             string original = value.newsName;
             if (!Mod.Active || Mod.Assets == null) return original;
-            string assassin = AssassinStory.LocalizedNews(value, true);
-            if (assassin != null) return assassin;
+            string story = AssassinStory.LocalizedNews(value, true) ?? CityStory.LocalizedNews(value, true);
+            if (story != null) return story;
             Load();
             return names.Translate(original, Mod.CurrentText);
         }
@@ -52,8 +52,8 @@ namespace JinSongPoc
         {
             string original = value.newsDescription;
             if (!Mod.Active || Mod.Assets == null) return original;
-            string assassin = AssassinStory.LocalizedNews(value, false);
-            if (assassin != null) return assassin;
+            string story = AssassinStory.LocalizedNews(value, false) ?? CityStory.LocalizedNews(value, false);
+            if (story != null) return story;
             Load();
             return bodies.Translate(original, Mod.CurrentText);
         }

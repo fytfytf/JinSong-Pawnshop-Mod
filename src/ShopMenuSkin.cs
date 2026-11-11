@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using TMPro;
 using UnityEngine;
@@ -353,6 +354,17 @@ namespace JinSongPoc
                 }
         }
 
+        [HarmonyPatch]
+        private static class GuidePageChanged
+        {
+            private static IEnumerable<MethodBase> TargetMethods()
+            {
+                yield return AccessTools.Method(typeof(MultiPageUIManager), "OpenUI", new[] { typeof(int) });
+                yield return AccessTools.Method(typeof(MultiPageUIManager), "ShowPage", new[] { typeof(int) });
+            }
+            private static void Postfix() { RefreshGuideImages(); }
+        }
+
         private static void ApplyGlyph(Image image, string artKey, bool blankDivider = false)
         {
             if (!Mod.Active || Mod.Assets == null || image == null) return;
@@ -390,7 +402,7 @@ namespace JinSongPoc
                 GlyphImages.Add(image, state);
             }
             state[1] = replacement;
-            image.overrideSprite = replacement;
+            if (image.overrideSprite != replacement) image.overrideSprite = replacement;
         }
 
         // Small line graphics use code-native ink strokes; no generated illustration or source-pixel scan.
@@ -461,7 +473,7 @@ namespace JinSongPoc
             for (Transform parent = image.transform.parent; parent != null && parent != book.transform; parent = parent.parent)
                 if (parent.name.StartsWith("Page", StringComparison.Ordinal)) { page = parent; break; }
             TMP_Text[] texts = page.GetComponentsInChildren<TMP_Text>();
-            int signature = LocHelper.GetCurrentLocaleCode().GetHashCode() ^ native.GetHashCode() ^ image.rectTransform.rect.size.GetHashCode();
+            int signature = (LocHelper.GetCurrentLocaleCode() ?? "").GetHashCode() ^ native.GetHashCode() ^ image.rectTransform.rect.size.GetHashCode();
             foreach (TMP_Text text in texts)
                 signature = unchecked(signature * 31 + (text.text ?? "").GetHashCode() + text.fontSize.GetHashCode() + text.rectTransform.anchoredPosition.GetHashCode());
             if (signature == state.Signature) { ApplyGlyph(image, artKey, state.Blank); return; }

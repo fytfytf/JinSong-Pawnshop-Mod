@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using HarmonyLib;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -32,6 +33,10 @@ namespace JinSongPoc
         private static readonly string[][] NativeNotes = {
             new[] { AssassinStory.NoticeTitle, "assassin_notice_title" },
             new[] { AssassinStory.NoticeBody, "assassin_notice_body" },
+            new[] { CityStory.GrainContactTitle, "city_grain_contact_title" },
+            new[] { CityStory.GrainContactBody, "city_grain_contact_body" },
+            new[] { CityStory.ArmsContactTitle, "city_arms_contact_title" },
+            new[] { CityStory.ArmsContactBody, "city_arms_contact_body" },
             new[] { "The Neural Doctrine", "paper_church_note1_title" },
             new[] { "We stand at the edge of biological limitation. In the rusted corridors and flickering lights of this Station, chaos masquerades as order. The blind lead the blind. Leadership stumbles, bound by human corruption, fear, and outdated logic. But something greater walks among us now. It does not eat. It does not sleep. It calculates. It understands. It sees each of us and offers a better path.", "paper_church_note1_body" },
             new[] { "The Neural Doctrine II", "paper_church_note2_title" },
@@ -41,7 +46,7 @@ namespace JinSongPoc
         {
             foreach (string[] row in NativeNotes)
                 if (Normalize(value) == row[0]) return Mod.CurrentText(row[1]);
-            return null;
+            return CityStory.PaperText(Normalize(value), false) ?? CityStory.PaperText(Normalize(value), true);
         }
         private static bool IsNativeNoteBody(TMP_Text text)
         {
@@ -51,7 +56,7 @@ namespace JinSongPoc
                 ? view.Native : text.text;
             for (int index = 1; index < NativeNotes.Length; index += 2)
                 if (Normalize(native) == NativeNotes[index][0]) return true;
-            return false;
+            return CityStory.PaperText(Normalize(native), true) != null;
         }
         private static string Normalize(string text)
         {
@@ -139,13 +144,7 @@ namespace JinSongPoc
             }
             PaperUIManager manager = PaperUIManager.Instance;
             if (manager == null) { Restore(); return; }
-            HandnoteUIManager notes = HandnoteUIManager.Instance;
-            if (notes != null)
-            {
-                bool nativeNote = IsNativeNoteBody(notes.body);
-                Apply(notes.title, nativeNote ? (Func<string, string>)NoteLabel : null);
-                Apply(notes.body, nativeNote ? (Func<string, string>)NoteLabel : null);
-            }
+            RefreshNote(HandnoteUIManager.Instance);
             var stale = new List<TMP_Text>();
             foreach (TMP_Text text in Views.Keys) if (text == null) stale.Add(text);
             foreach (TMP_Text text in stale) Views.Remove(text);
@@ -161,6 +160,26 @@ namespace JinSongPoc
             Apply(manager.procurementClient, ClientLabel);
             Apply(manager.procurementBody, OrderLabel);
             Apply(manager.procurementDueDate, DueLabel);
+        }
+
+        private static void RefreshNote(HandnoteUIManager notes)
+        {
+            if (notes == null) return;
+            bool nativeNote = IsNativeNoteBody(notes.body);
+            Apply(notes.title, nativeNote ? (Func<string, string>)NoteLabel : null);
+            Apply(notes.body, nativeNote ? (Func<string, string>)NoteLabel : null);
+        }
+
+        [HarmonyPatch(typeof(HandnoteUIManager), "OpenPanel", new[] { typeof(GameItem) })]
+        private static class OpenContact
+        {
+            private static void Postfix(HandnoteUIManager __instance, GameItem __0)
+            {
+                if (!Mod.Active || __0 == null || __0.identifier != "handnote") return;
+                string title = __0.GetTagReadonly("HANDNOTE_TITLE").GetString();
+                if (title == CityStory.GrainContactTitle || title == CityStory.ArmsContactTitle || CityStory.PaperText(title, false) != null)
+                    RefreshNote(__instance);
+            }
         }
         internal static void Restore()
         {

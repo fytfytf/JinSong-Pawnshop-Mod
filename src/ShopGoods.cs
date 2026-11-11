@@ -717,8 +717,6 @@ namespace JinSongPoc
         private static readonly HashSet<string> WeaponParents = new HashSet<string>(StringComparer.Ordinal)
         { "printed_gun", "handmade_pistol", "heavy_handmade_pistol", "glock_receiver", "smg", "shotgun", "revolver", "stun_gun", "tazer" };
         private static readonly Dictionary<Sprite, Sprite> FillMarkers = new Dictionary<Sprite, Sprite>();
-        private static Assembly itemDetailsAssembly;
-        private static readonly HashSet<MethodBase> ItemDetailsPatches = new HashSet<MethodBase>();
         // The vanilla note is saved as a generic post-it with its original localized title.
         private static readonly HashSet<string> PurifierNoteNames = new HashSet<string>(StringComparer.Ordinal)
         {
@@ -895,54 +893,6 @@ namespace JinSongPoc
             Icons.Clear();
             NativeByReplacement.Clear();
             FillMarkers.Clear();
-            UnbindItemDetails();
-        }
-
-        internal static void BindItemDetails()
-        {
-            if (Mod.Assets == null || Mod.Assets.HarmonyInstance == null || ModLoader.Mods == null) return;
-            LoadedMod details = ModLoader.Mods.Find(mod => mod.Manifest.ID == "item_details" && mod.IsEnabled && mod.Assembly != null);
-            if (details == null) return;
-
-            if (details.Assembly != itemDetailsAssembly) UnbindItemDetails();
-            itemDetailsAssembly = details.Assembly;
-            Harmony harmony = Mod.Assets.HarmonyInstance;
-            HarmonyMethod name = new HarmonyMethod(typeof(ShopGoods), "ItemDetailsName");
-            HarmonyMethod tooltip = new HarmonyMethod(typeof(TooltipText), "Transpiler");
-            PatchItemDetails(harmony, "GameRead", "ItemName", name, null, typeof(GameItem));
-            PatchItemDetails(harmony, "GameRead", "ItemDisplayName", name, null, typeof(GameItem));
-            PatchItemDetails(harmony, "ContainerItemSignature", "DisplayName", name, null, typeof(GameItem));
-            PatchItemDetails(harmony, "TooltipPipeline", "AddLinePrefix", null, tooltip,
-                typeof(string).MakeByRefType(), typeof(RenderHandler.ColorPalette).MakeByRefType(),
-                typeof(bool).MakeByRefType(), typeof(RichTextBuilder));
-            PatchItemDetails(harmony, "TooltipPipeline", "NoteDescription", null, tooltip, typeof(string), typeof(GameItem));
-        }
-
-        private static void PatchItemDetails(Harmony harmony, string typeName, string methodName,
-            HarmonyMethod postfix, HarmonyMethod transpiler, params Type[] parameters)
-        {
-            MethodInfo method;
-            try { method = ModReflect.Target("ItemDetails." + typeName, methodName, parameters) as MethodInfo; }
-            catch (ModReflectAccessException) { return; }
-            if (method == null || !method.IsStatic || method.ReturnType != (postfix == null ? typeof(bool) : typeof(string))
-                || ItemDetailsPatches.Contains(method)) return;
-            harmony.Patch(method, postfix: postfix, transpiler: transpiler);
-            ItemDetailsPatches.Add(method);
-        }
-
-        private static void UnbindItemDetails()
-        {
-            Harmony harmony = Mod.Assets == null ? null : Mod.Assets.HarmonyInstance;
-            if (harmony != null)
-                foreach (MethodBase method in ItemDetailsPatches)
-                    harmony.Unpatch(method, HarmonyPatchType.All, harmony.Id);
-            ItemDetailsPatches.Clear();
-            itemDetailsAssembly = null;
-        }
-
-        private static void ItemDetailsName(GameItem __0, ref string __result)
-        {
-            if (__0 != null && !GeneralHelper.HasCustomName(__0)) __result = Text(__0, "_name") ?? __result;
         }
 
         [HarmonyPatch(typeof(GameItemElement), "ResolveItemSprite")]

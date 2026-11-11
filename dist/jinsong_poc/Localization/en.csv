@@ -1452,3 +1452,149 @@ assassin_news_survive_caught_title,Attack Foiled; Garrison Searches Song Househo
 assassin_news_survive_caught_body,"The Jin quartermaster survived. The wounded Shen Li was captured and taken to the military jail. The quartermaster ordered searches of Song households, and several porters from the crossing were taken in for questioning."
 assassin_news_reported_title,Tip Leads to Arrest of Shen Li
 assassin_news_reported_body,"Acting on a tip from the city, the garrison arrested Shen Li before the attack. The quartermaster kept his rounds. The notice said Shen Li was jailed for raiding the supply wagon and plotting the attack."
+city_zhou_name,Zhou Yan
+city_grain_seller,Guo Shouyi
+city_arms_seller,Shi Wu
+city_intro,"I'm Zhou Yan. I buy for a few travelling merchants. I hear there's always a deal to be made at this counter."
+city_intro_offer,"I know a deputy grain keeper and an armory guard. Both have stock to sell. If you're interested, I'll leave you a note for each of them."
+city_intro_accept,Take both notes
+city_intro_decline,"Thank you, Zhou. I'll pass on this deal."
+city_decline_reply,Understood. Go about your business and forget I mentioned it.
+city_contacts_return,I brought back the notes we couldn't fit on the counter last time.
+city_contacts_delivered,Ask Guo Shouyi for grain and Shi Wu for arms. I'll come back for the goods in a few days.
+city_contacts_no_room,There's no room on the counter. I'll bring back any notes I couldn't leave today.
+city_grain_contact_title,Grain Warehouse Contact
+city_grain_contact_body,"Guo Shouyi, deputy grain keeper. Ask about the paper-wrapped rations from the old warehouse."
+city_arms_contact_title,Armory Contact
+city_arms_contact_body,"Shi Wu, armory guard. Ask about the old garrison blades he has set aside."
+city_grain_seller_line,"Zhou Yan sent me. These rations came out of the old warehouse. Pay for what you want and they're yours."
+city_arms_seller_line,"I'm Shi Wu from the armory. These are two old pieces from the racks. Take a look at them, shopkeeper."
+city_seller_quote,"The lot on the counter comes to {0} credits. Take your pick."
+city_seller_no_room,There's nowhere to lay out the goods. I'll take them back for now.
+city_grain_collect,"I'm here for rations. I brought {0} credits. Sell me what can travel in a sack."
+city_arms_collect,"I'm here for the arms. I brought {0} credits. Put any usable weapons on the counter."
+
+city_han_name,Han Cheng
+city_du_name,Du Jiu
+city_wei_name,Wei Jian
+city_xu_name,Xu Cheng
+city_wanyan_name,Wanyan Su
+city_pucha_name,Pucha An
+city_pass,I will leave this for now.
+city_ack,I understand.
+city_retry,We cannot finish this yet. Make room on the counter and have the money or papers ready.
+city_receipt_line,An inventory check is coming. Forty coins buys the armory receipt with my mark. Keep it or hand it to whomever you choose.
+city_pay_bribe,Pay 40 and take the receipt.
+city_receipt_paid,Here is the receipt. I will answer to the armory.
+city_receipt_kept,"I will keep it. If anyone asks, I was never here."
+city_guo_line,"People are asking about the old warehouse grain. If I am to speak, promise my family will be looked after."
+city_protect_family,Promise to look after Guo's family.
+city_guo_agrees,"I will remember. If the inspector asks, I will say where the grain came from and where it went."
+city_guo_leaves,Then consider this a visit about an old debt.
+city_han_food_line,My men have gone two days without rations. I brought {0} coins. Feed them first and we can talk after that.
+city_ledger_line,I came to redeem an old pledge. This warehouse ledger leaf was folded inside. I cannot take it with me. You may keep it.
+city_accept_ledger,Take Xu Cheng's ledger leaf.
+city_ledger_accept_reply,The ledger calls an actual withdrawal a loss in transit. You decide who sees it.
+city_ledger_decline_reply,Very well. I will take it with me.
+city_scout_aid_line,Wei Jian was wounded coming into town. I have {0} coins for proper medicine.
+city_pledge_line,Han has fed his men and will hear our terms. The commander has signed his pledge. It needs to reach Han.
+city_pledge_line_cold,Han is still reluctant. Our commander has pledged to spare men who stand down. You can carry his promise to Han.
+city_take_pledge,Take the Song commander's pledge.
+city_give_zhou_ledger,Take the pledge and hand Zhou the ledger.
+city_pledge_given,Here is the pledge. You decide whether to deliver it.
+city_ledger_to_zhou,I will take the ledger. Now we know who has been moving grain off the books.
+city_no_pledge,Very well. I will look for another way.
+city_han_answer_line,"I have one question. If I stand aside, will my men get home alive?"
+city_give_pledge,Present the commander's pledge.
+city_take_watch_roster,Ask Han for the watch roster.
+city_han_declines,My men would bear the cost. I cannot agree today.
+city_han_joins,I will stand down with the commander's word. Take the roster. It tells you when the watch changes.
+city_han_roster_only,You can have the times. I have made no promise about the gate.
+city_scout_recovered,Your medicine saved my life. Du Jiu has met the men outside. You can keep this dispatch.
+city_scout_lost,The wound is still feverish. I cannot make the road. I still have the dispatch Du Jiu left behind.
+city_take_dispatch,Take Du Jiu's dispatch.
+city_dispatch_given,The dispatch names the rendezvous. Whoever holds it can decide what happens there.
+city_scout_leaves,"I will keep it. If you see Du Jiu, tell him I am alive."
+city_wanyan_line,The garrison wants the townspeople's grain too. Show me where the old stocks went and I can send the requisition back.
+city_show_ledger_wanyan,Give Wanyan Su the ledger.
+city_wanyan_unproved,Without the ledger I cannot halt the order.
+city_wanyan_refuses,The warehouse loses grain and the town must starve for it? I will return the order. Keep this permit.
+city_wanyan_orders,The requisition stands. Once the gates close we will have to follow it.
+city_alternative_line,Han will not lead. I know men on the night watch. Carry a message for me and they may help.
+city_relay,Carry Wei Jian's message to the night watch.
+city_alternative_joined,Their answer has come. They will leave a way open when the watch changes.
+city_alternative_left,Then I will hold only the meeting point outside.
+city_rival_han,My men are out of food. I ask first. Will you hold this lot for me?
+city_rival_zhou,Our men outside are waiting for grain too. Whoever loses this lot will have to make other arrangements.
+city_grain_to_han,Reserve the grain for Han Cheng.
+city_grain_to_zhou,Reserve the grain for Zhou Yan.
+city_rival_reply_1,I will bring money another day and tell my men to wait.
+city_rival_reply_2,"I will return for it. Han, I will ask if anyone else has supplies."
+city_rival_reply_3,Then neither of us has a claim. We will look elsewhere.
+city_rival_buy_line,I have come for the grain we agreed on. Prices have risen since the gates closed. I brought {0} coins.
+city_requisition_line,The Inspectorate is buying back the missing grain. Here are {0} coins for the original lot.
+city_requisition_refused,I sent back the order. I have come to tell you we will take no grain today.
+city_requisition_refused_reply,Let the townspeople eat what they have.
+city_siege_medicine_line,Medicine has gone up since the gates closed. I brought {0} coins for supplies for the townspeople.
+city_audit_line,The inventory showed a shortage. I have {0} coins for the blades from my original lot.
+city_commission_line,"The Inspectorate is tracing missing supplies. If you agree to help, I will examine the ledger, watch roster and dispatch myself."
+city_join_inquiry,Agree to assist Pucha An.
+city_commission_yes,"I will enter your name in the case book. If you were involved, you will have to explain it yourself."
+city_commission_no,"Understood. If the case comes back to your counter, the evidence will speak."
+city_inquiry_line,"We are checking three things. Supplies that passed this counter, the watch at the gate and the contact outside. Which can you show me?"
+city_give_supply_ledger,Submit the ledger on the warehouse grain.
+city_give_supply_receipt,Submit the receipt on the armory blades.
+city_give_roster,Submit the roster on contacts inside the gate.
+city_give_dispatch,Submit the dispatch on contacts outside.
+city_account_for_goods,Account for the supplies and messages I handled.
+city_account_accepted,I have settled the matters you disclosed in the cooperation record. Any later dealings will be judged separately.
+city_evidence_missing,I do not have the original. The case record stays as it is.
+city_evidence_verified,The paper and testimony agree. This part of the case is established.
+city_evidence_proof_only,I have filed the paper. I still need a witness who can corroborate it.
+city_inquiry_wait,The case remains open. We can speak when you are ready.
+city_sweep_cooperate,We will check every established lead tonight. The people and goods entered in the record will be dealt with.
+city_sweep_inspect,With the gates shut we are checking supplies shop by shop. I will work from the records we have.
+city_sweep_done,The results are in the case book. The final decision will follow.
+city_end_song,The gates are open. Our contacts inside gave way and our men have entered. Open as usual tomorrow. The Song command will post its order.
+city_end_jin,"We have closed the cases at the warehouse, gate and rendezvous. The Song forces have withdrawn. The Inspectorate will reward your assistance tomorrow."
+city_end_execution,The papers and witnesses agree and your part remains unresolved. By order of the prefecture you are under arrest. Here is the warrant.
+city_execution_title,Judgment of the prefecture
+city_execution_body,The Inspectorate assembled the evidence of your role in supplying or aiding the infiltration. The Jin prefecture sentenced the shopkeeper to death.
+city_award_song,The new flag is up and the market has reopened. The commander sends this order to your shop.
+city_award_jin,"By Lord Wanyan's order, a banner reading Wanyan Special License now stands outside your shop. Please accept the Inspectorate's written citation."
+city_award_jin_given,The banner and the citation are both entered in the register. Open your shop as usual.
+city_award_given,The paper is on the counter. You may open for business as usual.
+city_news_notice_title,The prefecture announces a gate closure
+city_news_notice_body,The gates close tomorrow. No new grain or medicine will enter. The market trades as usual today.
+city_news_siege_title,The gates close and supplies run short
+city_news_siege_body,"The siege has begun. Prices rise on the reserved grain, the grain recovery order and the medicine Du Jiu seeks."
+city_news_song_title,Song troops enter and the market reopens
+city_news_song_body,The defenders stood aside and the troops outside entered. The gates are open and trade resumes.
+city_news_jin_title,The Inspectorate closes its case and the siege lifts
+city_news_jin_body,"The Inspectorate has closed the supply, gate and outside contact cases. The Song army withdrew and cooperating shops are commended."
+city_news_execution_title,Prefecture executes shopkeeper
+city_news_execution_body,"After the Inspectorate verified the evidence, the prefecture carried out its sentence."
+city_paper_receipt_title,Armory receipt
+city_paper_receipt_body,Shi Wu signed for the blades removed from the western racks.
+city_paper_ledger_title,Old warehouse ledger leaf
+city_paper_ledger_body,The missing sacks were crossed off against a false loss in transit.
+city_paper_pledge_title,Field commander's pledge
+city_paper_pledge_body,Men who stand down and shelter the townspeople will keep their lives.
+city_paper_roster_title,Watch rotation
+city_paper_roster_body,The relief watch is to take the side gate at the third drum.
+city_paper_dispatch_title,Outer camp dispatch
+city_paper_dispatch_body,Du Jiu is to bring word from the rendezvous beyond the east market.
+city_paper_warrant_title,Warrant of execution
+city_paper_warrant_body,The shopkeeper is condemned on the evidence entered in the garrison case.
+city_paper_song_award_title,Order to reopen the market
+city_paper_song_award_body,The Song command orders the market reopened and records the help of this shop.
+city_paper_jin_award_title,Citation of the Circuit Inspectorate
+city_paper_jin_award_body,The Inspectorate commends the shop for bringing the supply and infiltration case to a close.
+city_paper_permit_title,Warehouse passage permit
+city_paper_permit_body,Wanyan Su allows the bearer to move grain under seal during the curfew.
+city_pay_guo,Pay 30 coins to help Guo's family relocate.
+city_guo_paid,I will send my family away from the warehouse. I will tell the inspector what happened.
+
+city_song_victory_title,Song Troops Enter the City
+city_song_victory_body,The watch has opened the gates and the Song troops have entered. The siege is lifted. Open your shop as usual tomorrow.
+fixture_counter_to_stock,Return counter items to stock

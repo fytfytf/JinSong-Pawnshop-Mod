@@ -9,6 +9,7 @@ namespace JinSongPoc
     internal static class ShopHotspots
     {
         internal const string ArtKey = "jin_hotspot_shop";
+        internal const int StockButtonZone = 15;
         // Source landmarks measured in the approved 1671 × 941 painting.
         internal static readonly int[] Columns = { 0, 569, 1109, 1671 };
         internal static readonly int[] Rows = { 0, 66, 454, 484, 606, 941 };
@@ -29,7 +30,7 @@ namespace JinSongPoc
         private static readonly RectInt MemoPapers = ToScene(new RectInt(271, 315, 207, 111));
         private static readonly RectInt ShowcaseNiche = ToScene(new RectInt(298, 137, 145, 147));
         private static readonly RectInt WallCalendar = ToScene(new RectInt(268, 39, 246, 64));
-        private static readonly RectInt CounterLedger = ToScene(new RectInt(746, 575, 182, 31));
+        private static readonly RectInt WallLedger = new RectInt(195, 190, 106, 40);
         private static readonly RectInt PlayerTrade = ToScene(new RectInt(678, 506, 315, 51));
         private static readonly RectInt FullTrade = ToScene(new RectInt(568, 489, 548, 86));
         internal static readonly RectInt SideAbacus = ToScene(new RectInt(386, 548, 170, 46));
@@ -37,7 +38,14 @@ namespace JinSongPoc
         internal static readonly RectInt QueuePaper = ToScene(new RectInt(522, 154, 36, 64));
         internal static readonly RectInt QueueNumber = ToScene(new RectInt(525, 168, 30, 43));
         internal static RectInt CalendarArt { get { return WallCalendar; } }
-        internal static RectInt LedgerArt { get { return CounterLedger; } }
+        internal static RectInt LedgerArt { get { return WallLedger; } }
+        internal static RectInt LedgerInk
+        {
+            get
+            {
+                return new RectInt(WallLedger.x + 8, WallLedger.y + 8, WallLedger.width - 16, WallLedger.height - 11);
+            }
+        }
         private static readonly Dictionary<Image, HighlightAppearance> DropTargets = new Dictionary<Image, HighlightAppearance>();
         private static readonly Color32[] DropColors = {
             new Color32(235, 109, 93, 225), new Color32(149, 220, 131, 225), new Color32(131, 207, 241, 220),
@@ -67,7 +75,7 @@ namespace JinSongPoc
             if (UnifiedInterior.HasCounterLayout)
             {
                 if (number == 10) return WallCalendar;
-                if (number == 11) return CounterLedger;
+                if (number == 11) return new RectInt(WallLedger.x, WallLedger.y + 5, WallLedger.width, WallLedger.height - 5);
                 if (number == 24) return PlayerTrade;
             }
             if (UnifiedInterior.HasLeftShowcase)
@@ -121,6 +129,41 @@ namespace JinSongPoc
         }
 
         internal static void Track(int number, Interactable target) { Targets[number - 1] = target; }
+
+        private static bool IsPawnshopStockButton(StoreTransferButton button)
+        {
+            MapUIManager map = MapUIManager.Instance;
+            Interactable target = Targets[StockButtonZone - 1];
+            return Mod.Active && UnifiedInterior.IsHotspot && map != null && map.Current == null
+                && target != null && target.gameObject == button.gameObject;
+        }
+
+        [HarmonyPatch(typeof(StoreTransferButton), "OnClick")]
+        private static class ReturnCounterStock
+        {
+            private static bool Prefix(StoreTransferButton __instance)
+            {
+                if (!IsPawnshopStockButton(__instance)) return true;
+                EmporiumEntry entry = EmporiumEntry.Instance;
+                if (entry == null || entry.backInvinvElement == null || entry.invElement == null) return false;
+
+                if (__instance.audioSource != null) __instance.audioSource.Play();
+                entry.TransferOwnedItemBackToInv();
+                TutorialUIManager tutorial = TutorialUIManager.Instance;
+                if (tutorial != null) tutorial.OnTransferButtonClicked();
+                return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(StoreTransferButton), "GetTooltip")]
+        private static class ReturnCounterStockTooltip
+        {
+            private static void Postfix(StoreTransferButton __instance, ref string __result)
+            {
+                if (IsPawnshopStockButton(__instance))
+                    __result = Mod.CurrentText("fixture_counter_to_stock") ?? __result;
+            }
+        }
 
         private static void FrameDropTarget(GameSlotInventory slot, Image image, RenderHandler.BackgroundColor color)
         {

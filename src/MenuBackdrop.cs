@@ -59,7 +59,11 @@ namespace JinSongPoc
 
         internal static void Apply(LoadedMod assets)
         {
-            if (assets == null) return;
+            // The loader populates textures synchronously before its audio coroutine
+            // raises OnModAssetsLoaded. The menu can already use those textures.
+            if (assets == null && ModLoader.Mods != null)
+                assets = ModLoader.Mods.Find(mod => mod.IsEnabled && mod.Manifest.ID == Mod.Id);
+            if (assets == null || assets.Textures == null) return;
             if (background == null)
             {
                 Restore();

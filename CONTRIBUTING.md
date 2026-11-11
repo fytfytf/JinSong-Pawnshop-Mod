@@ -1,6 +1,6 @@
 # 金宋当铺 MOD 修改与贡献指南
 
-本指南面向想改贴图、翻译、界面或剧情的贡献者。当前开发参照是 **Alpha262**，在 Windows 的 Steam 正式版上完成了发布兼容专项。先从下表找到入口，再按改动范围选择验证。历史版本的实机记录保留各自的适用范围。 [项目首页](README.md)
+本指南面向想改贴图、翻译、界面或剧情的贡献者。当前源码对应 **Alpha277**，可在 Windows 上使用 Steam 正式版游戏文件构建。先从下表找到入口，再按改动范围选择验证。历史版本的实机记录保留各自的适用范围。 [项目首页](README.md)
 
 ## 从源码构建一个本地测试版
 
@@ -37,7 +37,7 @@ Copy-Item -LiteralPath 'assets/v01/alpha140-shop-audio/Sounds' -Destination $mod
 | 指南、文书、机构名与每日新闻 | [`SerializedLabels.cs`](src/SerializedLabels.cs)、[`PaperText.cs`](src/PaperText.cs)、[`OrganizationText.cs`](src/OrganizationText.cs)、[`NewsPresentation.cs`](src/NewsPresentation.cs) | 有些文本来自原生查词，有些来自 Unity 序列化标签或事件缓存。查实际显示控件，再选对应入口。 |
 | 净水、蓄能、配方与机巧加工的显示 | [`WaterPresentation.cs`](src/WaterPresentation.cs)、[`CraftingText.cs`](src/CraftingText.cs)、[`ChemicalText.cs`](src/ChemicalText.cs)、[`AccessCraftingText.cs`](src/AccessCraftingText.cs) | 保留原生水量、纯度、耗电、配方和容器状态。改显示时比对同一物品进入界面前后的实际数据。 |
 | 界面和店铺音效 | [`ShopAudio.cs`](src/ShopAudio.cs)、[`DirectShopAudio.cs`](src/DirectShopAudio.cs)、[`音效源目录`](assets/v01/alpha140-shop-audio/Sounds) | 查实际播放入口。替换界面或店铺声音时留意循环声源和背景音乐。 |
-| 新增任务和结局 | [`AssassinStory.cs`](src/AssassinStory.cs)、[`JinSongPoc.cs`](src/JinSongPoc.cs)、[`NewsPresentation.cs`](src/NewsPresentation.cs) | 沈砺线已验证独立顾客、成交金额、离场结算、分支状态和次日新闻。改原版剧情前先查 [原任务流](docs/QUEST_FLOWS.zh-CN.md)。 |
+| 新增任务和结局 | [`AssassinStory.cs`](src/AssassinStory.cs)、[`CityStory.cs`](src/CityStory.cs)、[`CityStoryCampaign.cs`](src/CityStoryCampaign.cs)、[`CityRules.cs`](src/CityRules.cs) | 核对来访、成交金额、离场结算、文书和结局条件。对照 [新增剧情攻略](docs/STORY_WALKTHROUGH.zh-CN.md) 和 [原任务流](docs/QUEST_FLOWS.zh-CN.md)。 |
 
 **例子一，给青瓷净水器换皮。** 在 `ShopGoods.cs` 查 `water_purifier`，会找到 `purifier` 和 `purifier_w` 两个精灵入口。对应的 MOD 源图是 `jin_goods_purifier.png` 和 `jin_goods_purifier_w.png`。沿用两张图的尺寸、透明边界和占格。只改中文题名时，改 `zh.csv` 的 `goods_purifier_name`，保留 `water_purifier` 原 ID。
 
@@ -73,6 +73,6 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File tools/run-ui-survey.ps1 `
 
 - 写清游戏版本、MOD 版本、改动的文件和受影响的功能。给出实际操作步骤与预期结果。显示问题可以附裁好的界面截图，业务改动注明关键输入和输出。
 - 在验证说明里分别写明本次实际验证的范围，以及沿用哪一版的既有记录。仅编译或静态检查时，按实际结果填写。提交源文件、语言表和相应原创素材。
-- 新增入口优先用游戏的 `ModHook` 和公开 API。确需查游戏或声明的兼容 MOD 内部成员时，使用官方 `ModReflect`。Alpha262 的 `<Capabilities />` 为空。涉及新 DLL、外部依赖或反射时，先按官方指南在当前游戏中用 `mod-scan jinsong_poc` 核对。 [官方能力与扫描说明](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#checking-before-you-publish)
+- 新增入口优先用游戏的 `ModHook` 和公开 API。确需查游戏或声明的兼容 MOD 内部成员时，使用官方 `ModReflect`。Alpha277 的 `<Capabilities />` 为空。涉及新 DLL、外部依赖或反射时，先按官方指南在当前游戏中用 `mod-scan jinsong_poc` 核对。 [官方能力与扫描说明](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#checking-before-you-publish)
 
 维护者公开仓库前应确定代码与素材的授权范围，并逐项检查将发布的文件和 Git 历史。供贡献者构建的游戏程序集由各自的正版安装提供。公开提交应剔除账号信息、存档、个人路径日志、临时助手产物、外部 MOD DLL 和未经授权的原版资源。仓库当前尚无 `LICENSE`，请以发布时的实际授权为准。 [GitHub 许可说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
